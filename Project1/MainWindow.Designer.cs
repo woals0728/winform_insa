@@ -169,25 +169,25 @@
             // 인사코드관리ToolStripMenuItem2
             // 
             this.인사코드관리ToolStripMenuItem2.Name = "인사코드관리ToolStripMenuItem2";
-            this.인사코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
+            this.인사코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사코드관리ToolStripMenuItem2.Text = "인사코드 관리";
             // 
             // 부서코드관리ToolStripMenuItem2
             // 
             this.부서코드관리ToolStripMenuItem2.Name = "부서코드관리ToolStripMenuItem2";
-            this.부서코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
+            this.부서코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.부서코드관리ToolStripMenuItem2.Text = "부서코드 관리";
             // 
             // 직급코드관리ToolStripMenuItem2
             // 
             this.직급코드관리ToolStripMenuItem2.Name = "직급코드관리ToolStripMenuItem2";
-            this.직급코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
+            this.직급코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.직급코드관리ToolStripMenuItem2.Text = "직급코드 관리";
             // 
             // 직책코드관리ToolStripMenuItem2
             // 
             this.직책코드관리ToolStripMenuItem2.Name = "직책코드관리ToolStripMenuItem2";
-            this.직책코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
+            this.직책코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.직책코드관리ToolStripMenuItem2.Text = "직책코드 관리";
             // 
             // 인사기록관리ToolStripMenuItem1
@@ -203,14 +203,14 @@
             // 인사기본사항ToolStripMenuItem2
             // 
             this.인사기본사항ToolStripMenuItem2.Name = "인사기본사항ToolStripMenuItem2";
-            this.인사기본사항ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
+            this.인사기본사항ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사기본사항ToolStripMenuItem2.Text = "인사기록 등록";
             this.인사기본사항ToolStripMenuItem2.Click += new System.EventHandler(this.인사기본사항ToolStripMenuItem_Click);
             // 
             // 인사기록조회통합ToolStripMenuItem2
             // 
             this.인사기록조회통합ToolStripMenuItem2.Name = "인사기록조회통합ToolStripMenuItem2";
-            this.인사기록조회통합ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
+            this.인사기록조회통합ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사기록조회통합ToolStripMenuItem2.Text = "인사기록 조회";
             this.인사기록조회통합ToolStripMenuItem2.Click += new System.EventHandler(this.인사기록조회통합ToolStripMenuItem2_Click);
             // 
@@ -228,19 +228,19 @@
             // 인사발령대장관리ToolStripMenuItem2
             // 
             this.인사발령대장관리ToolStripMenuItem2.Name = "인사발령대장관리ToolStripMenuItem2";
-            this.인사발령대장관리ToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
+            this.인사발령대장관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사발령대장관리ToolStripMenuItem2.Text = "인사발령대장 관리";
             // 
             // 인사발령등록ToolStripMenuItem2
             // 
             this.인사발령등록ToolStripMenuItem2.Name = "인사발령등록ToolStripMenuItem2";
-            this.인사발령등록ToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
+            this.인사발령등록ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사발령등록ToolStripMenuItem2.Text = "인사발령 등록";
             // 
             // 인사발령조회ToolStripMenuItem2
             // 
             this.인사발령조회ToolStripMenuItem2.Name = "인사발령조회ToolStripMenuItem2";
-            this.인사발령조회ToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
+            this.인사발령조회ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사발령조회ToolStripMenuItem2.Text = "인사발령 조회";
             // 
             // 제증명서발ToolStripMenuItem
@@ -294,25 +294,25 @@
             // 부서별인원현황ToolStripMenuItem2
             // 
             this.부서별인원현황ToolStripMenuItem2.Name = "부서별인원현황ToolStripMenuItem2";
-            this.부서별인원현황ToolStripMenuItem2.Size = new System.Drawing.Size(162, 22);
+            this.부서별인원현황ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.부서별인원현황ToolStripMenuItem2.Text = "부서별 인원현황";
             // 
             // 직급별인원현황ToolStripMenuItem2
             // 
             this.직급별인원현황ToolStripMenuItem2.Name = "직급별인원현황ToolStripMenuItem2";
-            this.직급별인원현황ToolStripMenuItem2.Size = new System.Drawing.Size(162, 22);
+            this.직급별인원현황ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.직급별인원현황ToolStripMenuItem2.Text = "직급별 인원현황";
             // 
             // 입사인원추이ToolStripMenuItem2
             // 
             this.입사인원추이ToolStripMenuItem2.Name = "입사인원추이ToolStripMenuItem2";
-            this.입사인원추이ToolStripMenuItem2.Size = new System.Drawing.Size(162, 22);
+            this.입사인원추이ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.입사인원추이ToolStripMenuItem2.Text = "입사인원 추이";
             // 
             // 퇴사인원추이ToolStripMenuItem2
             // 
             this.퇴사인원추이ToolStripMenuItem2.Name = "퇴사인원추이ToolStripMenuItem2";
-            this.퇴사인원추이ToolStripMenuItem2.Size = new System.Drawing.Size(162, 22);
+            this.퇴사인원추이ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.퇴사인원추이ToolStripMenuItem2.Text = "퇴사인원 추이";
             // 
             // toolStripMenuItem1

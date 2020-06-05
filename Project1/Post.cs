@@ -16,8 +16,8 @@ namespace Project1
 {
     public partial class Post : MetroForm
     {
-        P_information parentD;
-        public Post(P_information set)
+        Information parentD;
+        public Post(Information set)
         {
             InitializeComponent();
             parentD = set;
@@ -34,7 +34,6 @@ namespace Project1
             {
                 MessageBox.Show("주소를 입력하세요.");
             }
-
             List<string> tm = new List<string>();
             int tma;
             DataTable table = new DataTable();

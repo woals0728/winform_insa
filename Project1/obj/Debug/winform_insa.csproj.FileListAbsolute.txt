@@ -1,0 +1,8 @@
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\winform_insa.csprojAssemblyReference.cache
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Login.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.MainWindow.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Post.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\winform_insa.Properties.Resources.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.P_information.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Reference.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\winform_insa.csproj.GenerateResource.cache

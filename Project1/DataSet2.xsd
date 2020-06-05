@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Project1.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="Oracle.ManagedDataAccess.Client" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="THRM_BAS_LJMTableAdapter" GeneratorDataComponentClassName="THRM_BAS_LJMTableAdapter" Name="THRM_BAS_LJM" UserDataComponentName="THRM_BAS_LJMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="EDU.THRM_BAS_LJM" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM "EDU"."THRM_BAS_LJM" WHERE (("BAS_EMPNO" = :Original_BAS_EMPNO) AND ((:IsNull_BAS_RESNO = 1 AND "BAS_RESNO" IS NULL) OR ("BAS_RESNO" = :Original_BAS_RESNO)) AND ((:IsNull_BAS_NAME = 1 AND "BAS_NAME" IS NULL) OR ("BAS_NAME" = :Original_BAS_NAME)) AND ((:IsNull_BAS_CNAME = 1 AND "BAS_CNAME" IS NULL) OR ("BAS_CNAME" = :Original_BAS_CNAME)) AND ((:IsNull_BAS_ENAME = 1 AND "BAS_ENAME" IS NULL) OR ("BAS_ENAME" = :Original_BAS_ENAME)) AND ((:IsNull_BAS_FIX = 1 AND "BAS_FIX" IS NULL) OR ("BAS_FIX" = :Original_BAS_FIX)) AND ((:IsNull_BAS_ZIP = 1 AND "BAS_ZIP" IS NULL) OR ("BAS_ZIP" = :Original_BAS_ZIP)) AND ((:IsNull_BAS_ADDR = 1 AND "BAS_ADDR" IS NULL) OR ("BAS_ADDR" = :Original_BAS_ADDR)) AND ((:IsNull_BAS_RESIDENCE = 1 AND "BAS_RESIDENCE" IS NULL) OR ("BAS_RESIDENCE" = :Original_BAS_RESIDENCE)) AND ((:IsNull_BAS_HDPNO = 1 AND "BAS_HDPNO" IS NULL) OR ("BAS_HDPNO" = :Original_BAS_HDPNO)) AND ((:IsNull_BAS_TELNO = 1 AND "BAS_TELNO" IS NULL) OR ("BAS_TELNO" = :Original_BAS_TELNO)) AND ((:IsNull_BAS_EMAIL = 1 AND "BAS_EMAIL" IS NULL) OR ("BAS_EMAIL" = :Original_BAS_EMAIL)) AND ((:IsNull_BAS_MIL_STA = 1 AND "BAS_MIL_STA" IS NULL) OR ("BAS_MIL_STA" = :Original_BAS_MIL_STA)) AND ((:IsNull_BAS_MIL_MIL = 1 AND "BAS_MIL_MIL" IS NULL) OR ("BAS_MIL_MIL" = :Original_BAS_MIL_MIL)) AND ((:IsNull_BAS_MIL_RNK = 1 AND "BAS_MIL_RNK" IS NULL) OR ("BAS_MIL_RNK" = :Original_BAS_MIL_RNK)) AND ((:IsNull_BAS_MAR = 1 AND "BAS_MAR" IS NULL) OR ("BAS_MAR" = :Original_BAS_MAR)) AND ((:IsNull_BAS_ACC_BANK1 = 1 AND "BAS_ACC_BANK1" IS NULL) OR ("BAS_ACC_BANK1" = :Original_BAS_ACC_BANK1)) AND ((:IsNull_BAS_ACC_NAME1 = 1 AND "BAS_ACC_NAME1" IS NULL) OR ("BAS_ACC_NAME1" = :Original_BAS_ACC_NAME1)) AND ((:IsNull_BAS_ACC_NO1 = 1 AND "BAS_ACC_NO1" IS NULL) OR ("BAS_ACC_NO1" = :Original_BAS_ACC_NO1)) AND ((:IsNull_BAS_ACC_BANK2 = 1 AND "BAS_ACC_BANK2" IS NULL) OR ("BAS_ACC_BANK2" = :Original_BAS_ACC_BANK2)) AND ((:IsNull_BAS_ACC_NAME2 = 1 AND "BAS_ACC_NAME2" IS NULL) OR ("BAS_ACC_NAME2" = :Original_BAS_ACC_NAME2)) AND ((:IsNull_BAS_ACC_NO2 = 1 AND "BAS_ACC_NO2" IS NULL) OR ("BAS_ACC_NO2" = :Original_BAS_ACC_NO2)) AND ((:IsNull_BAS_CONT = 1 AND "BAS_CONT" IS NULL) OR ("BAS_CONT" = :Original_BAS_CONT)) AND ((:IsNull_BAS_INTERN = 1 AND "BAS_INTERN" IS NULL) OR ("BAS_INTERN" = :Original_BAS_INTERN)) AND ((:IsNull_BAS_INTERN_NO = 1 AND "BAS_INTERN_NO" IS NULL) OR ("BAS_INTERN_NO" = :Original_BAS_INTERN_NO)) AND ((:IsNull_BAS_EMP_SDATE = 1 AND "BAS_EMP_SDATE" IS NULL) OR ("BAS_EMP_SDATE" = :Original_BAS_EMP_SDATE)) AND ((:IsNull_BAS_EMP_EDATE = 1 AND "BAS_EMP_EDATE" IS NULL) OR ("BAS_EMP_EDATE" = :Original_BAS_EMP_EDATE)) AND ((:IsNull_BAS_ENTDATE = 1 AND "BAS_ENTDATE" IS NULL) OR ("BAS_ENTDATE" = :Original_BAS_ENTDATE)) AND ((:IsNull_BAS_RESDATE = 1 AND "BAS_RESDATE" IS NULL) OR ("BAS_RESDATE" = :Original_BAS_RESDATE)) AND ((:IsNull_BAS_LEVDATE = 1 AND "BAS_LEVDATE" IS NULL) OR ("BAS_LEVDATE" = :Original_BAS_LEVDATE)) AND ((:IsNull_BAS_REIDATE = 1 AND "BAS_REIDATE" IS NULL) OR ("BAS_REIDATE" = :Original_BAS_REIDATE)) AND ((:IsNull_BAS_WSTA = 1 AND "BAS_WSTA" IS NULL) OR ("BAS_WSTA" = :Original_BAS_WSTA)) AND ((:IsNull_BAS_STS = 1 AND "BAS_STS" IS NULL) OR ("BAS_STS" = :Original_BAS_STS)) AND ((:IsNull_BAS_POS = 1 AND "BAS_POS" IS NULL) OR ("BAS_POS" = :Original_BAS_POS)) AND ((:IsNull_BAS_DUT = 1 AND "BAS_DUT" IS NULL) OR ("BAS_DUT" = :Original_BAS_DUT)) AND ((:IsNull_BAS_DEPT = 1 AND "BAS_DEPT" IS NULL) OR ("BAS_DEPT" = :Original_BAS_DEPT)) AND ((:IsNull_BAS_RMK = 1 AND "BAS_RMK" IS NULL) OR ("BAS_RMK" = :Original_BAS_RMK)) AND ((:IsNull_BAS_POS_DT = 1 AND "BAS_POS_DT" IS NULL) OR ("BAS_POS_DT" = :Original_BAS_POS_DT)) AND ((:IsNull_BAS_DUT_DT = 1 AND "BAS_DUT_DT" IS NULL) OR ("BAS_DUT_DT" = :Original_BAS_DUT_DT)) AND ((:IsNull_BAS_DEPT_DT = 1 AND "BAS_DEPT_DT" IS NULL) OR ("BAS_DEPT_DT" = :Original_BAS_DEPT_DT)) AND ((:IsNull_BAS_INTERN_DT = 1 AND "BAS_INTERN_DT" IS NULL) OR ("BAS_INTERN_DT" = :Original_BAS_INTERN_DT)) AND ((:IsNull_DATASYS1 = 1 AND "DATASYS1" IS NULL) OR ("DATASYS1" = :Original_DATASYS1)) AND ((:IsNull_DATASYS2 = 1 AND "DATASYS2" IS NULL) OR ("DATASYS2" = :Original_DATASYS2)) AND ((:IsNull_DATASYS3 = 1 AND "DATASYS3" IS NULL) OR ("DATASYS3" = :Original_DATASYS3)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_EMPNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="BAS_EMPNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_RESNO" Precision="0" ProviderType="Int32" Scale="0" Size="82" SourceColumn="BAS_RESNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_RESNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="82" SourceColumn="BAS_RESNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_NAME" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_NAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_CNAME" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_CNAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_CNAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_CNAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ENAME" Precision="0" ProviderType="Int32" Scale="0" Size="50" SourceColumn="BAS_ENAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ENAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="BAS_ENAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_FIX" Precision="0" ProviderType="Int32" Scale="0" Size="2" SourceColumn="BAS_FIX" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_FIX" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="BAS_FIX" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ZIP" Precision="0" ProviderType="Int32" Scale="0" Size="5" SourceColumn="BAS_ZIP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ZIP" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="BAS_ZIP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ADDR" Precision="0" ProviderType="Int32" Scale="0" Size="150" SourceColumn="BAS_ADDR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ADDR" Precision="0" ProviderType="Varchar2" Scale="0" Size="150" SourceColumn="BAS_ADDR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_RESIDENCE" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_RESIDENCE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_RESIDENCE" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_RESIDENCE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_HDPNO" Precision="0" ProviderType="Int32" Scale="0" Size="15" SourceColumn="BAS_HDPNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_HDPNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="BAS_HDPNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_TELNO" Precision="0" ProviderType="Int32" Scale="0" Size="15" SourceColumn="BAS_TELNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_TELNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="BAS_TELNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_EMAIL" Precision="0" ProviderType="Int32" Scale="0" Size="30" SourceColumn="BAS_EMAIL" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_EMAIL" Precision="0" ProviderType="Varchar2" Scale="0" Size="30" SourceColumn="BAS_EMAIL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_MIL_STA" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="BAS_MIL_STA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_MIL_STA" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_MIL_STA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_MIL_MIL" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="BAS_MIL_MIL" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_MIL_MIL" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_MIL_MIL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_MIL_RNK" Precision="0" ProviderType="Int32" Scale="0" Size="6" SourceColumn="BAS_MIL_RNK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_MIL_RNK" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="BAS_MIL_RNK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_MAR" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="BAS_MAR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_MAR" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_MAR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_BANK1" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_BANK1" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_NAME1" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_NAME1" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_NO1" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_ACC_NO1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_NO1" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_NO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_BANK2" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_BANK2" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_NAME2" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_NAME2" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_NO2" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_ACC_NO2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_NO2" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_NO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_CONT" Precision="0" ProviderType="Int32" Scale="0" Size="6" SourceColumn="BAS_CONT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_CONT" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="BAS_CONT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_INTERN" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="BAS_INTERN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_INTERN" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_INTERN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_INTERN_NO" Precision="0" ProviderType="Int32" Scale="0" Size="22" SourceColumn="BAS_INTERN_NO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="Original_BAS_INTERN_NO" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="BAS_INTERN_NO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_EMP_SDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_EMP_SDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_EMP_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_EMP_SDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_EMP_EDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_EMP_EDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_EMP_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_EMP_EDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ENTDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_ENTDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ENTDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_ENTDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_RESDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_RESDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_RESDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_RESDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_LEVDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_LEVDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_LEVDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_LEVDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_REIDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_REIDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_REIDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_REIDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_WSTA" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="BAS_WSTA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_WSTA" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_WSTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_STS" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="BAS_STS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_STS" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="BAS_STS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_POS" Precision="0" ProviderType="Int32" Scale="0" Size="3" SourceColumn="BAS_POS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_POS" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="BAS_POS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_DUT" Precision="0" ProviderType="Int32" Scale="0" Size="2" SourceColumn="BAS_DUT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_DUT" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="BAS_DUT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_DEPT" Precision="0" ProviderType="Int32" Scale="0" Size="3" SourceColumn="BAS_DEPT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_DEPT" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="BAS_DEPT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_RMK" Precision="0" ProviderType="Int32" Scale="0" Size="200" SourceColumn="BAS_RMK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_RMK" Precision="0" ProviderType="Varchar2" Scale="0" Size="200" SourceColumn="BAS_RMK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_POS_DT" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_POS_DT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_POS_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_POS_DT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_DUT_DT" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_DUT_DT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_DUT_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_DUT_DT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_DEPT_DT" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_DEPT_DT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_DEPT_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_DEPT_DT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_INTERN_DT" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_INTERN_DT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_INTERN_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_INTERN_DT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS1" Precision="0" ProviderType="Int32" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS2" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS3" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO "EDU"."THRM_BAS_LJM" ("BAS_EMPNO", "BAS_RESNO", "BAS_NAME", "BAS_CNAME", "BAS_ENAME", "BAS_FIX", "BAS_ZIP", "BAS_ADDR", "BAS_RESIDENCE", "BAS_HDPNO", "BAS_TELNO", "BAS_EMAIL", "BAS_MIL_STA", "BAS_MIL_MIL", "BAS_MIL_RNK", "BAS_MAR", "BAS_ACC_BANK1", "BAS_ACC_NAME1", "BAS_ACC_NO1", "BAS_ACC_BANK2", "BAS_ACC_NAME2", "BAS_ACC_NO2", "BAS_CONT", "BAS_INTERN", "BAS_INTERN_NO", "BAS_EMP_SDATE", "BAS_EMP_EDATE", "BAS_ENTDATE", "BAS_RESDATE", "BAS_LEVDATE", "BAS_REIDATE", "BAS_WSTA", "BAS_STS", "BAS_POS", "BAS_DUT", "BAS_DEPT", "BAS_RMK", "BAS_POS_DT", "BAS_DUT_DT", "BAS_DEPT_DT", "BAS_INTERN_DT", "DATASYS1", "DATASYS2", "DATASYS3") VALUES (:BAS_EMPNO, :BAS_RESNO, :BAS_NAME, :BAS_CNAME, :BAS_ENAME, :BAS_FIX, :BAS_ZIP, :BAS_ADDR, :BAS_RESIDENCE, :BAS_HDPNO, :BAS_TELNO, :BAS_EMAIL, :BAS_MIL_STA, :BAS_MIL_MIL, :BAS_MIL_RNK, :BAS_MAR, :BAS_ACC_BANK1, :BAS_ACC_NAME1, :BAS_ACC_NO1, :BAS_ACC_BANK2, :BAS_ACC_NAME2, :BAS_ACC_NO2, :BAS_CONT, :BAS_INTERN, :BAS_INTERN_NO, :BAS_EMP_SDATE, :BAS_EMP_EDATE, :BAS_ENTDATE, :BAS_RESDATE, :BAS_LEVDATE, :BAS_REIDATE, :BAS_WSTA, :BAS_STS, :BAS_POS, :BAS_DUT, :BAS_DEPT, :BAS_RMK, :BAS_POS_DT, :BAS_DUT_DT, :BAS_DEPT_DT, :BAS_INTERN_DT, :DATASYS1, :DATASYS2, :DATASYS3)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_EMPNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="BAS_EMPNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_RESNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="82" SourceColumn="BAS_RESNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_NAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_CNAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_CNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ENAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="BAS_ENAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_FIX" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="BAS_FIX" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ZIP" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="BAS_ZIP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ADDR" Precision="0" ProviderType="Varchar2" Scale="0" Size="150" SourceColumn="BAS_ADDR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_RESIDENCE" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_RESIDENCE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_HDPNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="BAS_HDPNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_TELNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="BAS_TELNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_EMAIL" Precision="0" ProviderType="Varchar2" Scale="0" Size="30" SourceColumn="BAS_EMAIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_MIL_STA" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_MIL_STA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_MIL_MIL" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_MIL_MIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_MIL_RNK" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="BAS_MIL_RNK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_MAR" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_MAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_BANK1" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_NAME1" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_NO1" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_NO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_BANK2" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_NAME2" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_NO2" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_NO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_CONT" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="BAS_CONT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_INTERN" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_INTERN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="BAS_INTERN_NO" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="BAS_INTERN_NO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_EMP_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_EMP_SDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_EMP_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_EMP_EDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ENTDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_ENTDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_RESDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_RESDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_LEVDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_LEVDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_REIDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_REIDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_WSTA" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_WSTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_STS" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="BAS_STS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_POS" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="BAS_POS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_DUT" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="BAS_DUT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_DEPT" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="BAS_DEPT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_RMK" Precision="0" ProviderType="Varchar2" Scale="0" Size="200" SourceColumn="BAS_RMK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_POS_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_POS_DT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_DUT_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_DUT_DT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_DEPT_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_DEPT_DT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_INTERN_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_INTERN_DT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BAS_EMPNO, BAS_RESNO, BAS_NAME, BAS_CNAME, BAS_ENAME, BAS_FIX, BAS_ZIP, BAS_ADDR, BAS_RESIDENCE, BAS_HDPNO, BAS_TELNO, BAS_EMAIL, BAS_MIL_STA, BAS_MIL_MIL, BAS_MIL_RNK, BAS_MAR, BAS_ACC_BANK1, BAS_ACC_NAME1, BAS_ACC_NO1, BAS_ACC_BANK2, BAS_ACC_NAME2, BAS_ACC_NO2, BAS_CONT, BAS_INTERN, BAS_INTERN_NO, BAS_EMP_SDATE, BAS_EMP_EDATE, BAS_ENTDATE, BAS_RESDATE, BAS_LEVDATE, BAS_REIDATE, BAS_WSTA, BAS_STS, BAS_POS, BAS_DUT, BAS_DEPT, BAS_RMK, BAS_POS_DT, BAS_DUT_DT, BAS_DEPT_DT, BAS_INTERN_DT, DATASYS1, DATASYS2, DATASYS3 FROM EDU.THRM_BAS_LJM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE "EDU"."THRM_BAS_LJM" SET "BAS_EMPNO" = :BAS_EMPNO, "BAS_RESNO" = :BAS_RESNO, "BAS_NAME" = :BAS_NAME, "BAS_CNAME" = :BAS_CNAME, "BAS_ENAME" = :BAS_ENAME, "BAS_FIX" = :BAS_FIX, "BAS_ZIP" = :BAS_ZIP, "BAS_ADDR" = :BAS_ADDR, "BAS_RESIDENCE" = :BAS_RESIDENCE, "BAS_HDPNO" = :BAS_HDPNO, "BAS_TELNO" = :BAS_TELNO, "BAS_EMAIL" = :BAS_EMAIL, "BAS_MIL_STA" = :BAS_MIL_STA, "BAS_MIL_MIL" = :BAS_MIL_MIL, "BAS_MIL_RNK" = :BAS_MIL_RNK, "BAS_MAR" = :BAS_MAR, "BAS_ACC_BANK1" = :BAS_ACC_BANK1, "BAS_ACC_NAME1" = :BAS_ACC_NAME1, "BAS_ACC_NO1" = :BAS_ACC_NO1, "BAS_ACC_BANK2" = :BAS_ACC_BANK2, "BAS_ACC_NAME2" = :BAS_ACC_NAME2, "BAS_ACC_NO2" = :BAS_ACC_NO2, "BAS_CONT" = :BAS_CONT, "BAS_INTERN" = :BAS_INTERN, "BAS_INTERN_NO" = :BAS_INTERN_NO, "BAS_EMP_SDATE" = :BAS_EMP_SDATE, "BAS_EMP_EDATE" = :BAS_EMP_EDATE, "BAS_ENTDATE" = :BAS_ENTDATE, "BAS_RESDATE" = :BAS_RESDATE, "BAS_LEVDATE" = :BAS_LEVDATE, "BAS_REIDATE" = :BAS_REIDATE, "BAS_WSTA" = :BAS_WSTA, "BAS_STS" = :BAS_STS, "BAS_POS" = :BAS_POS, "BAS_DUT" = :BAS_DUT, "BAS_DEPT" = :BAS_DEPT, "BAS_RMK" = :BAS_RMK, "BAS_POS_DT" = :BAS_POS_DT, "BAS_DUT_DT" = :BAS_DUT_DT, "BAS_DEPT_DT" = :BAS_DEPT_DT, "BAS_INTERN_DT" = :BAS_INTERN_DT, "DATASYS1" = :DATASYS1, "DATASYS2" = :DATASYS2, "DATASYS3" = :DATASYS3 WHERE (("BAS_EMPNO" = :Original_BAS_EMPNO) AND ((:IsNull_BAS_RESNO = 1 AND "BAS_RESNO" IS NULL) OR ("BAS_RESNO" = :Original_BAS_RESNO)) AND ((:IsNull_BAS_NAME = 1 AND "BAS_NAME" IS NULL) OR ("BAS_NAME" = :Original_BAS_NAME)) AND ((:IsNull_BAS_CNAME = 1 AND "BAS_CNAME" IS NULL) OR ("BAS_CNAME" = :Original_BAS_CNAME)) AND ((:IsNull_BAS_ENAME = 1 AND "BAS_ENAME" IS NULL) OR ("BAS_ENAME" = :Original_BAS_ENAME)) AND ((:IsNull_BAS_FIX = 1 AND "BAS_FIX" IS NULL) OR ("BAS_FIX" = :Original_BAS_FIX)) AND ((:IsNull_BAS_ZIP = 1 AND "BAS_ZIP" IS NULL) OR ("BAS_ZIP" = :Original_BAS_ZIP)) AND ((:IsNull_BAS_ADDR = 1 AND "BAS_ADDR" IS NULL) OR ("BAS_ADDR" = :Original_BAS_ADDR)) AND ((:IsNull_BAS_RESIDENCE = 1 AND "BAS_RESIDENCE" IS NULL) OR ("BAS_RESIDENCE" = :Original_BAS_RESIDENCE)) AND ((:IsNull_BAS_HDPNO = 1 AND "BAS_HDPNO" IS NULL) OR ("BAS_HDPNO" = :Original_BAS_HDPNO)) AND ((:IsNull_BAS_TELNO = 1 AND "BAS_TELNO" IS NULL) OR ("BAS_TELNO" = :Original_BAS_TELNO)) AND ((:IsNull_BAS_EMAIL = 1 AND "BAS_EMAIL" IS NULL) OR ("BAS_EMAIL" = :Original_BAS_EMAIL)) AND ((:IsNull_BAS_MIL_STA = 1 AND "BAS_MIL_STA" IS NULL) OR ("BAS_MIL_STA" = :Original_BAS_MIL_STA)) AND ((:IsNull_BAS_MIL_MIL = 1 AND "BAS_MIL_MIL" IS NULL) OR ("BAS_MIL_MIL" = :Original_BAS_MIL_MIL)) AND ((:IsNull_BAS_MIL_RNK = 1 AND "BAS_MIL_RNK" IS NULL) OR ("BAS_MIL_RNK" = :Original_BAS_MIL_RNK)) AND ((:IsNull_BAS_MAR = 1 AND "BAS_MAR" IS NULL) OR ("BAS_MAR" = :Original_BAS_MAR)) AND ((:IsNull_BAS_ACC_BANK1 = 1 AND "BAS_ACC_BANK1" IS NULL) OR ("BAS_ACC_BANK1" = :Original_BAS_ACC_BANK1)) AND ((:IsNull_BAS_ACC_NAME1 = 1 AND "BAS_ACC_NAME1" IS NULL) OR ("BAS_ACC_NAME1" = :Original_BAS_ACC_NAME1)) AND ((:IsNull_BAS_ACC_NO1 = 1 AND "BAS_ACC_NO1" IS NULL) OR ("BAS_ACC_NO1" = :Original_BAS_ACC_NO1)) AND ((:IsNull_BAS_ACC_BANK2 = 1 AND "BAS_ACC_BANK2" IS NULL) OR ("BAS_ACC_BANK2" = :Original_BAS_ACC_BANK2)) AND ((:IsNull_BAS_ACC_NAME2 = 1 AND "BAS_ACC_NAME2" IS NULL) OR ("BAS_ACC_NAME2" = :Original_BAS_ACC_NAME2)) AND ((:IsNull_BAS_ACC_NO2 = 1 AND "BAS_ACC_NO2" IS NULL) OR ("BAS_ACC_NO2" = :Original_BAS_ACC_NO2)) AND ((:IsNull_BAS_CONT = 1 AND "BAS_CONT" IS NULL) OR ("BAS_CONT" = :Original_BAS_CONT)) AND ((:IsNull_BAS_INTERN = 1 AND "BAS_INTERN" IS NULL) OR ("BAS_INTERN" = :Original_BAS_INTERN)) AND ((:IsNull_BAS_INTERN_NO = 1 AND "BAS_INTERN_NO" IS NULL) OR ("BAS_INTERN_NO" = :Original_BAS_INTERN_NO)) AND ((:IsNull_BAS_EMP_SDATE = 1 AND "BAS_EMP_SDATE" IS NULL) OR ("BAS_EMP_SDATE" = :Original_BAS_EMP_SDATE)) AND ((:IsNull_BAS_EMP_EDATE = 1 AND "BAS_EMP_EDATE" IS NULL) OR ("BAS_EMP_EDATE" = :Original_BAS_EMP_EDATE)) AND ((:IsNull_BAS_ENTDATE = 1 AND "BAS_ENTDATE" IS NULL) OR ("BAS_ENTDATE" = :Original_BAS_ENTDATE)) AND ((:IsNull_BAS_RESDATE = 1 AND "BAS_RESDATE" IS NULL) OR ("BAS_RESDATE" = :Original_BAS_RESDATE)) AND ((:IsNull_BAS_LEVDATE = 1 AND "BAS_LEVDATE" IS NULL) OR ("BAS_LEVDATE" = :Original_BAS_LEVDATE)) AND ((:IsNull_BAS_REIDATE = 1 AND "BAS_REIDATE" IS NULL) OR ("BAS_REIDATE" = :Original_BAS_REIDATE)) AND ((:IsNull_BAS_WSTA = 1 AND "BAS_WSTA" IS NULL) OR ("BAS_WSTA" = :Original_BAS_WSTA)) AND ((:IsNull_BAS_STS = 1 AND "BAS_STS" IS NULL) OR ("BAS_STS" = :Original_BAS_STS)) AND ((:IsNull_BAS_POS = 1 AND "BAS_POS" IS NULL) OR ("BAS_POS" = :Original_BAS_POS)) AND ((:IsNull_BAS_DUT = 1 AND "BAS_DUT" IS NULL) OR ("BAS_DUT" = :Original_BAS_DUT)) AND ((:IsNull_BAS_DEPT = 1 AND "BAS_DEPT" IS NULL) OR ("BAS_DEPT" = :Original_BAS_DEPT)) AND ((:IsNull_BAS_RMK = 1 AND "BAS_RMK" IS NULL) OR ("BAS_RMK" = :Original_BAS_RMK)) AND ((:IsNull_BAS_POS_DT = 1 AND "BAS_POS_DT" IS NULL) OR ("BAS_POS_DT" = :Original_BAS_POS_DT)) AND ((:IsNull_BAS_DUT_DT = 1 AND "BAS_DUT_DT" IS NULL) OR ("BAS_DUT_DT" = :Original_BAS_DUT_DT)) AND ((:IsNull_BAS_DEPT_DT = 1 AND "BAS_DEPT_DT" IS NULL) OR ("BAS_DEPT_DT" = :Original_BAS_DEPT_DT)) AND ((:IsNull_BAS_INTERN_DT = 1 AND "BAS_INTERN_DT" IS NULL) OR ("BAS_INTERN_DT" = :Original_BAS_INTERN_DT)) AND ((:IsNull_DATASYS1 = 1 AND "DATASYS1" IS NULL) OR ("DATASYS1" = :Original_DATASYS1)) AND ((:IsNull_DATASYS2 = 1 AND "DATASYS2" IS NULL) OR ("DATASYS2" = :Original_DATASYS2)) AND ((:IsNull_DATASYS3 = 1 AND "DATASYS3" IS NULL) OR ("DATASYS3" = :Original_DATASYS3)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_EMPNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="BAS_EMPNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_RESNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="82" SourceColumn="BAS_RESNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_NAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_CNAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_CNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ENAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="BAS_ENAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_FIX" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="BAS_FIX" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ZIP" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="BAS_ZIP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ADDR" Precision="0" ProviderType="Varchar2" Scale="0" Size="150" SourceColumn="BAS_ADDR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_RESIDENCE" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_RESIDENCE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_HDPNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="BAS_HDPNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_TELNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="BAS_TELNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_EMAIL" Precision="0" ProviderType="Varchar2" Scale="0" Size="30" SourceColumn="BAS_EMAIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_MIL_STA" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_MIL_STA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_MIL_MIL" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_MIL_MIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_MIL_RNK" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="BAS_MIL_RNK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_MAR" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_MAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_BANK1" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_NAME1" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_NO1" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_NO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_BANK2" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_NAME2" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ACC_NO2" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_NO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_CONT" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="BAS_CONT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_INTERN" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_INTERN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="BAS_INTERN_NO" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="BAS_INTERN_NO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_EMP_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_EMP_SDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_EMP_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_EMP_EDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_ENTDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_ENTDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_RESDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_RESDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_LEVDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_LEVDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_REIDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_REIDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_WSTA" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_WSTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_STS" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="BAS_STS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_POS" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="BAS_POS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_DUT" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="BAS_DUT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_DEPT" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="BAS_DEPT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_RMK" Precision="0" ProviderType="Varchar2" Scale="0" Size="200" SourceColumn="BAS_RMK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_POS_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_POS_DT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_DUT_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_DUT_DT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_DEPT_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_DEPT_DT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="BAS_INTERN_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_INTERN_DT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_EMPNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="BAS_EMPNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_RESNO" Precision="0" ProviderType="Int32" Scale="0" Size="82" SourceColumn="BAS_RESNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_RESNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="82" SourceColumn="BAS_RESNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_NAME" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_NAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_CNAME" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_CNAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_CNAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_CNAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ENAME" Precision="0" ProviderType="Int32" Scale="0" Size="50" SourceColumn="BAS_ENAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ENAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="BAS_ENAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_FIX" Precision="0" ProviderType="Int32" Scale="0" Size="2" SourceColumn="BAS_FIX" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_FIX" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="BAS_FIX" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ZIP" Precision="0" ProviderType="Int32" Scale="0" Size="5" SourceColumn="BAS_ZIP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ZIP" Precision="0" ProviderType="Varchar2" Scale="0" Size="5" SourceColumn="BAS_ZIP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ADDR" Precision="0" ProviderType="Int32" Scale="0" Size="150" SourceColumn="BAS_ADDR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ADDR" Precision="0" ProviderType="Varchar2" Scale="0" Size="150" SourceColumn="BAS_ADDR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_RESIDENCE" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_RESIDENCE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_RESIDENCE" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_RESIDENCE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_HDPNO" Precision="0" ProviderType="Int32" Scale="0" Size="15" SourceColumn="BAS_HDPNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_HDPNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="BAS_HDPNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_TELNO" Precision="0" ProviderType="Int32" Scale="0" Size="15" SourceColumn="BAS_TELNO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_TELNO" Precision="0" ProviderType="Varchar2" Scale="0" Size="15" SourceColumn="BAS_TELNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_EMAIL" Precision="0" ProviderType="Int32" Scale="0" Size="30" SourceColumn="BAS_EMAIL" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_EMAIL" Precision="0" ProviderType="Varchar2" Scale="0" Size="30" SourceColumn="BAS_EMAIL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_MIL_STA" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="BAS_MIL_STA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_MIL_STA" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_MIL_STA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_MIL_MIL" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="BAS_MIL_MIL" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_MIL_MIL" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_MIL_MIL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_MIL_RNK" Precision="0" ProviderType="Int32" Scale="0" Size="6" SourceColumn="BAS_MIL_RNK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_MIL_RNK" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="BAS_MIL_RNK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_MAR" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="BAS_MAR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_MAR" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_MAR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_BANK1" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_BANK1" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_NAME1" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_NAME1" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_NO1" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_ACC_NO1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_NO1" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_NO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_BANK2" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_BANK2" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_BANK2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_NAME2" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_NAME2" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="BAS_ACC_NAME2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ACC_NO2" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="BAS_ACC_NO2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ACC_NO2" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="BAS_ACC_NO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_CONT" Precision="0" ProviderType="Int32" Scale="0" Size="6" SourceColumn="BAS_CONT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_CONT" Precision="0" ProviderType="Varchar2" Scale="0" Size="6" SourceColumn="BAS_CONT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_INTERN" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="BAS_INTERN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_INTERN" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_INTERN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_INTERN_NO" Precision="0" ProviderType="Int32" Scale="0" Size="22" SourceColumn="BAS_INTERN_NO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="Original_BAS_INTERN_NO" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="BAS_INTERN_NO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_EMP_SDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_EMP_SDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_EMP_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_EMP_SDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_EMP_EDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_EMP_EDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_EMP_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_EMP_EDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_ENTDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_ENTDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_ENTDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_ENTDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_RESDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_RESDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_RESDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_RESDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_LEVDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_LEVDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_LEVDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_LEVDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_REIDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_REIDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_REIDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_REIDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_WSTA" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="BAS_WSTA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_WSTA" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="BAS_WSTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_STS" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="BAS_STS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_STS" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="BAS_STS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_POS" Precision="0" ProviderType="Int32" Scale="0" Size="3" SourceColumn="BAS_POS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_POS" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="BAS_POS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_DUT" Precision="0" ProviderType="Int32" Scale="0" Size="2" SourceColumn="BAS_DUT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_DUT" Precision="0" ProviderType="Varchar2" Scale="0" Size="2" SourceColumn="BAS_DUT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_DEPT" Precision="0" ProviderType="Int32" Scale="0" Size="3" SourceColumn="BAS_DEPT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_DEPT" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="BAS_DEPT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_RMK" Precision="0" ProviderType="Int32" Scale="0" Size="200" SourceColumn="BAS_RMK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_RMK" Precision="0" ProviderType="Varchar2" Scale="0" Size="200" SourceColumn="BAS_RMK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_POS_DT" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_POS_DT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_POS_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_POS_DT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_DUT_DT" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_DUT_DT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_DUT_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_DUT_DT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_DEPT_DT" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_DEPT_DT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_DEPT_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_DEPT_DT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BAS_INTERN_DT" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="BAS_INTERN_DT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_BAS_INTERN_DT" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="BAS_INTERN_DT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS1" Precision="0" ProviderType="Int32" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS2" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS3" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BAS_EMPNO" DataSetColumn="BAS_EMPNO" />
+              <Mapping SourceColumn="BAS_RESNO" DataSetColumn="BAS_RESNO" />
+              <Mapping SourceColumn="BAS_NAME" DataSetColumn="BAS_NAME" />
+              <Mapping SourceColumn="BAS_CNAME" DataSetColumn="BAS_CNAME" />
+              <Mapping SourceColumn="BAS_ENAME" DataSetColumn="BAS_ENAME" />
+              <Mapping SourceColumn="BAS_FIX" DataSetColumn="BAS_FIX" />
+              <Mapping SourceColumn="BAS_ZIP" DataSetColumn="BAS_ZIP" />
+              <Mapping SourceColumn="BAS_ADDR" DataSetColumn="BAS_ADDR" />
+              <Mapping SourceColumn="BAS_RESIDENCE" DataSetColumn="BAS_RESIDENCE" />
+              <Mapping SourceColumn="BAS_HDPNO" DataSetColumn="BAS_HDPNO" />
+              <Mapping SourceColumn="BAS_TELNO" DataSetColumn="BAS_TELNO" />
+              <Mapping SourceColumn="BAS_EMAIL" DataSetColumn="BAS_EMAIL" />
+              <Mapping SourceColumn="BAS_MIL_STA" DataSetColumn="BAS_MIL_STA" />
+              <Mapping SourceColumn="BAS_MIL_MIL" DataSetColumn="BAS_MIL_MIL" />
+              <Mapping SourceColumn="BAS_MIL_RNK" DataSetColumn="BAS_MIL_RNK" />
+              <Mapping SourceColumn="BAS_MAR" DataSetColumn="BAS_MAR" />
+              <Mapping SourceColumn="BAS_ACC_BANK1" DataSetColumn="BAS_ACC_BANK1" />
+              <Mapping SourceColumn="BAS_ACC_NAME1" DataSetColumn="BAS_ACC_NAME1" />
+              <Mapping SourceColumn="BAS_ACC_NO1" DataSetColumn="BAS_ACC_NO1" />
+              <Mapping SourceColumn="BAS_ACC_BANK2" DataSetColumn="BAS_ACC_BANK2" />
+              <Mapping SourceColumn="BAS_ACC_NAME2" DataSetColumn="BAS_ACC_NAME2" />
+              <Mapping SourceColumn="BAS_ACC_NO2" DataSetColumn="BAS_ACC_NO2" />
+              <Mapping SourceColumn="BAS_CONT" DataSetColumn="BAS_CONT" />
+              <Mapping SourceColumn="BAS_INTERN" DataSetColumn="BAS_INTERN" />
+              <Mapping SourceColumn="BAS_INTERN_NO" DataSetColumn="BAS_INTERN_NO" />
+              <Mapping SourceColumn="BAS_EMP_SDATE" DataSetColumn="BAS_EMP_SDATE" />
+              <Mapping SourceColumn="BAS_EMP_EDATE" DataSetColumn="BAS_EMP_EDATE" />
+              <Mapping SourceColumn="BAS_ENTDATE" DataSetColumn="BAS_ENTDATE" />
+              <Mapping SourceColumn="BAS_RESDATE" DataSetColumn="BAS_RESDATE" />
+              <Mapping SourceColumn="BAS_LEVDATE" DataSetColumn="BAS_LEVDATE" />
+              <Mapping SourceColumn="BAS_REIDATE" DataSetColumn="BAS_REIDATE" />
+              <Mapping SourceColumn="BAS_WSTA" DataSetColumn="BAS_WSTA" />
+              <Mapping SourceColumn="BAS_STS" DataSetColumn="BAS_STS" />
+              <Mapping SourceColumn="BAS_POS" DataSetColumn="BAS_POS" />
+              <Mapping SourceColumn="BAS_DUT" DataSetColumn="BAS_DUT" />
+              <Mapping SourceColumn="BAS_DEPT" DataSetColumn="BAS_DEPT" />
+              <Mapping SourceColumn="BAS_RMK" DataSetColumn="BAS_RMK" />
+              <Mapping SourceColumn="BAS_POS_DT" DataSetColumn="BAS_POS_DT" />
+              <Mapping SourceColumn="BAS_DUT_DT" DataSetColumn="BAS_DUT_DT" />
+              <Mapping SourceColumn="BAS_DEPT_DT" DataSetColumn="BAS_DEPT_DT" />
+              <Mapping SourceColumn="BAS_INTERN_DT" DataSetColumn="BAS_INTERN_DT" />
+              <Mapping SourceColumn="DATASYS1" DataSetColumn="DATASYS1" />
+              <Mapping SourceColumn="DATASYS2" DataSetColumn="DATASYS2" />
+              <Mapping SourceColumn="DATASYS3" DataSetColumn="DATASYS3" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="THRM_DEPT_LJMTableAdapter" GeneratorDataComponentClassName="THRM_DEPT_LJMTableAdapter" Name="THRM_DEPT_LJM" UserDataComponentName="THRM_DEPT_LJMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="EDU.THRM_DEPT_LJM" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM "EDU"."THRM_DEPT_LJM" WHERE (("DEPT_CODE" = :Original_DEPT_CODE) AND ((:IsNull_DEPT_NAME = 1 AND "DEPT_NAME" IS NULL) OR ("DEPT_NAME" = :Original_DEPT_NAME)) AND ((:IsNull_DEPT_NAMES = 1 AND "DEPT_NAMES" IS NULL) OR ("DEPT_NAMES" = :Original_DEPT_NAMES)) AND ((:IsNull_DEPT_SEQ = 1 AND "DEPT_SEQ" IS NULL) OR ("DEPT_SEQ" = :Original_DEPT_SEQ)) AND ((:IsNull_DEPT_UPP = 1 AND "DEPT_UPP" IS NULL) OR ("DEPT_UPP" = :Original_DEPT_UPP)) AND ((:IsNull_DEPT_DEPT = 1 AND "DEPT_DEPT" IS NULL) OR ("DEPT_DEPT" = :Original_DEPT_DEPT)) AND ((:IsNull_DEPT_SDATE = 1 AND "DEPT_SDATE" IS NULL) OR ("DEPT_SDATE" = :Original_DEPT_SDATE)) AND ((:IsNull_DEPT_EDATE = 1 AND "DEPT_EDATE" IS NULL) OR ("DEPT_EDATE" = :Original_DEPT_EDATE)) AND ((:IsNull_DATASYS1 = 1 AND "DATASYS1" IS NULL) OR ("DATASYS1" = :Original_DATASYS1)) AND ((:IsNull_DATASYS2 = 1 AND "DATASYS2" IS NULL) OR ("DATASYS2" = :Original_DATASYS2)) AND ((:IsNull_DATASYS3 = 1 AND "DATASYS3" IS NULL) OR ("DATASYS3" = :Original_DATASYS3)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_CODE" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_CODE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_NAME" Precision="0" ProviderType="Int32" Scale="0" Size="50" SourceColumn="DEPT_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_NAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="DEPT_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_NAMES" Precision="0" ProviderType="Int32" Scale="0" Size="50" SourceColumn="DEPT_NAMES" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_NAMES" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="DEPT_NAMES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_SEQ" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="DEPT_SEQ" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_SEQ" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="DEPT_SEQ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_UPP" Precision="0" ProviderType="Int32" Scale="0" Size="3" SourceColumn="DEPT_UPP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_UPP" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_UPP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_DEPT" Precision="0" ProviderType="Int32" Scale="0" Size="3" SourceColumn="DEPT_DEPT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_DEPT" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_DEPT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_SDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="DEPT_SDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="DEPT_SDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_EDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="DEPT_EDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="DEPT_EDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS1" Precision="0" ProviderType="Int32" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS2" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS3" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO "EDU"."THRM_DEPT_LJM" ("DEPT_CODE", "DEPT_NAME", "DEPT_NAMES", "DEPT_SEQ", "DEPT_UPP", "DEPT_DEPT", "DEPT_SDATE", "DEPT_EDATE", "DATASYS1", "DATASYS2", "DATASYS3") VALUES (:DEPT_CODE, :DEPT_NAME, :DEPT_NAMES, :DEPT_SEQ, :DEPT_UPP, :DEPT_DEPT, :DEPT_SDATE, :DEPT_EDATE, :DATASYS1, :DATASYS2, :DATASYS3)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_CODE" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_CODE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_NAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="DEPT_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_NAMES" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="DEPT_NAMES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_SEQ" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="DEPT_SEQ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_UPP" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_UPP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_DEPT" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_DEPT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="DEPT_SDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="DEPT_EDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DEPT_CODE, DEPT_NAME, DEPT_NAMES, DEPT_SEQ, DEPT_UPP, DEPT_DEPT, DEPT_SDATE, DEPT_EDATE, DATASYS1, DATASYS2, DATASYS3 FROM EDU.THRM_DEPT_LJM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE "EDU"."THRM_DEPT_LJM" SET "DEPT_CODE" = :DEPT_CODE, "DEPT_NAME" = :DEPT_NAME, "DEPT_NAMES" = :DEPT_NAMES, "DEPT_SEQ" = :DEPT_SEQ, "DEPT_UPP" = :DEPT_UPP, "DEPT_DEPT" = :DEPT_DEPT, "DEPT_SDATE" = :DEPT_SDATE, "DEPT_EDATE" = :DEPT_EDATE, "DATASYS1" = :DATASYS1, "DATASYS2" = :DATASYS2, "DATASYS3" = :DATASYS3 WHERE (("DEPT_CODE" = :Original_DEPT_CODE) AND ((:IsNull_DEPT_NAME = 1 AND "DEPT_NAME" IS NULL) OR ("DEPT_NAME" = :Original_DEPT_NAME)) AND ((:IsNull_DEPT_NAMES = 1 AND "DEPT_NAMES" IS NULL) OR ("DEPT_NAMES" = :Original_DEPT_NAMES)) AND ((:IsNull_DEPT_SEQ = 1 AND "DEPT_SEQ" IS NULL) OR ("DEPT_SEQ" = :Original_DEPT_SEQ)) AND ((:IsNull_DEPT_UPP = 1 AND "DEPT_UPP" IS NULL) OR ("DEPT_UPP" = :Original_DEPT_UPP)) AND ((:IsNull_DEPT_DEPT = 1 AND "DEPT_DEPT" IS NULL) OR ("DEPT_DEPT" = :Original_DEPT_DEPT)) AND ((:IsNull_DEPT_SDATE = 1 AND "DEPT_SDATE" IS NULL) OR ("DEPT_SDATE" = :Original_DEPT_SDATE)) AND ((:IsNull_DEPT_EDATE = 1 AND "DEPT_EDATE" IS NULL) OR ("DEPT_EDATE" = :Original_DEPT_EDATE)) AND ((:IsNull_DATASYS1 = 1 AND "DATASYS1" IS NULL) OR ("DATASYS1" = :Original_DATASYS1)) AND ((:IsNull_DATASYS2 = 1 AND "DATASYS2" IS NULL) OR ("DATASYS2" = :Original_DATASYS2)) AND ((:IsNull_DATASYS3 = 1 AND "DATASYS3" IS NULL) OR ("DATASYS3" = :Original_DATASYS3)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_CODE" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_CODE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_NAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="DEPT_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_NAMES" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="DEPT_NAMES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_SEQ" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="DEPT_SEQ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_UPP" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_UPP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_DEPT" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_DEPT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="DEPT_SDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DEPT_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="DEPT_EDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_CODE" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_CODE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_NAME" Precision="0" ProviderType="Int32" Scale="0" Size="50" SourceColumn="DEPT_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_NAME" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="DEPT_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_NAMES" Precision="0" ProviderType="Int32" Scale="0" Size="50" SourceColumn="DEPT_NAMES" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_NAMES" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="DEPT_NAMES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_SEQ" Precision="0" ProviderType="Int32" Scale="0" Size="4" SourceColumn="DEPT_SEQ" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_SEQ" Precision="0" ProviderType="Varchar2" Scale="0" Size="4" SourceColumn="DEPT_SEQ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_UPP" Precision="0" ProviderType="Int32" Scale="0" Size="3" SourceColumn="DEPT_UPP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_UPP" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_UPP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_DEPT" Precision="0" ProviderType="Int32" Scale="0" Size="3" SourceColumn="DEPT_DEPT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_DEPT" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="DEPT_DEPT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_SDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="DEPT_SDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="DEPT_SDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DEPT_EDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="DEPT_EDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DEPT_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="DEPT_EDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS1" Precision="0" ProviderType="Int32" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS2" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS3" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DEPT_CODE" DataSetColumn="DEPT_CODE" />
+              <Mapping SourceColumn="DEPT_NAME" DataSetColumn="DEPT_NAME" />
+              <Mapping SourceColumn="DEPT_NAMES" DataSetColumn="DEPT_NAMES" />
+              <Mapping SourceColumn="DEPT_SEQ" DataSetColumn="DEPT_SEQ" />
+              <Mapping SourceColumn="DEPT_UPP" DataSetColumn="DEPT_UPP" />
+              <Mapping SourceColumn="DEPT_DEPT" DataSetColumn="DEPT_DEPT" />
+              <Mapping SourceColumn="DEPT_SDATE" DataSetColumn="DEPT_SDATE" />
+              <Mapping SourceColumn="DEPT_EDATE" DataSetColumn="DEPT_EDATE" />
+              <Mapping SourceColumn="DATASYS1" DataSetColumn="DATASYS1" />
+              <Mapping SourceColumn="DATASYS2" DataSetColumn="DATASYS2" />
+              <Mapping SourceColumn="DATASYS3" DataSetColumn="DATASYS3" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TIEAS_CD_LJMTableAdapter" GeneratorDataComponentClassName="TIEAS_CD_LJMTableAdapter" Name="TIEAS_CD_LJM" UserDataComponentName="TIEAS_CD_LJMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="EDU.TIEAS_CD_LJM" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM "EDU"."TIEAS_CD_LJM" WHERE (("CD_GRPCD" = :Original_CD_GRPCD) AND ("CD_CODE" = :Original_CD_CODE) AND ((:IsNull_CD_SEQ = 1 AND "CD_SEQ" IS NULL) OR ("CD_SEQ" = :Original_CD_SEQ)) AND ((:IsNull_CD_CODNMS = 1 AND "CD_CODNMS" IS NULL) OR ("CD_CODNMS" = :Original_CD_CODNMS)) AND ((:IsNull_CD_CODNM = 1 AND "CD_CODNM" IS NULL) OR ("CD_CODNM" = :Original_CD_CODNM)) AND ((:IsNull_CD_ADDINFO = 1 AND "CD_ADDINFO" IS NULL) OR ("CD_ADDINFO" = :Original_CD_ADDINFO)) AND ((:IsNull_CD_UPPER = 1 AND "CD_UPPER" IS NULL) OR ("CD_UPPER" = :Original_CD_UPPER)) AND ((:IsNull_CD_USE = 1 AND "CD_USE" IS NULL) OR ("CD_USE" = :Original_CD_USE)) AND ((:IsNull_CD_SDATE = 1 AND "CD_SDATE" IS NULL) OR ("CD_SDATE" = :Original_CD_SDATE)) AND ((:IsNull_CD_EDATE = 1 AND "CD_EDATE" IS NULL) OR ("CD_EDATE" = :Original_CD_EDATE)) AND ((:IsNull_DATASYS1 = 1 AND "DATASYS1" IS NULL) OR ("DATASYS1" = :Original_DATASYS1)) AND ((:IsNull_DATASYS2 = 1 AND "DATASYS2" IS NULL) OR ("DATASYS2" = :Original_DATASYS2)) AND ((:IsNull_DATASYS3 = 1 AND "DATASYS3" IS NULL) OR ("DATASYS3" = :Original_DATASYS3)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_GRPCD" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="CD_GRPCD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_CODE" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_CODE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_SEQ" Precision="0" ProviderType="Int32" Scale="0" Size="22" SourceColumn="CD_SEQ" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="Original_CD_SEQ" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="CD_SEQ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_CODNMS" Precision="0" ProviderType="Int32" Scale="0" Size="30" SourceColumn="CD_CODNMS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_CODNMS" Precision="0" ProviderType="Varchar2" Scale="0" Size="30" SourceColumn="CD_CODNMS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_CODNM" Precision="0" ProviderType="Int32" Scale="0" Size="50" SourceColumn="CD_CODNM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_CODNM" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="CD_CODNM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_ADDINFO" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="CD_ADDINFO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_ADDINFO" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_ADDINFO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_UPPER" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="CD_UPPER" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_UPPER" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_UPPER" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_USE" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="CD_USE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_USE" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="CD_USE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_SDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="CD_SDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="CD_SDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_EDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="CD_EDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="CD_EDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS1" Precision="0" ProviderType="Int32" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS2" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS3" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO "EDU"."TIEAS_CD_LJM" ("CD_GRPCD", "CD_CODE", "CD_SEQ", "CD_CODNMS", "CD_CODNM", "CD_ADDINFO", "CD_UPPER", "CD_USE", "CD_SDATE", "CD_EDATE", "DATASYS1", "DATASYS2", "DATASYS3") VALUES (:CD_GRPCD, :CD_CODE, :CD_SEQ, :CD_CODNMS, :CD_CODNM, :CD_ADDINFO, :CD_UPPER, :CD_USE, :CD_SDATE, :CD_EDATE, :DATASYS1, :DATASYS2, :DATASYS3)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_GRPCD" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="CD_GRPCD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_CODE" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_CODE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="CD_SEQ" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="CD_SEQ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_CODNMS" Precision="0" ProviderType="Varchar2" Scale="0" Size="30" SourceColumn="CD_CODNMS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_CODNM" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="CD_CODNM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_ADDINFO" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_ADDINFO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_UPPER" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_UPPER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_USE" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="CD_USE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="CD_SDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="CD_EDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CD_GRPCD, CD_CODE, CD_SEQ, CD_CODNMS, CD_CODNM, CD_ADDINFO, CD_UPPER, CD_USE, CD_SDATE, CD_EDATE, DATASYS1, DATASYS2, DATASYS3 FROM EDU.TIEAS_CD_LJM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE "EDU"."TIEAS_CD_LJM" SET "CD_GRPCD" = :CD_GRPCD, "CD_CODE" = :CD_CODE, "CD_SEQ" = :CD_SEQ, "CD_CODNMS" = :CD_CODNMS, "CD_CODNM" = :CD_CODNM, "CD_ADDINFO" = :CD_ADDINFO, "CD_UPPER" = :CD_UPPER, "CD_USE" = :CD_USE, "CD_SDATE" = :CD_SDATE, "CD_EDATE" = :CD_EDATE, "DATASYS1" = :DATASYS1, "DATASYS2" = :DATASYS2, "DATASYS3" = :DATASYS3 WHERE (("CD_GRPCD" = :Original_CD_GRPCD) AND ("CD_CODE" = :Original_CD_CODE) AND ((:IsNull_CD_SEQ = 1 AND "CD_SEQ" IS NULL) OR ("CD_SEQ" = :Original_CD_SEQ)) AND ((:IsNull_CD_CODNMS = 1 AND "CD_CODNMS" IS NULL) OR ("CD_CODNMS" = :Original_CD_CODNMS)) AND ((:IsNull_CD_CODNM = 1 AND "CD_CODNM" IS NULL) OR ("CD_CODNM" = :Original_CD_CODNM)) AND ((:IsNull_CD_ADDINFO = 1 AND "CD_ADDINFO" IS NULL) OR ("CD_ADDINFO" = :Original_CD_ADDINFO)) AND ((:IsNull_CD_UPPER = 1 AND "CD_UPPER" IS NULL) OR ("CD_UPPER" = :Original_CD_UPPER)) AND ((:IsNull_CD_USE = 1 AND "CD_USE" IS NULL) OR ("CD_USE" = :Original_CD_USE)) AND ((:IsNull_CD_SDATE = 1 AND "CD_SDATE" IS NULL) OR ("CD_SDATE" = :Original_CD_SDATE)) AND ((:IsNull_CD_EDATE = 1 AND "CD_EDATE" IS NULL) OR ("CD_EDATE" = :Original_CD_EDATE)) AND ((:IsNull_DATASYS1 = 1 AND "DATASYS1" IS NULL) OR ("DATASYS1" = :Original_DATASYS1)) AND ((:IsNull_DATASYS2 = 1 AND "DATASYS2" IS NULL) OR ("DATASYS2" = :Original_DATASYS2)) AND ((:IsNull_DATASYS3 = 1 AND "DATASYS3" IS NULL) OR ("DATASYS3" = :Original_DATASYS3)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_GRPCD" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="CD_GRPCD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_CODE" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_CODE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="CD_SEQ" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="CD_SEQ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_CODNMS" Precision="0" ProviderType="Varchar2" Scale="0" Size="30" SourceColumn="CD_CODNMS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_CODNM" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="CD_CODNM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_ADDINFO" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_ADDINFO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_UPPER" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_UPPER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_USE" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="CD_USE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="CD_SDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="CD_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="CD_EDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_GRPCD" Precision="0" ProviderType="Varchar2" Scale="0" Size="3" SourceColumn="CD_GRPCD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_CODE" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_CODE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_SEQ" Precision="0" ProviderType="Int32" Scale="0" Size="22" SourceColumn="CD_SEQ" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="Original_CD_SEQ" Precision="0" ProviderType="Int16" Scale="0" Size="22" SourceColumn="CD_SEQ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_CODNMS" Precision="0" ProviderType="Int32" Scale="0" Size="30" SourceColumn="CD_CODNMS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_CODNMS" Precision="0" ProviderType="Varchar2" Scale="0" Size="30" SourceColumn="CD_CODNMS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_CODNM" Precision="0" ProviderType="Int32" Scale="0" Size="50" SourceColumn="CD_CODNM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_CODNM" Precision="0" ProviderType="Varchar2" Scale="0" Size="50" SourceColumn="CD_CODNM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_ADDINFO" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="CD_ADDINFO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_ADDINFO" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_ADDINFO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_UPPER" Precision="0" ProviderType="Int32" Scale="0" Size="10" SourceColumn="CD_UPPER" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_UPPER" Precision="0" ProviderType="Varchar2" Scale="0" Size="10" SourceColumn="CD_UPPER" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_USE" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="CD_USE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_USE" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="CD_USE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_SDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="CD_SDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_SDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="CD_SDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_CD_EDATE" Precision="0" ProviderType="Int32" Scale="0" Size="8" SourceColumn="CD_EDATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_CD_EDATE" Precision="0" ProviderType="Varchar2" Scale="0" Size="8" SourceColumn="CD_EDATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS1" Precision="0" ProviderType="Int32" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_DATASYS1" Precision="0" ProviderType="Date" Scale="0" Size="7" SourceColumn="DATASYS1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS2" Precision="0" ProviderType="Int32" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS2" Precision="0" ProviderType="Varchar2" Scale="0" Size="1" SourceColumn="DATASYS2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DATASYS3" Precision="0" ProviderType="Int32" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_DATASYS3" Precision="0" ProviderType="Varchar2" Scale="0" Size="20" SourceColumn="DATASYS3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CD_GRPCD" DataSetColumn="CD_GRPCD" />
+              <Mapping SourceColumn="CD_CODE" DataSetColumn="CD_CODE" />
+              <Mapping SourceColumn="CD_SEQ" DataSetColumn="CD_SEQ" />
+              <Mapping SourceColumn="CD_CODNMS" DataSetColumn="CD_CODNMS" />
+              <Mapping SourceColumn="CD_CODNM" DataSetColumn="CD_CODNM" />
+              <Mapping SourceColumn="CD_ADDINFO" DataSetColumn="CD_ADDINFO" />
+              <Mapping SourceColumn="CD_UPPER" DataSetColumn="CD_UPPER" />
+              <Mapping SourceColumn="CD_USE" DataSetColumn="CD_USE" />
+              <Mapping SourceColumn="CD_SDATE" DataSetColumn="CD_SDATE" />
+              <Mapping SourceColumn="CD_EDATE" DataSetColumn="CD_EDATE" />
+              <Mapping SourceColumn="DATASYS1" DataSetColumn="DATASYS1" />
+              <Mapping SourceColumn="DATASYS2" DataSetColumn="DATASYS2" />
+              <Mapping SourceColumn="DATASYS3" DataSetColumn="DATASYS3" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet2" msprop:Generator_UserDSName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="THRM_BAS_LJM" msprop:Generator_TableClassName="THRM_BAS_LJMDataTable" msprop:Generator_TableVarName="tableTHRM_BAS_LJM" msprop:Generator_TablePropName="THRM_BAS_LJM" msprop:Generator_RowDeletingName="THRM_BAS_LJMRowDeleting" msprop:Generator_RowChangingName="THRM_BAS_LJMRowChanging" msprop:Generator_RowEvHandlerName="THRM_BAS_LJMRowChangeEventHandler" msprop:Generator_RowDeletedName="THRM_BAS_LJMRowDeleted" msprop:Generator_UserTableName="THRM_BAS_LJM" msprop:Generator_RowChangedName="THRM_BAS_LJMRowChanged" msprop:Generator_RowEvArgName="THRM_BAS_LJMRowChangeEvent" msprop:Generator_RowClassName="THRM_BAS_LJMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BAS_EMPNO" msprop:Generator_ColumnVarNameInTable="columnBAS_EMPNO" msprop:Generator_ColumnPropNameInRow="BAS_EMPNO" msprop:Generator_ColumnPropNameInTable="BAS_EMPNOColumn" msprop:Generator_UserColumnName="BAS_EMPNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_RESNO" msprop:Generator_ColumnVarNameInTable="columnBAS_RESNO" msprop:Generator_ColumnPropNameInRow="BAS_RESNO" msprop:Generator_ColumnPropNameInTable="BAS_RESNOColumn" msprop:Generator_UserColumnName="BAS_RESNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="82" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_NAME" msprop:Generator_ColumnVarNameInTable="columnBAS_NAME" msprop:Generator_ColumnPropNameInRow="BAS_NAME" msprop:Generator_ColumnPropNameInTable="BAS_NAMEColumn" msprop:Generator_UserColumnName="BAS_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_CNAME" msprop:Generator_ColumnVarNameInTable="columnBAS_CNAME" msprop:Generator_ColumnPropNameInRow="BAS_CNAME" msprop:Generator_ColumnPropNameInTable="BAS_CNAMEColumn" msprop:Generator_UserColumnName="BAS_CNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ENAME" msprop:Generator_ColumnVarNameInTable="columnBAS_ENAME" msprop:Generator_ColumnPropNameInRow="BAS_ENAME" msprop:Generator_ColumnPropNameInTable="BAS_ENAMEColumn" msprop:Generator_UserColumnName="BAS_ENAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_FIX" msprop:Generator_ColumnVarNameInTable="columnBAS_FIX" msprop:Generator_ColumnPropNameInRow="BAS_FIX" msprop:Generator_ColumnPropNameInTable="BAS_FIXColumn" msprop:Generator_UserColumnName="BAS_FIX" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ZIP" msprop:Generator_ColumnVarNameInTable="columnBAS_ZIP" msprop:Generator_ColumnPropNameInRow="BAS_ZIP" msprop:Generator_ColumnPropNameInTable="BAS_ZIPColumn" msprop:Generator_UserColumnName="BAS_ZIP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ADDR" msprop:Generator_ColumnVarNameInTable="columnBAS_ADDR" msprop:Generator_ColumnPropNameInRow="BAS_ADDR" msprop:Generator_ColumnPropNameInTable="BAS_ADDRColumn" msprop:Generator_UserColumnName="BAS_ADDR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_RESIDENCE" msprop:Generator_ColumnVarNameInTable="columnBAS_RESIDENCE" msprop:Generator_ColumnPropNameInRow="BAS_RESIDENCE" msprop:Generator_ColumnPropNameInTable="BAS_RESIDENCEColumn" msprop:Generator_UserColumnName="BAS_RESIDENCE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_HDPNO" msprop:Generator_ColumnVarNameInTable="columnBAS_HDPNO" msprop:Generator_ColumnPropNameInRow="BAS_HDPNO" msprop:Generator_ColumnPropNameInTable="BAS_HDPNOColumn" msprop:Generator_UserColumnName="BAS_HDPNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_TELNO" msprop:Generator_ColumnVarNameInTable="columnBAS_TELNO" msprop:Generator_ColumnPropNameInRow="BAS_TELNO" msprop:Generator_ColumnPropNameInTable="BAS_TELNOColumn" msprop:Generator_UserColumnName="BAS_TELNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_EMAIL" msprop:Generator_ColumnVarNameInTable="columnBAS_EMAIL" msprop:Generator_ColumnPropNameInRow="BAS_EMAIL" msprop:Generator_ColumnPropNameInTable="BAS_EMAILColumn" msprop:Generator_UserColumnName="BAS_EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_MIL_STA" msprop:Generator_ColumnVarNameInTable="columnBAS_MIL_STA" msprop:Generator_ColumnPropNameInRow="BAS_MIL_STA" msprop:Generator_ColumnPropNameInTable="BAS_MIL_STAColumn" msprop:Generator_UserColumnName="BAS_MIL_STA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_MIL_MIL" msprop:Generator_ColumnVarNameInTable="columnBAS_MIL_MIL" msprop:Generator_ColumnPropNameInRow="BAS_MIL_MIL" msprop:Generator_ColumnPropNameInTable="BAS_MIL_MILColumn" msprop:Generator_UserColumnName="BAS_MIL_MIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_MIL_RNK" msprop:Generator_ColumnVarNameInTable="columnBAS_MIL_RNK" msprop:Generator_ColumnPropNameInRow="BAS_MIL_RNK" msprop:Generator_ColumnPropNameInTable="BAS_MIL_RNKColumn" msprop:Generator_UserColumnName="BAS_MIL_RNK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_MAR" msprop:Generator_ColumnVarNameInTable="columnBAS_MAR" msprop:Generator_ColumnPropNameInRow="BAS_MAR" msprop:Generator_ColumnPropNameInTable="BAS_MARColumn" msprop:Generator_UserColumnName="BAS_MAR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ACC_BANK1" msprop:Generator_ColumnVarNameInTable="columnBAS_ACC_BANK1" msprop:Generator_ColumnPropNameInRow="BAS_ACC_BANK1" msprop:Generator_ColumnPropNameInTable="BAS_ACC_BANK1Column" msprop:Generator_UserColumnName="BAS_ACC_BANK1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ACC_NAME1" msprop:Generator_ColumnVarNameInTable="columnBAS_ACC_NAME1" msprop:Generator_ColumnPropNameInRow="BAS_ACC_NAME1" msprop:Generator_ColumnPropNameInTable="BAS_ACC_NAME1Column" msprop:Generator_UserColumnName="BAS_ACC_NAME1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ACC_NO1" msprop:Generator_ColumnVarNameInTable="columnBAS_ACC_NO1" msprop:Generator_ColumnPropNameInRow="BAS_ACC_NO1" msprop:Generator_ColumnPropNameInTable="BAS_ACC_NO1Column" msprop:Generator_UserColumnName="BAS_ACC_NO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ACC_BANK2" msprop:Generator_ColumnVarNameInTable="columnBAS_ACC_BANK2" msprop:Generator_ColumnPropNameInRow="BAS_ACC_BANK2" msprop:Generator_ColumnPropNameInTable="BAS_ACC_BANK2Column" msprop:Generator_UserColumnName="BAS_ACC_BANK2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ACC_NAME2" msprop:Generator_ColumnVarNameInTable="columnBAS_ACC_NAME2" msprop:Generator_ColumnPropNameInRow="BAS_ACC_NAME2" msprop:Generator_ColumnPropNameInTable="BAS_ACC_NAME2Column" msprop:Generator_UserColumnName="BAS_ACC_NAME2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ACC_NO2" msprop:Generator_ColumnVarNameInTable="columnBAS_ACC_NO2" msprop:Generator_ColumnPropNameInRow="BAS_ACC_NO2" msprop:Generator_ColumnPropNameInTable="BAS_ACC_NO2Column" msprop:Generator_UserColumnName="BAS_ACC_NO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_CONT" msprop:Generator_ColumnVarNameInTable="columnBAS_CONT" msprop:Generator_ColumnPropNameInRow="BAS_CONT" msprop:Generator_ColumnPropNameInTable="BAS_CONTColumn" msprop:Generator_UserColumnName="BAS_CONT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_INTERN" msprop:Generator_ColumnVarNameInTable="columnBAS_INTERN" msprop:Generator_ColumnPropNameInRow="BAS_INTERN" msprop:Generator_ColumnPropNameInTable="BAS_INTERNColumn" msprop:Generator_UserColumnName="BAS_INTERN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_INTERN_NO" msprop:Generator_ColumnVarNameInTable="columnBAS_INTERN_NO" msprop:Generator_ColumnPropNameInRow="BAS_INTERN_NO" msprop:Generator_ColumnPropNameInTable="BAS_INTERN_NOColumn" msprop:Generator_UserColumnName="BAS_INTERN_NO" type="xs:short" minOccurs="0" />
+              <xs:element name="BAS_EMP_SDATE" msprop:Generator_ColumnVarNameInTable="columnBAS_EMP_SDATE" msprop:Generator_ColumnPropNameInRow="BAS_EMP_SDATE" msprop:Generator_ColumnPropNameInTable="BAS_EMP_SDATEColumn" msprop:Generator_UserColumnName="BAS_EMP_SDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_EMP_EDATE" msprop:Generator_ColumnVarNameInTable="columnBAS_EMP_EDATE" msprop:Generator_ColumnPropNameInRow="BAS_EMP_EDATE" msprop:Generator_ColumnPropNameInTable="BAS_EMP_EDATEColumn" msprop:Generator_UserColumnName="BAS_EMP_EDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_ENTDATE" msprop:Generator_ColumnVarNameInTable="columnBAS_ENTDATE" msprop:Generator_ColumnPropNameInRow="BAS_ENTDATE" msprop:Generator_ColumnPropNameInTable="BAS_ENTDATEColumn" msprop:Generator_UserColumnName="BAS_ENTDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_RESDATE" msprop:Generator_ColumnVarNameInTable="columnBAS_RESDATE" msprop:Generator_ColumnPropNameInRow="BAS_RESDATE" msprop:Generator_ColumnPropNameInTable="BAS_RESDATEColumn" msprop:Generator_UserColumnName="BAS_RESDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_LEVDATE" msprop:Generator_ColumnVarNameInTable="columnBAS_LEVDATE" msprop:Generator_ColumnPropNameInRow="BAS_LEVDATE" msprop:Generator_ColumnPropNameInTable="BAS_LEVDATEColumn" msprop:Generator_UserColumnName="BAS_LEVDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_REIDATE" msprop:Generator_ColumnVarNameInTable="columnBAS_REIDATE" msprop:Generator_ColumnPropNameInRow="BAS_REIDATE" msprop:Generator_ColumnPropNameInTable="BAS_REIDATEColumn" msprop:Generator_UserColumnName="BAS_REIDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_WSTA" msprop:Generator_ColumnVarNameInTable="columnBAS_WSTA" msprop:Generator_ColumnPropNameInRow="BAS_WSTA" msprop:Generator_ColumnPropNameInTable="BAS_WSTAColumn" msprop:Generator_UserColumnName="BAS_WSTA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_STS" msprop:Generator_ColumnVarNameInTable="columnBAS_STS" msprop:Generator_ColumnPropNameInRow="BAS_STS" msprop:Generator_ColumnPropNameInTable="BAS_STSColumn" msprop:Generator_UserColumnName="BAS_STS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_POS" msprop:Generator_ColumnVarNameInTable="columnBAS_POS" msprop:Generator_ColumnPropNameInRow="BAS_POS" msprop:Generator_ColumnPropNameInTable="BAS_POSColumn" msprop:Generator_UserColumnName="BAS_POS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_DUT" msprop:Generator_ColumnVarNameInTable="columnBAS_DUT" msprop:Generator_ColumnPropNameInRow="BAS_DUT" msprop:Generator_ColumnPropNameInTable="BAS_DUTColumn" msprop:Generator_UserColumnName="BAS_DUT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_DEPT" msprop:Generator_ColumnVarNameInTable="columnBAS_DEPT" msprop:Generator_ColumnPropNameInRow="BAS_DEPT" msprop:Generator_ColumnPropNameInTable="BAS_DEPTColumn" msprop:Generator_UserColumnName="BAS_DEPT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_RMK" msprop:Generator_ColumnVarNameInTable="columnBAS_RMK" msprop:Generator_ColumnPropNameInRow="BAS_RMK" msprop:Generator_ColumnPropNameInTable="BAS_RMKColumn" msprop:Generator_UserColumnName="BAS_RMK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_POS_DT" msprop:Generator_ColumnVarNameInTable="columnBAS_POS_DT" msprop:Generator_ColumnPropNameInRow="BAS_POS_DT" msprop:Generator_ColumnPropNameInTable="BAS_POS_DTColumn" msprop:Generator_UserColumnName="BAS_POS_DT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_DUT_DT" msprop:Generator_ColumnVarNameInTable="columnBAS_DUT_DT" msprop:Generator_ColumnPropNameInRow="BAS_DUT_DT" msprop:Generator_ColumnPropNameInTable="BAS_DUT_DTColumn" msprop:Generator_UserColumnName="BAS_DUT_DT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_DEPT_DT" msprop:Generator_ColumnVarNameInTable="columnBAS_DEPT_DT" msprop:Generator_ColumnPropNameInRow="BAS_DEPT_DT" msprop:Generator_ColumnPropNameInTable="BAS_DEPT_DTColumn" msprop:Generator_UserColumnName="BAS_DEPT_DT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAS_INTERN_DT" msprop:Generator_ColumnVarNameInTable="columnBAS_INTERN_DT" msprop:Generator_ColumnPropNameInRow="BAS_INTERN_DT" msprop:Generator_ColumnPropNameInTable="BAS_INTERN_DTColumn" msprop:Generator_UserColumnName="BAS_INTERN_DT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATASYS1" msprop:Generator_ColumnVarNameInTable="columnDATASYS1" msprop:Generator_ColumnPropNameInRow="DATASYS1" msprop:Generator_ColumnPropNameInTable="DATASYS1Column" msprop:Generator_UserColumnName="DATASYS1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATASYS2" msprop:Generator_ColumnVarNameInTable="columnDATASYS2" msprop:Generator_ColumnPropNameInRow="DATASYS2" msprop:Generator_ColumnPropNameInTable="DATASYS2Column" msprop:Generator_UserColumnName="DATASYS2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATASYS3" msprop:Generator_ColumnVarNameInTable="columnDATASYS3" msprop:Generator_ColumnPropNameInRow="DATASYS3" msprop:Generator_ColumnPropNameInTable="DATASYS3Column" msprop:Generator_UserColumnName="DATASYS3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="THRM_DEPT_LJM" msprop:Generator_TableClassName="THRM_DEPT_LJMDataTable" msprop:Generator_TableVarName="tableTHRM_DEPT_LJM" msprop:Generator_TablePropName="THRM_DEPT_LJM" msprop:Generator_RowDeletingName="THRM_DEPT_LJMRowDeleting" msprop:Generator_RowChangingName="THRM_DEPT_LJMRowChanging" msprop:Generator_RowEvHandlerName="THRM_DEPT_LJMRowChangeEventHandler" msprop:Generator_RowDeletedName="THRM_DEPT_LJMRowDeleted" msprop:Generator_UserTableName="THRM_DEPT_LJM" msprop:Generator_RowChangedName="THRM_DEPT_LJMRowChanged" msprop:Generator_RowEvArgName="THRM_DEPT_LJMRowChangeEvent" msprop:Generator_RowClassName="THRM_DEPT_LJMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEPT_CODE" msprop:Generator_ColumnVarNameInTable="columnDEPT_CODE" msprop:Generator_ColumnPropNameInRow="DEPT_CODE" msprop:Generator_ColumnPropNameInTable="DEPT_CODEColumn" msprop:Generator_UserColumnName="DEPT_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEPT_NAME" msprop:Generator_ColumnVarNameInTable="columnDEPT_NAME" msprop:Generator_ColumnPropNameInRow="DEPT_NAME" msprop:Generator_ColumnPropNameInTable="DEPT_NAMEColumn" msprop:Generator_UserColumnName="DEPT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEPT_NAMES" msprop:Generator_ColumnVarNameInTable="columnDEPT_NAMES" msprop:Generator_ColumnPropNameInRow="DEPT_NAMES" msprop:Generator_ColumnPropNameInTable="DEPT_NAMESColumn" msprop:Generator_UserColumnName="DEPT_NAMES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEPT_SEQ" msprop:Generator_ColumnVarNameInTable="columnDEPT_SEQ" msprop:Generator_ColumnPropNameInRow="DEPT_SEQ" msprop:Generator_ColumnPropNameInTable="DEPT_SEQColumn" msprop:Generator_UserColumnName="DEPT_SEQ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEPT_UPP" msprop:Generator_ColumnVarNameInTable="columnDEPT_UPP" msprop:Generator_ColumnPropNameInRow="DEPT_UPP" msprop:Generator_ColumnPropNameInTable="DEPT_UPPColumn" msprop:Generator_UserColumnName="DEPT_UPP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEPT_DEPT" msprop:Generator_ColumnVarNameInTable="columnDEPT_DEPT" msprop:Generator_ColumnPropNameInRow="DEPT_DEPT" msprop:Generator_ColumnPropNameInTable="DEPT_DEPTColumn" msprop:Generator_UserColumnName="DEPT_DEPT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEPT_SDATE" msprop:Generator_ColumnVarNameInTable="columnDEPT_SDATE" msprop:Generator_ColumnPropNameInRow="DEPT_SDATE" msprop:Generator_ColumnPropNameInTable="DEPT_SDATEColumn" msprop:Generator_UserColumnName="DEPT_SDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEPT_EDATE" msprop:Generator_ColumnVarNameInTable="columnDEPT_EDATE" msprop:Generator_ColumnPropNameInRow="DEPT_EDATE" msprop:Generator_ColumnPropNameInTable="DEPT_EDATEColumn" msprop:Generator_UserColumnName="DEPT_EDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATASYS1" msprop:Generator_ColumnVarNameInTable="columnDATASYS1" msprop:Generator_ColumnPropNameInRow="DATASYS1" msprop:Generator_ColumnPropNameInTable="DATASYS1Column" msprop:Generator_UserColumnName="DATASYS1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATASYS2" msprop:Generator_ColumnVarNameInTable="columnDATASYS2" msprop:Generator_ColumnPropNameInRow="DATASYS2" msprop:Generator_ColumnPropNameInTable="DATASYS2Column" msprop:Generator_UserColumnName="DATASYS2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATASYS3" msprop:Generator_ColumnVarNameInTable="columnDATASYS3" msprop:Generator_ColumnPropNameInRow="DATASYS3" msprop:Generator_ColumnPropNameInTable="DATASYS3Column" msprop:Generator_UserColumnName="DATASYS3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TIEAS_CD_LJM" msprop:Generator_TableClassName="TIEAS_CD_LJMDataTable" msprop:Generator_TableVarName="tableTIEAS_CD_LJM" msprop:Generator_TablePropName="TIEAS_CD_LJM" msprop:Generator_RowDeletingName="TIEAS_CD_LJMRowDeleting" msprop:Generator_RowChangingName="TIEAS_CD_LJMRowChanging" msprop:Generator_RowEvHandlerName="TIEAS_CD_LJMRowChangeEventHandler" msprop:Generator_RowDeletedName="TIEAS_CD_LJMRowDeleted" msprop:Generator_UserTableName="TIEAS_CD_LJM" msprop:Generator_RowChangedName="TIEAS_CD_LJMRowChanged" msprop:Generator_RowEvArgName="TIEAS_CD_LJMRowChangeEvent" msprop:Generator_RowClassName="TIEAS_CD_LJMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CD_GRPCD" msprop:Generator_ColumnVarNameInTable="columnCD_GRPCD" msprop:Generator_ColumnPropNameInRow="CD_GRPCD" msprop:Generator_ColumnPropNameInTable="CD_GRPCDColumn" msprop:Generator_UserColumnName="CD_GRPCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_CODE" msprop:Generator_ColumnVarNameInTable="columnCD_CODE" msprop:Generator_ColumnPropNameInRow="CD_CODE" msprop:Generator_ColumnPropNameInTable="CD_CODEColumn" msprop:Generator_UserColumnName="CD_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_SEQ" msprop:Generator_ColumnVarNameInTable="columnCD_SEQ" msprop:Generator_ColumnPropNameInRow="CD_SEQ" msprop:Generator_ColumnPropNameInTable="CD_SEQColumn" msprop:Generator_UserColumnName="CD_SEQ" type="xs:short" minOccurs="0" />
+              <xs:element name="CD_CODNMS" msprop:Generator_ColumnVarNameInTable="columnCD_CODNMS" msprop:Generator_ColumnPropNameInRow="CD_CODNMS" msprop:Generator_ColumnPropNameInTable="CD_CODNMSColumn" msprop:Generator_UserColumnName="CD_CODNMS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_CODNM" msprop:Generator_ColumnVarNameInTable="columnCD_CODNM" msprop:Generator_ColumnPropNameInRow="CD_CODNM" msprop:Generator_ColumnPropNameInTable="CD_CODNMColumn" msprop:Generator_UserColumnName="CD_CODNM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_ADDINFO" msprop:Generator_ColumnVarNameInTable="columnCD_ADDINFO" msprop:Generator_ColumnPropNameInRow="CD_ADDINFO" msprop:Generator_ColumnPropNameInTable="CD_ADDINFOColumn" msprop:Generator_UserColumnName="CD_ADDINFO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_UPPER" msprop:Generator_ColumnVarNameInTable="columnCD_UPPER" msprop:Generator_ColumnPropNameInRow="CD_UPPER" msprop:Generator_ColumnPropNameInTable="CD_UPPERColumn" msprop:Generator_UserColumnName="CD_UPPER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_USE" msprop:Generator_ColumnVarNameInTable="columnCD_USE" msprop:Generator_ColumnPropNameInRow="CD_USE" msprop:Generator_ColumnPropNameInTable="CD_USEColumn" msprop:Generator_UserColumnName="CD_USE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_SDATE" msprop:Generator_ColumnVarNameInTable="columnCD_SDATE" msprop:Generator_ColumnPropNameInRow="CD_SDATE" msprop:Generator_ColumnPropNameInTable="CD_SDATEColumn" msprop:Generator_UserColumnName="CD_SDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_EDATE" msprop:Generator_ColumnVarNameInTable="columnCD_EDATE" msprop:Generator_ColumnPropNameInRow="CD_EDATE" msprop:Generator_ColumnPropNameInTable="CD_EDATEColumn" msprop:Generator_UserColumnName="CD_EDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATASYS1" msprop:Generator_ColumnVarNameInTable="columnDATASYS1" msprop:Generator_ColumnPropNameInRow="DATASYS1" msprop:Generator_ColumnPropNameInTable="DATASYS1Column" msprop:Generator_UserColumnName="DATASYS1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATASYS2" msprop:Generator_ColumnVarNameInTable="columnDATASYS2" msprop:Generator_ColumnPropNameInRow="DATASYS2" msprop:Generator_ColumnPropNameInTable="DATASYS2Column" msprop:Generator_UserColumnName="DATASYS2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATASYS3" msprop:Generator_ColumnVarNameInTable="columnDATASYS3" msprop:Generator_ColumnPropNameInRow="DATASYS3" msprop:Generator_ColumnPropNameInTable="DATASYS3Column" msprop:Generator_UserColumnName="DATASYS3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:THRM_BAS_LJM" />
+      <xs:field xpath="mstns:BAS_EMPNO" />
+    </xs:unique>
+    <xs:unique name="THRM_DEPT_LJM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:THRM_DEPT_LJM" />
+      <xs:field xpath="mstns:DEPT_CODE" />
+    </xs:unique>
+    <xs:unique name="TIEAS_CD_LJM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TIEAS_CD_LJM" />
+      <xs:field xpath="mstns:CD_GRPCD" />
+      <xs:field xpath="mstns:CD_CODE" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
