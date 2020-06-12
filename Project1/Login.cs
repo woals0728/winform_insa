@@ -25,8 +25,6 @@ namespace Project1
             InitializeComponent();
         }
 
-        
-
         private void metroButton1_Click(object sender, EventArgs e)
         {
             if(String.IsNullOrEmpty(textBox1.Text))
@@ -133,5 +131,8 @@ namespace Project1
                 Settings.Default.Save();
             }
         }
+
+
+        
     }
 }

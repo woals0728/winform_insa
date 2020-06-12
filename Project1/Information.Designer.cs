@@ -184,6 +184,7 @@
             this.bas_emp_edate.Name = "bas_emp_edate";
             this.bas_emp_edate.Size = new System.Drawing.Size(78, 20);
             this.bas_emp_edate.TabIndex = 29;
+            this.bas_emp_edate.ValueChanged += new System.EventHandler(this.bas_emp_sdate_ValueChanged);
             // 
             // bas_emp_sdate
             // 
@@ -194,6 +195,7 @@
             this.bas_emp_sdate.Name = "bas_emp_sdate";
             this.bas_emp_sdate.Size = new System.Drawing.Size(78, 20);
             this.bas_emp_sdate.TabIndex = 28;
+            this.bas_emp_sdate.ValueChanged += new System.EventHandler(this.bas_emp_sdate_ValueChanged);
             // 
             // label38
             // 

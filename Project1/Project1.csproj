@@ -164,6 +164,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="E_Background.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -349,6 +354,17 @@
     </None>
     <None Include="DataSet7.xss">
       <DependentUpon>DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet8.xsc">
+      <DependentUpon>DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet8.xss">
+      <DependentUpon>DataSet8.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Project1_TemporaryKey.pfx" />

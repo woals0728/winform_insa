@@ -34,11 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.dataSet5 = new Project1.DataSet5();
-            this.tHRMLICLJMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tHRM_LIC_LJMTableAdapter = new Project1.DataSet5TableAdapters.THRM_LIC_LJMTableAdapter();
             this.lICEMPNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lICCODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lICGRADEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,9 +42,16 @@
             this.dATASYS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dATASYS2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dATASYS3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tHRMLICLJMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet5 = new Project1.DataSet5();
+            this.tHRM_LIC_LJMTableAdapter = new Project1.DataSet5TableAdapters.THRM_LIC_LJMTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.delete_button = new System.Windows.Forms.Button();
+            this.add_button = new System.Windows.Forms.Button();
+            this.fam_save_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHRMLICLJMBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView6
@@ -114,42 +116,8 @@
             this.dataGridView6.RowHeadersVisible = false;
             this.dataGridView6.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView6.RowTemplate.Height = 23;
-            this.dataGridView6.Size = new System.Drawing.Size(1074, 305);
+            this.dataGridView6.Size = new System.Drawing.Size(1074, 279);
             this.dataGridView6.TabIndex = 67;
-            // 
-            // button11
-            // 
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(1031, 6);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(49, 23);
-            this.button11.TabIndex = 65;
-            this.button11.Text = "취소";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(976, 6);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(49, 23);
-            this.button12.TabIndex = 66;
-            this.button12.Text = "저장";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // dataSet5
-            // 
-            this.dataSet5.DataSetName = "DataSet5";
-            this.dataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tHRMLICLJMBindingSource
-            // 
-            this.tHRMLICLJMBindingSource.DataMember = "THRM_LIC_LJM";
-            this.tHRMLICLJMBindingSource.DataSource = this.dataSet5;
-            // 
-            // tHRM_LIC_LJMTableAdapter
-            // 
-            this.tHRM_LIC_LJMTableAdapter.ClearBeforeFill = true;
             // 
             // lICEMPNODataGridViewTextBoxColumn
             // 
@@ -203,19 +171,79 @@
             this.dATASYS3DataGridViewTextBoxColumn.Name = "dATASYS3DataGridViewTextBoxColumn";
             this.dATASYS3DataGridViewTextBoxColumn.Visible = false;
             // 
+            // tHRMLICLJMBindingSource
+            // 
+            this.tHRMLICLJMBindingSource.DataMember = "THRM_LIC_LJM";
+            this.tHRMLICLJMBindingSource.DataSource = this.dataSet5;
+            // 
+            // dataSet5
+            // 
+            this.dataSet5.DataSetName = "DataSet5";
+            this.dataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tHRM_LIC_LJMTableAdapter
+            // 
+            this.tHRM_LIC_LJMTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1031, 320);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(49, 23);
+            this.button1.TabIndex = 71;
+            this.button1.Text = "취소";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // delete_button
+            // 
+            this.delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete_button.Location = new System.Drawing.Point(1019, 6);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.Size = new System.Drawing.Size(61, 23);
+            this.delete_button.TabIndex = 70;
+            this.delete_button.Text = "행 삭제";
+            this.delete_button.UseVisualStyleBackColor = true;
+            // 
+            // add_button
+            // 
+            this.add_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_button.Location = new System.Drawing.Point(952, 6);
+            this.add_button.Name = "add_button";
+            this.add_button.Size = new System.Drawing.Size(61, 23);
+            this.add_button.TabIndex = 68;
+            this.add_button.Text = "행 추가";
+            this.add_button.UseVisualStyleBackColor = true;
+            // 
+            // fam_save_button
+            // 
+            this.fam_save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fam_save_button.ForeColor = System.Drawing.Color.White;
+            this.fam_save_button.Location = new System.Drawing.Point(976, 320);
+            this.fam_save_button.Name = "fam_save_button";
+            this.fam_save_button.Size = new System.Drawing.Size(49, 23);
+            this.fam_save_button.TabIndex = 69;
+            this.fam_save_button.Text = "저장";
+            this.fam_save_button.UseVisualStyleBackColor = false;
+            // 
             // License
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.delete_button);
+            this.Controls.Add(this.add_button);
+            this.Controls.Add(this.fam_save_button);
             this.Controls.Add(this.dataGridView6);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button12);
             this.Name = "License";
             this.Size = new System.Drawing.Size(1086, 346);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHRMLICLJMBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -223,8 +251,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.BindingSource tHRMLICLJMBindingSource;
         private DataSet5 dataSet5;
         private DataSet5TableAdapters.THRM_LIC_LJMTableAdapter tHRM_LIC_LJMTableAdapter;
@@ -236,5 +262,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS3DataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button delete_button;
+        private System.Windows.Forms.Button add_button;
+        private System.Windows.Forms.Button fam_save_button;
     }
 }

@@ -209,6 +209,8 @@ namespace Project1
 
         public void cancelPerform(object sender, EventArgs e)
         {
+            var main = new MainWindow();
+            main.insert_button.Visible = false;
             emptyPerform();
         }
 
@@ -292,7 +294,12 @@ namespace Project1
                     c4_Text = txt4.Substring(0, 1);
                 }
                 conn.Open();
-                this.iNFORMATIONTableAdapter.Fill(this.dataSet7.INFORMATION);
+                //string sql = "select * from INFORMATION_LJM where "+ c2_Text +" like '%"+textBox3.Text+ "%' and bas_dut like '%" + c3_Text + "%'" +
+                //" and dept_code like '%" + c1_Text + "%' and bas_pos like '%" + c4_Text + "%' order by bas_empno";
+                //OracleDataAdapter adapter = new OracleDataAdapter(sql, conn);
+                //adapter.Fill(ds);
+                //dataGridView1.DataSource = ds.Tables[0];
+                this.iNFORMATION_LJMTableAdapter.Fill(this.dataSet8.INFORMATION_LJM);
                 //bas_empno, bas_name, bas_hdpno, pos_codnms, dut_codnms, dept_name, bas_email
                 //string sql = "select * from thrm_bas_ljm, (select cd_code, cd_codnms from TIEAS_CD_LJM where cd_grpcd='STS'), " +
                 //    "(select cd_code as pos_code, cd_codnms as pos_codnms from TIEAS_CD_LJM where cd_grpcd ='POS'), " +
@@ -339,7 +346,7 @@ namespace Project1
 
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

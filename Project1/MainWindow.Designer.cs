@@ -81,11 +81,7 @@
             this.입사인원추이ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.퇴사인원추이ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.ADMIN_NAME = new System.Windows.Forms.Label();
-            this.LOGIN_TIME = new System.Windows.Forms.Label();
             this.NOW_TIME = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.인사기초정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -123,17 +119,21 @@
             this.update_button = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
             this.insert_button = new System.Windows.Forms.Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ADMIN_NAME = new System.Windows.Forms.Label();
+            this.LOGIN_TIME = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,25 +169,25 @@
             // 인사코드관리ToolStripMenuItem2
             // 
             this.인사코드관리ToolStripMenuItem2.Name = "인사코드관리ToolStripMenuItem2";
-            this.인사코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.인사코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.인사코드관리ToolStripMenuItem2.Text = "인사코드 관리";
             // 
             // 부서코드관리ToolStripMenuItem2
             // 
             this.부서코드관리ToolStripMenuItem2.Name = "부서코드관리ToolStripMenuItem2";
-            this.부서코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.부서코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.부서코드관리ToolStripMenuItem2.Text = "부서코드 관리";
             // 
             // 직급코드관리ToolStripMenuItem2
             // 
             this.직급코드관리ToolStripMenuItem2.Name = "직급코드관리ToolStripMenuItem2";
-            this.직급코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.직급코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.직급코드관리ToolStripMenuItem2.Text = "직급코드 관리";
             // 
             // 직책코드관리ToolStripMenuItem2
             // 
             this.직책코드관리ToolStripMenuItem2.Name = "직책코드관리ToolStripMenuItem2";
-            this.직책코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.직책코드관리ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.직책코드관리ToolStripMenuItem2.Text = "직책코드 관리";
             // 
             // 인사기록관리ToolStripMenuItem1
@@ -203,14 +203,14 @@
             // 인사기본사항ToolStripMenuItem2
             // 
             this.인사기본사항ToolStripMenuItem2.Name = "인사기본사항ToolStripMenuItem2";
-            this.인사기본사항ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.인사기본사항ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.인사기본사항ToolStripMenuItem2.Text = "인사기록 등록";
             this.인사기본사항ToolStripMenuItem2.Click += new System.EventHandler(this.인사기본사항ToolStripMenuItem_Click);
             // 
             // 인사기록조회통합ToolStripMenuItem2
             // 
             this.인사기록조회통합ToolStripMenuItem2.Name = "인사기록조회통합ToolStripMenuItem2";
-            this.인사기록조회통합ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.인사기록조회통합ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.인사기록조회통합ToolStripMenuItem2.Text = "인사기록 조회";
             this.인사기록조회통합ToolStripMenuItem2.Click += new System.EventHandler(this.인사기록조회통합ToolStripMenuItem2_Click);
             // 
@@ -228,19 +228,19 @@
             // 인사발령대장관리ToolStripMenuItem2
             // 
             this.인사발령대장관리ToolStripMenuItem2.Name = "인사발령대장관리ToolStripMenuItem2";
-            this.인사발령대장관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.인사발령대장관리ToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
             this.인사발령대장관리ToolStripMenuItem2.Text = "인사발령대장 관리";
             // 
             // 인사발령등록ToolStripMenuItem2
             // 
             this.인사발령등록ToolStripMenuItem2.Name = "인사발령등록ToolStripMenuItem2";
-            this.인사발령등록ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.인사발령등록ToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
             this.인사발령등록ToolStripMenuItem2.Text = "인사발령 등록";
             // 
             // 인사발령조회ToolStripMenuItem2
             // 
             this.인사발령조회ToolStripMenuItem2.Name = "인사발령조회ToolStripMenuItem2";
-            this.인사발령조회ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.인사발령조회ToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
             this.인사발령조회ToolStripMenuItem2.Text = "인사발령 조회";
             // 
             // 제증명서발ToolStripMenuItem
@@ -294,25 +294,25 @@
             // 부서별인원현황ToolStripMenuItem2
             // 
             this.부서별인원현황ToolStripMenuItem2.Name = "부서별인원현황ToolStripMenuItem2";
-            this.부서별인원현황ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.부서별인원현황ToolStripMenuItem2.Size = new System.Drawing.Size(162, 22);
             this.부서별인원현황ToolStripMenuItem2.Text = "부서별 인원현황";
             // 
             // 직급별인원현황ToolStripMenuItem2
             // 
             this.직급별인원현황ToolStripMenuItem2.Name = "직급별인원현황ToolStripMenuItem2";
-            this.직급별인원현황ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.직급별인원현황ToolStripMenuItem2.Size = new System.Drawing.Size(162, 22);
             this.직급별인원현황ToolStripMenuItem2.Text = "직급별 인원현황";
             // 
             // 입사인원추이ToolStripMenuItem2
             // 
             this.입사인원추이ToolStripMenuItem2.Name = "입사인원추이ToolStripMenuItem2";
-            this.입사인원추이ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.입사인원추이ToolStripMenuItem2.Size = new System.Drawing.Size(162, 22);
             this.입사인원추이ToolStripMenuItem2.Text = "입사인원 추이";
             // 
             // 퇴사인원추이ToolStripMenuItem2
             // 
             this.퇴사인원추이ToolStripMenuItem2.Name = "퇴사인원추이ToolStripMenuItem2";
-            this.퇴사인원추이ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.퇴사인원추이ToolStripMenuItem2.Size = new System.Drawing.Size(162, 22);
             this.퇴사인원추이ToolStripMenuItem2.Text = "퇴사인원 추이";
             // 
             // toolStripMenuItem1
@@ -519,30 +519,6 @@
             this.label1.Size = new System.Drawing.Size(953, 2);
             this.label1.TabIndex = 12;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(8, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 11);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "사용자 :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(106, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 11);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "접속시간 :";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -555,28 +531,6 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "현재시간 :";
             // 
-            // ADMIN_NAME
-            // 
-            this.ADMIN_NAME.AutoSize = true;
-            this.ADMIN_NAME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ADMIN_NAME.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ADMIN_NAME.ForeColor = System.Drawing.Color.White;
-            this.ADMIN_NAME.Location = new System.Drawing.Point(53, 8);
-            this.ADMIN_NAME.Name = "ADMIN_NAME";
-            this.ADMIN_NAME.Size = new System.Drawing.Size(0, 11);
-            this.ADMIN_NAME.TabIndex = 16;
-            // 
-            // LOGIN_TIME
-            // 
-            this.LOGIN_TIME.AutoSize = true;
-            this.LOGIN_TIME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LOGIN_TIME.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LOGIN_TIME.ForeColor = System.Drawing.Color.White;
-            this.LOGIN_TIME.Location = new System.Drawing.Point(161, 8);
-            this.LOGIN_TIME.Name = "LOGIN_TIME";
-            this.LOGIN_TIME.Size = new System.Drawing.Size(0, 11);
-            this.LOGIN_TIME.TabIndex = 16;
-            // 
             // NOW_TIME
             // 
             this.NOW_TIME.AutoSize = true;
@@ -585,8 +539,9 @@
             this.NOW_TIME.ForeColor = System.Drawing.Color.White;
             this.NOW_TIME.Location = new System.Drawing.Point(1009, 85);
             this.NOW_TIME.Name = "NOW_TIME";
-            this.NOW_TIME.Size = new System.Drawing.Size(0, 11);
+            this.NOW_TIME.Size = new System.Drawing.Size(64, 11);
             this.NOW_TIME.TabIndex = 16;
+            this.NOW_TIME.Text = "NOW_TIME";
             // 
             // timer1
             // 
@@ -857,26 +812,6 @@
             this.insert_button.Click += new System.EventHandler(this.insert_button_Click);
             this.insert_button.MouseHover += new System.EventHandler(this.insert_button_MouseHover);
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox9.Enabled = false;
-            this.pictureBox9.Location = new System.Drawing.Point(1018, -5);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(103, 10);
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox4.Enabled = false;
-            this.pictureBox4.Location = new System.Drawing.Point(1021, 25);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(103, 37);
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -897,6 +832,74 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pictureBox4.Enabled = false;
+            this.pictureBox4.Location = new System.Drawing.Point(1021, 25);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(103, 37);
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pictureBox9.Enabled = false;
+            this.pictureBox9.Location = new System.Drawing.Point(1018, -5);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(103, 10);
+            this.pictureBox9.TabIndex = 10;
+            this.pictureBox9.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(8, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 11);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "사용자 :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(110, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 11);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "접속시간 :";
+            // 
+            // ADMIN_NAME
+            // 
+            this.ADMIN_NAME.AutoSize = true;
+            this.ADMIN_NAME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ADMIN_NAME.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ADMIN_NAME.ForeColor = System.Drawing.Color.White;
+            this.ADMIN_NAME.Location = new System.Drawing.Point(53, 8);
+            this.ADMIN_NAME.Name = "ADMIN_NAME";
+            this.ADMIN_NAME.Size = new System.Drawing.Size(36, 11);
+            this.ADMIN_NAME.TabIndex = 16;
+            this.ADMIN_NAME.Text = "NAME";
+            // 
+            // LOGIN_TIME
+            // 
+            this.LOGIN_TIME.AutoSize = true;
+            this.LOGIN_TIME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LOGIN_TIME.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LOGIN_TIME.ForeColor = System.Drawing.Color.White;
+            this.LOGIN_TIME.Location = new System.Drawing.Point(165, 8);
+            this.LOGIN_TIME.Name = "LOGIN_TIME";
+            this.LOGIN_TIME.Size = new System.Drawing.Size(71, 11);
+            this.LOGIN_TIME.TabIndex = 16;
+            this.LOGIN_TIME.Text = "LOGIN_TIME";
+            // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -913,6 +916,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1124, 713);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.submit_button);
             this.Controls.Add(this.cancel_button);
             this.Controls.Add(this.update_button);
@@ -920,7 +924,6 @@
             this.Controls.Add(this.insert_button);
             this.Controls.Add(this.NOW_TIME);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LOGIN_TIME);
@@ -941,10 +944,10 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -985,14 +988,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label NOW_TIME;
-        public System.Windows.Forms.Label ADMIN_NAME;
-        public System.Windows.Forms.Label LOGIN_TIME;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem 인사기초정보ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 인사코드관리ToolStripMenuItem1;
@@ -1045,12 +1043,17 @@
         private System.Windows.Forms.ToolStripMenuItem 입사인원추이ToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem 퇴사인원추이ToolStripMenuItem2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox9;
         public System.Windows.Forms.Button insert_button;
         public System.Windows.Forms.Button delete_button;
         public System.Windows.Forms.Button update_button;
         public System.Windows.Forms.Button cancel_button;
         public System.Windows.Forms.Button submit_button;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label ADMIN_NAME;
+        public System.Windows.Forms.Label LOGIN_TIME;
         private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

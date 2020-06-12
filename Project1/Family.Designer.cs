@@ -34,19 +34,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.fAMEMPNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fAMRELDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.tHRMFAMLJMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new Project1.DataSet1();
-            this.add_button = new System.Windows.Forms.Button();
-            this.fam_save_button = new System.Windows.Forms.Button();
-            this.tHRM_FAM_LJMTableAdapter = new Project1.DataSet1TableAdapters.THRM_FAM_LJMTableAdapter();
-            this.fAMEMPNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fAMRELDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fAMNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fAMBTHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fAMLTGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fAMLTGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dATASYS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dATASYS2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dATASYS3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.add_button = new System.Windows.Forms.Button();
+            this.fam_save_button = new System.Windows.Forms.Button();
+            this.tHRM_FAM_LJMTableAdapter = new Project1.DataSet1TableAdapters.THRM_FAM_LJMTableAdapter();
             this.delete_button = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -78,7 +78,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView2.ColumnHeadersHeight = 24;
+            this.dataGridView2.ColumnHeadersHeight = 26;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.fAMEMPNODataGridViewTextBoxColumn,
@@ -117,44 +117,9 @@
             this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView2.RowTemplate.Height = 23;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(1074, 305);
+            this.dataGridView2.Size = new System.Drawing.Size(1074, 279);
             this.dataGridView2.TabIndex = 64;
-            // 
-            // tHRMFAMLJMBindingSource
-            // 
-            this.tHRMFAMLJMBindingSource.DataMember = "THRM_FAM_LJM";
-            this.tHRMFAMLJMBindingSource.DataSource = this.dataSet1;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // add_button
-            // 
-            this.add_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_button.Location = new System.Drawing.Point(921, 6);
-            this.add_button.Name = "add_button";
-            this.add_button.Size = new System.Drawing.Size(49, 23);
-            this.add_button.TabIndex = 62;
-            this.add_button.Text = "추가";
-            this.add_button.UseVisualStyleBackColor = true;
-            this.add_button.Click += new System.EventHandler(this.add_button_Click);
-            // 
-            // fam_save_button
-            // 
-            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fam_save_button.Location = new System.Drawing.Point(866, 6);
-            this.fam_save_button.Name = "fam_save_button";
-            this.fam_save_button.Size = new System.Drawing.Size(49, 23);
-            this.fam_save_button.TabIndex = 63;
-            this.fam_save_button.Text = "저장";
-            this.fam_save_button.UseVisualStyleBackColor = true;
-            this.fam_save_button.Click += new System.EventHandler(this.fam_save_button_Click);
-            // 
-            // tHRM_FAM_LJMTableAdapter
-            // 
-            this.tHRM_FAM_LJMTableAdapter.ClearBeforeFill = true;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // fAMEMPNODataGridViewTextBoxColumn
             // 
@@ -166,9 +131,24 @@
             // fAMRELDataGridViewTextBoxColumn
             // 
             this.fAMRELDataGridViewTextBoxColumn.DataPropertyName = "FAM_REL";
+            this.fAMRELDataGridViewTextBoxColumn.DataSource = this.tHRMFAMLJMBindingSource;
+            this.fAMRELDataGridViewTextBoxColumn.DisplayMember = "FAM_REL";
+            this.fAMRELDataGridViewTextBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fAMRELDataGridViewTextBoxColumn.HeaderText = "관계";
             this.fAMRELDataGridViewTextBoxColumn.Name = "fAMRELDataGridViewTextBoxColumn";
-            this.fAMRELDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.fAMRELDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.fAMRELDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.fAMRELDataGridViewTextBoxColumn.ValueMember = "FAM_REL";
+            // 
+            // tHRMFAMLJMBindingSource
+            // 
+            this.tHRMFAMLJMBindingSource.DataMember = "THRM_FAM_LJM";
+            this.tHRMFAMLJMBindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // fAMNAMEDataGridViewTextBoxColumn
             // 
@@ -185,10 +165,14 @@
             // fAMLTGDataGridViewTextBoxColumn
             // 
             this.fAMLTGDataGridViewTextBoxColumn.DataPropertyName = "FAM_LTG";
+            this.fAMLTGDataGridViewTextBoxColumn.DataSource = this.tHRMFAMLJMBindingSource;
+            this.fAMLTGDataGridViewTextBoxColumn.DisplayMember = "FAM_LTG";
+            this.fAMLTGDataGridViewTextBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fAMLTGDataGridViewTextBoxColumn.HeaderText = "동거여부";
             this.fAMLTGDataGridViewTextBoxColumn.Name = "fAMLTGDataGridViewTextBoxColumn";
-            this.fAMLTGDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fAMLTGDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.fAMLTGDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.fAMLTGDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.fAMLTGDataGridViewTextBoxColumn.ValueMember = "FAM_LTG";
             // 
             // dATASYS1DataGridViewTextBoxColumn
             // 
@@ -211,26 +195,57 @@
             this.dATASYS3DataGridViewTextBoxColumn.Name = "dATASYS3DataGridViewTextBoxColumn";
             this.dATASYS3DataGridViewTextBoxColumn.Visible = false;
             // 
+            // add_button
+            // 
+            this.add_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_button.Location = new System.Drawing.Point(952, 6);
+            this.add_button.Name = "add_button";
+            this.add_button.Size = new System.Drawing.Size(61, 23);
+            this.add_button.TabIndex = 62;
+            this.add_button.Text = "행 추가";
+            this.add_button.UseVisualStyleBackColor = true;
+            this.add_button.Click += new System.EventHandler(this.add_button_Click);
+            // 
+            // fam_save_button
+            // 
+            this.fam_save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fam_save_button.ForeColor = System.Drawing.Color.White;
+            this.fam_save_button.Location = new System.Drawing.Point(976, 320);
+            this.fam_save_button.Name = "fam_save_button";
+            this.fam_save_button.Size = new System.Drawing.Size(49, 23);
+            this.fam_save_button.TabIndex = 63;
+            this.fam_save_button.Text = "저장";
+            this.fam_save_button.UseVisualStyleBackColor = false;
+            this.fam_save_button.Click += new System.EventHandler(this.fam_save_button_Click);
+            // 
+            // tHRM_FAM_LJMTableAdapter
+            // 
+            this.tHRM_FAM_LJMTableAdapter.ClearBeforeFill = true;
+            // 
             // delete_button
             // 
             this.delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delete_button.Location = new System.Drawing.Point(976, 6);
+            this.delete_button.Location = new System.Drawing.Point(1019, 6);
             this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(49, 23);
+            this.delete_button.Size = new System.Drawing.Size(61, 23);
             this.delete_button.TabIndex = 65;
-            this.delete_button.Text = "삭제";
+            this.delete_button.Text = "행 삭제";
             this.delete_button.UseVisualStyleBackColor = true;
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1031, 6);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1031, 320);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(49, 23);
             this.button1.TabIndex = 66;
             this.button1.Text = "취소";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Family
             // 
@@ -260,15 +275,15 @@
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource tHRMFAMLJMBindingSource;
         private DataSet1TableAdapters.THRM_FAM_LJMTableAdapter tHRM_FAM_LJMTableAdapter;
+        private System.Windows.Forms.Button delete_button;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn fAMEMPNODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fAMRELDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn fAMRELDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fAMNAMEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fAMBTHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fAMLTGDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn fAMLTGDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS3DataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button delete_button;
-        private System.Windows.Forms.Button button1;
     }
 }

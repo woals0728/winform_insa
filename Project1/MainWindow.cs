@@ -158,7 +158,9 @@ namespace Project1
 
         private void cancel_button_Click(object sender, EventArgs e)
         {
-            this.CancelClick?.Invoke(sender, e);
+            //this.CancelClick?.Invoke(sender, e);
+            var inf = new P_information();
+            inf.cancelPerform(sender, e);
             setSubmit_ButtonVisible(false, Color.Gray);
             setButton_Visible(true, Color.FromArgb(64,64,64));
         }
@@ -206,5 +208,22 @@ namespace Project1
         {
             toolTip.SetToolTip(this.cancel_button, "취소 버튼");
         }
+
+        #region REFLECTION BUTTON
+        private void button_Click(object sender, EventArgs e)
+        {
+            Call_Method((string)(sender as Button).Tag);
+        }
+
+        private void Call_Method(String _mtd)
+        {
+            var inf = new P_information();
+            Type type = inf.tabControl1.SelectedTab.Controls[0].GetType();
+            UserControl user = Activator.CreateInstance(type) as UserControl;
+
+            System.Reflection.MethodInfo mtd = type.GetMethod(_mtd);
+            mtd.Invoke(user, null);
+        }
+        #endregion
     }
 }

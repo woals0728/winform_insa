@@ -166,5 +166,9 @@ namespace Project1
             }
         }
 
+        private void bas_emp_sdate_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

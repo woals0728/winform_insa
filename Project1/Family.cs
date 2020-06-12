@@ -26,11 +26,6 @@ namespace Project1
 
         private void Family_Load(object sender, EventArgs e)
         {
-            DataGridViewComboBoxColumn com = new DataGridViewComboBoxColumn();
-            com.Name = "관계";
-            com.ValueMember = "FAM_REL";
-            com.DisplayMember = "FAM_REL";
-            com.DataSource = this.dataSet1.THRM_FAM_LJM;
             this.tHRM_FAM_LJMTableAdapter.Fill(this.dataSet1.THRM_FAM_LJM);
         }
 
@@ -41,9 +36,29 @@ namespace Project1
                 dataGridView2.Rows.RemoveAt(item.Index);
             }
         }
-
+    
         private void add_button_Click(object sender, EventArgs e)
         {
+            try
+            {
+                BindingSource bs = (BindingSource)dataGridView2.DataSource;
+                DataSet1 ds = bs.DataSource as DataSet1;
+                ds.Tables[0].Rows.Add("10001", "", "", "4", "5");
+            }
+            catch
+            {
+                MessageBox.Show("마지막 행을 작성후 추가해 주십시오.");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
 
         }
     }

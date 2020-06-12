@@ -29,16 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.dataSet6 = new Project1.DataSet6();
-            this.tHRMFORLLJMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tHRM_FORL_LJMTableAdapter = new Project1.DataSet6TableAdapters.THRM_FORL_LJMTableAdapter();
             this.fORLEMPNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fORLCODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fORLSCOREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,9 +42,16 @@
             this.dATASYS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dATASYS2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dATASYS3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tHRMFORLLJMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet6 = new Project1.DataSet6();
+            this.tHRM_FORL_LJMTableAdapter = new Project1.DataSet6TableAdapters.THRM_FORL_LJMTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.delete_button = new System.Windows.Forms.Button();
+            this.add_button = new System.Windows.Forms.Button();
+            this.fam_save_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHRMFORLLJMBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView7
@@ -58,8 +60,8 @@
             this.dataGridView7.AllowUserToDeleteRows = false;
             this.dataGridView7.AllowUserToResizeColumns = false;
             this.dataGridView7.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
-            this.dataGridView7.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dataGridView7.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView7.AutoGenerateColumns = false;
             this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView7.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -68,14 +70,14 @@
             this.dataGridView7.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView7.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataGridView7.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView7.ColumnHeadersHeight = 24;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -88,14 +90,14 @@
             this.dATASYS2DataGridViewTextBoxColumn,
             this.dATASYS3DataGridViewTextBoxColumn});
             this.dataGridView7.DataSource = this.tHRMFORLLJMBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView7.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView7.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView7.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.dataGridView7.EnableHeadersVisualStyles = false;
             this.dataGridView7.GridColor = System.Drawing.Color.DarkGray;
@@ -103,53 +105,19 @@
             this.dataGridView7.MultiSelect = false;
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightCyan;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView7.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.LightCyan;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView7.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView7.RowHeadersVisible = false;
             this.dataGridView7.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView7.RowTemplate.Height = 23;
-            this.dataGridView7.Size = new System.Drawing.Size(1074, 305);
+            this.dataGridView7.Size = new System.Drawing.Size(1074, 279);
             this.dataGridView7.TabIndex = 67;
-            // 
-            // button13
-            // 
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(1031, 6);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(49, 23);
-            this.button13.TabIndex = 65;
-            this.button13.Text = "취소";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(976, 6);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(49, 23);
-            this.button14.TabIndex = 66;
-            this.button14.Text = "저장";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // dataSet6
-            // 
-            this.dataSet6.DataSetName = "DataSet6";
-            this.dataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tHRMFORLLJMBindingSource
-            // 
-            this.tHRMFORLLJMBindingSource.DataMember = "THRM_FORL_LJM";
-            this.tHRMFORLLJMBindingSource.DataSource = this.dataSet6;
-            // 
-            // tHRM_FORL_LJMTableAdapter
-            // 
-            this.tHRM_FORL_LJMTableAdapter.ClearBeforeFill = true;
             // 
             // fORLEMPNODataGridViewTextBoxColumn
             // 
@@ -203,19 +171,79 @@
             this.dATASYS3DataGridViewTextBoxColumn.Name = "dATASYS3DataGridViewTextBoxColumn";
             this.dATASYS3DataGridViewTextBoxColumn.Visible = false;
             // 
+            // tHRMFORLLJMBindingSource
+            // 
+            this.tHRMFORLLJMBindingSource.DataMember = "THRM_FORL_LJM";
+            this.tHRMFORLLJMBindingSource.DataSource = this.dataSet6;
+            // 
+            // dataSet6
+            // 
+            this.dataSet6.DataSetName = "DataSet6";
+            this.dataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tHRM_FORL_LJMTableAdapter
+            // 
+            this.tHRM_FORL_LJMTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1031, 320);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(49, 23);
+            this.button1.TabIndex = 71;
+            this.button1.Text = "취소";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // delete_button
+            // 
+            this.delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete_button.Location = new System.Drawing.Point(1019, 6);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.Size = new System.Drawing.Size(61, 23);
+            this.delete_button.TabIndex = 70;
+            this.delete_button.Text = "행 삭제";
+            this.delete_button.UseVisualStyleBackColor = true;
+            // 
+            // add_button
+            // 
+            this.add_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_button.Location = new System.Drawing.Point(952, 6);
+            this.add_button.Name = "add_button";
+            this.add_button.Size = new System.Drawing.Size(61, 23);
+            this.add_button.TabIndex = 68;
+            this.add_button.Text = "행 추가";
+            this.add_button.UseVisualStyleBackColor = true;
+            // 
+            // fam_save_button
+            // 
+            this.fam_save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fam_save_button.ForeColor = System.Drawing.Color.White;
+            this.fam_save_button.Location = new System.Drawing.Point(976, 320);
+            this.fam_save_button.Name = "fam_save_button";
+            this.fam_save_button.Size = new System.Drawing.Size(49, 23);
+            this.fam_save_button.TabIndex = 69;
+            this.fam_save_button.Text = "저장";
+            this.fam_save_button.UseVisualStyleBackColor = false;
+            // 
             // Language
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.delete_button);
+            this.Controls.Add(this.add_button);
+            this.Controls.Add(this.fam_save_button);
             this.Controls.Add(this.dataGridView7);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button14);
             this.Name = "Language";
             this.Size = new System.Drawing.Size(1086, 346);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHRMFORLLJMBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -223,8 +251,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.BindingSource tHRMFORLLJMBindingSource;
         private DataSet6 dataSet6;
         private DataSet6TableAdapters.THRM_FORL_LJMTableAdapter tHRM_FORL_LJMTableAdapter;
@@ -236,5 +262,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS3DataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button delete_button;
+        private System.Windows.Forms.Button add_button;
+        private System.Windows.Forms.Button fam_save_button;
     }
 }
