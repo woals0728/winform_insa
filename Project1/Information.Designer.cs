@@ -1085,6 +1085,7 @@
             this.Controls.Add(this.groupBox3);
             this.Name = "Information";
             this.Size = new System.Drawing.Size(1086, 346);
+            this.Tag = "인사기본사항";
             this.Load += new System.EventHandler(this.Information_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

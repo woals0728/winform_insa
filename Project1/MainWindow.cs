@@ -20,19 +20,19 @@ namespace Project1
 {
     public partial class MainWindow : MetroForm
     {
-        private static string orcl_str = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=222.237.134.74)(PORT=1522)))(CONNECT_DATA=(SID=ora7)));User ID=edu;Password=edu1234";
-        OracleConnection conn = new OracleConnection(orcl_str);
-        OracleCommand cmd;
         OracleDataReader reader;
+        P_information inf;
+        Reference refer;
+        private List<UserControl> userList;
 
         public MainWindow()
         {
             InitializeComponent();
             menuStrip1.Renderer = new ToolStripProfessionalRenderer(new MyColorTable());
-            this.인사기본사항ToolStripMenuItem.Click += 인사기본사항ToolStripMenuItem_Click;
+            userList = new List<UserControl>();
         }
 
-
+        #region 메뉴 색상 설정
         public class MyColorTable : ProfessionalColorTable
         {
             public override Color MenuItemPressedGradientBegin
@@ -51,10 +51,11 @@ namespace Project1
                 }
             }
         }
-
+        #endregion
         private void Form2_Load(object sender, EventArgs e)
         {
-            setSubmit_ButtonVisible(false, Color.Gray);
+            setSubmitButton(false, Properties.Resources.submit_);
+            setCancelButton(false, Properties.Resources.cancel_);
             Timer t = new Timer();
             t.Tick += new EventHandler(timer1_Tick);
             t.Start();
@@ -67,6 +68,12 @@ namespace Project1
             NOW_TIME.Text = datePart;
         }
 
+        private void Load_Control(UserControl ctrl)
+        {
+            userList.Add(ctrl);
+            inf.tabControl1.TabPages.Add(ctrl.Tag.ToString());
+            inf.tabControl1.TabPages[inf.tabControl1.TabPages.Count - 1].Controls.Add(ctrl);
+        }
 
         private void 인사기본사항ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -78,14 +85,22 @@ namespace Project1
                 }
                 ctrl.Dispose();
             }
-            var inf = new P_information();
-            this.InsertClick = new ButtonClick(inf.insertPerform);
-            this.UpdateClick = new ButtonClick(inf.updatePerform);
-            this.DeleteClick = new ButtonClick(inf.deletePerform);
-            this.SubmitClick = new ButtonClick(inf.submitPerform);
-            this.CancelClick = new ButtonClick(inf.cancelPerform);
-            
+
+            this.inf = new P_information();
+            //this.InsertClick = new ButtonClick(inf.insertPerform);
+            //this.UpdateClick = new ButtonClick(inf.updatePerform);
+            //this.DeleteClick = new ButtonClick(inf.deletePerform);
+            //this.SubmitClick = new ButtonClick(inf.submitPerform);
+            //this.CancelClick = new ButtonClick(inf.cancelPerform);
             panel1.Controls.Add(inf);
+
+            Load_Control(new Information());
+            Load_Control(new Family());
+            Load_Control(new E_Background());
+            Load_Control(new Awards());
+            Load_Control(new Career());
+            Load_Control(new License());
+            Load_Control(new Language());
         }
 
         
@@ -100,8 +115,8 @@ namespace Project1
                 }
                 ctrl.Dispose();
             }
-            var re = new Reference();
-            panel1.Controls.Add(re);
+            this.refer = new Reference();
+            panel1.Controls.Add(refer);
         }
 
 
@@ -113,62 +128,79 @@ namespace Project1
         public event ButtonClick SubmitClick;
         public event ButtonClick CancelClick;
 
-        public void setSubmit_ButtonVisible(Boolean flag, Color txt)
+        #region 버튼상태제어
+        public void setInsertButton(Boolean flag, Image img)
         {
-            this.submit_button.Enabled = flag;
-            this.cancel_button.Enabled = flag;
-            this.submit_button.BackColor = txt;
-            this.cancel_button.BackColor = txt;
+            insert_button.Enabled = flag;
+            insert_button.BackgroundImage = img;
         }
 
-        public void setButton_Visible(Boolean flag, Color txt)
+        public void setUpdateButton(Boolean flag, Image img)
         {
-            this.insert_button.Enabled = flag;
-            this.delete_button.Enabled = flag;
-            this.update_button.Enabled = flag;
-            this.insert_button.BackColor = txt;
-            this.delete_button.BackColor = txt;
-            this.update_button.BackColor = txt;
+            update_button.Enabled = flag;
+            update_button.BackgroundImage = img;
         }
 
-        
+        public void setDeleteButton(Boolean flag, Image img)
+        {
+            delete_button.Enabled = flag;
+            delete_button.BackgroundImage = img;
+        }
+
+        public void setSubmitButton(Boolean flag, Image img)
+        {
+            submit_button.Enabled = flag;
+            submit_button.BackgroundImage = img;
+        }
+
+        public void setCancelButton(Boolean flag, Image img)
+        {
+            cancel_button.Enabled = flag;
+            cancel_button.BackgroundImage = img;
+        }
+
+        public void setButton_1()
+        {
+            setInsertButton(false, Properties.Resources.insert_);
+            setDeleteButton(false, Properties.Resources.delete_);
+            setUpdateButton(false, Properties.Resources.update_);
+            setSubmitButton(true, Properties.Resources.submit);
+            setCancelButton(true, Properties.Resources.cancel);
+        }
+
+        public void setButton_2()
+        {
+            setInsertButton(true, Properties.Resources.insert);
+            setDeleteButton(true, Properties.Resources.delete);
+            setUpdateButton(true, Properties.Resources.update);
+            setSubmitButton(false, Properties.Resources.submit_);
+            setCancelButton(false, Properties.Resources.cancel_);
+        }
+        #endregion
 
         private void insert_button_Click(object sender, EventArgs e)
         {
+            setButton_1();
             this.InsertClick?.Invoke(sender, e);
-            //var inf = new P_information();
-            //inf.insertPerform(sender, e);
-            setSubmit_ButtonVisible(true, Color.FromArgb(64, 64, 64));
-            setButton_Visible(false, Color.Gray);
         }
 
         private void delete_button_Click(object sender, EventArgs e)
         {
+            setButton_1();
             this.DeleteClick?.Invoke(sender, e);
-            setSubmit_ButtonVisible(true, Color.FromArgb(64,64,64));
-            setButton_Visible(false, Color.Gray);
         }
 
         private void update_button_Click(object sender, EventArgs e)
         {
+            setButton_1();
             this.UpdateClick?.Invoke(sender, e);
-            setSubmit_ButtonVisible(true, Color.FromArgb(64,64,64));
-            setButton_Visible(false, Color.Gray);
-        }
-
-        private void cancel_button_Click(object sender, EventArgs e)
-        {
-            //this.CancelClick?.Invoke(sender, e);
-            var inf = new P_information();
-            inf.cancelPerform(sender, e);
-            setSubmit_ButtonVisible(false, Color.Gray);
-            setButton_Visible(true, Color.FromArgb(64,64,64));
         }
 
         private void submit_button_Click(object sender, EventArgs e)
         {
             try
             {
+
                 this.SubmitClick?.Invoke(sender, e);
             }
             catch(Exception ex)
@@ -177,11 +209,19 @@ namespace Project1
             }
             finally
             {
-                setSubmit_ButtonVisible(false, Color.Gray);
-                setButton_Visible(true, Color.FromArgb(64, 64, 64));
+                setButton_2();
             }
         }
 
+        private void cancel_button_Click(object sender, EventArgs e)
+        {
+            setButton_2();
+            this.CancelClick?.Invoke(sender, e);
+            var inf = new P_information();
+            inf.cancelPerform(sender, e);
+        }
+
+        #region 버튼 툴팁
         ToolTip toolTip = new ToolTip();
 
         private void insert_button_MouseHover(object sender, EventArgs e)
@@ -208,6 +248,7 @@ namespace Project1
         {
             toolTip.SetToolTip(this.cancel_button, "취소 버튼");
         }
+        #endregion
 
         #region REFLECTION BUTTON
         private void button_Click(object sender, EventArgs e)
@@ -217,12 +258,17 @@ namespace Project1
 
         private void Call_Method(String _mtd)
         {
-            var inf = new P_information();
-            Type type = inf.tabControl1.SelectedTab.Controls[0].GetType();
-            UserControl user = Activator.CreateInstance(type) as UserControl;
+            UserControl control = (UserControl)inf.tabControl1.SelectedTab.Controls[0];
+            Type type = control.GetType();
+
+            System.Reflection.PropertyInfo pi = type.GetProperty("mainControl");
+            if(pi != null)
+            {
+                pi.SetValue(control, this);
+            }
 
             System.Reflection.MethodInfo mtd = type.GetMethod(_mtd);
-            mtd.Invoke(user, null);
+            mtd.Invoke(control, null);
         }
         #endregion
     }

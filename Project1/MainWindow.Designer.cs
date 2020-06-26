@@ -203,14 +203,14 @@
             // 인사기본사항ToolStripMenuItem2
             // 
             this.인사기본사항ToolStripMenuItem2.Name = "인사기본사항ToolStripMenuItem2";
-            this.인사기본사항ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
+            this.인사기본사항ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사기본사항ToolStripMenuItem2.Text = "인사기록 등록";
             this.인사기본사항ToolStripMenuItem2.Click += new System.EventHandler(this.인사기본사항ToolStripMenuItem_Click);
             // 
             // 인사기록조회통합ToolStripMenuItem2
             // 
             this.인사기록조회통합ToolStripMenuItem2.Name = "인사기록조회통합ToolStripMenuItem2";
-            this.인사기록조회통합ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
+            this.인사기록조회통합ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사기록조회통합ToolStripMenuItem2.Text = "인사기록 조회";
             this.인사기록조회통합ToolStripMenuItem2.Click += new System.EventHandler(this.인사기록조회통합ToolStripMenuItem2_Click);
             // 
@@ -741,7 +741,7 @@
             // submit_button
             // 
             this.submit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.submit_button.BackgroundImage = global::Project1.Properties.Resources._7_Accept_agree_check_512;
+            this.submit_button.BackgroundImage = global::Project1.Properties.Resources.submit;
             this.submit_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.submit_button.FlatAppearance.BorderSize = 0;
             this.submit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -756,7 +756,7 @@
             // cancel_button
             // 
             this.cancel_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cancel_button.BackgroundImage = global::Project1.Properties.Resources.cancle_512;
+            this.cancel_button.BackgroundImage = global::Project1.Properties.Resources.cancel;
             this.cancel_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.cancel_button.FlatAppearance.BorderSize = 0;
             this.cancel_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -770,7 +770,7 @@
             // update_button
             // 
             this.update_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.update_button.BackgroundImage = global::Project1.Properties.Resources.Edit_512__1_;
+            this.update_button.BackgroundImage = global::Project1.Properties.Resources.update;
             this.update_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.update_button.FlatAppearance.BorderSize = 0;
             this.update_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -785,7 +785,7 @@
             // delete_button
             // 
             this.delete_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.delete_button.BackgroundImage = global::Project1.Properties.Resources.icon_trash_01_512;
+            this.delete_button.BackgroundImage = global::Project1.Properties.Resources.delete;
             this.delete_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.delete_button.FlatAppearance.BorderSize = 0;
             this.delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -800,7 +800,7 @@
             // insert_button
             // 
             this.insert_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.insert_button.BackgroundImage = global::Project1.Properties.Resources.asdf;
+            this.insert_button.BackgroundImage = global::Project1.Properties.Resources.insert;
             this.insert_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.insert_button.FlatAppearance.BorderSize = 0;
             this.insert_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -808,8 +808,9 @@
             this.insert_button.Name = "insert_button";
             this.insert_button.Size = new System.Drawing.Size(29, 29);
             this.insert_button.TabIndex = 20;
+            this.insert_button.Tag = "insert_button";
             this.insert_button.UseVisualStyleBackColor = false;
-            this.insert_button.Click += new System.EventHandler(this.insert_button_Click);
+            this.insert_button.Click += new System.EventHandler(this.button_Click);
             this.insert_button.MouseHover += new System.EventHandler(this.insert_button_MouseHover);
             // 
             // pictureBox2

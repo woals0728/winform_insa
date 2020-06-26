@@ -54,8 +54,8 @@ namespace Project1
                 }
                 catch(Exception ex)
                 {
-                    //MessageBox.Show("주소를 입력하세요");
-                    //MessageBox.Show($"DB connection fail.\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("주소를 입력하세요");
+                    MessageBox.Show($"DB connection fail.\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 
@@ -193,8 +193,8 @@ namespace Project1
 
                 catch (Exception ex)
                 {
-                    //MessageBox.Show("주소를 입력하세요");
-                    //MessageBox.Show($"DB connection fail.\n {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   MessageBox.Show("주소를 입력하세요");
+                   MessageBox.Show($"DB connection fail.\n {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 

@@ -241,6 +241,7 @@
             this.Controls.Add(this.dataGridView6);
             this.Name = "License";
             this.Size = new System.Drawing.Size(1086, 346);
+            this.Tag = "자격면허";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHRMLICLJMBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();

@@ -46,7 +46,13 @@ C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\bin\Debug\Ubi
 C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\bin\Debug\Google.Protobuf.xml
 C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\bin\Debug\MySql.Data.xml
 C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\bin\Debug\Renci.SshNet.xml
-C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.csprojAssemblyReference.cache
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Awards.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Career.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.E_Background.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Family.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Information.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Language.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.License.resources
 C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Login.resources
 C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.MainWindow.resources
 C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Post.resources
@@ -59,10 +65,5 @@ C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Pro
 C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.csproj.CopyComplete
 C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.exe
 C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.pdb
-C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Awards.resources
-C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Career.resources
-C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.E_Background.resources
-C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Family.resources
-C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Information.resources
-C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.Language.resources
-C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.License.resources
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\obj\Debug\Project1.csprojAssemblyReference.cache
+C:\Users\Mac_1\Desktop\visual_studio_Project\winform_insa\Project1\bin\Debug\Config.xml

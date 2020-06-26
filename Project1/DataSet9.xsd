@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet9" targetNamespace="http://tempuri.org/DataSet9.xsd" xmlns:mstns="http://tempuri.org/DataSet9.xsd" xmlns="http://tempuri.org/DataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix=":" PropertyReference="ApplicationSettings.Project1.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="Oracle.ManagedDataAccess.Client" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FAMILY_LJMTableAdapter" GeneratorDataComponentClassName="FAMILY_LJMTableAdapter" Name="FAMILY_LJM" UserDataComponentName="FAMILY_LJMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FAM_EMPNO, FAM_REL, FAM_NAME, FAM_BTH, FAM_LTG, DATASYS1, DATASYS2, DATASYS3, CD_CODE, CD_CODNMS FROM EDU.FAMILY_LJM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FAM_EMPNO" DataSetColumn="FAM_EMPNO" />
+              <Mapping SourceColumn="FAM_REL" DataSetColumn="FAM_REL" />
+              <Mapping SourceColumn="FAM_NAME" DataSetColumn="FAM_NAME" />
+              <Mapping SourceColumn="FAM_BTH" DataSetColumn="FAM_BTH" />
+              <Mapping SourceColumn="FAM_LTG" DataSetColumn="FAM_LTG" />
+              <Mapping SourceColumn="DATASYS1" DataSetColumn="DATASYS1" />
+              <Mapping SourceColumn="DATASYS2" DataSetColumn="DATASYS2" />
+              <Mapping SourceColumn="DATASYS3" DataSetColumn="DATASYS3" />
+              <Mapping SourceColumn="CD_CODE" DataSetColumn="CD_CODE" />
+              <Mapping SourceColumn="CD_CODNMS" DataSetColumn="CD_CODNMS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet9" msprop:Generator_UserDSName="DataSet9">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FAMILY_LJM" msprop:Generator_TableClassName="FAMILY_LJMDataTable" msprop:Generator_TableVarName="tableFAMILY_LJM" msprop:Generator_TablePropName="FAMILY_LJM" msprop:Generator_RowDeletingName="FAMILY_LJMRowDeleting" msprop:Generator_RowChangingName="FAMILY_LJMRowChanging" msprop:Generator_RowEvHandlerName="FAMILY_LJMRowChangeEventHandler" msprop:Generator_RowDeletedName="FAMILY_LJMRowDeleted" msprop:Generator_UserTableName="FAMILY_LJM" msprop:Generator_RowChangedName="FAMILY_LJMRowChanged" msprop:Generator_RowEvArgName="FAMILY_LJMRowChangeEvent" msprop:Generator_RowClassName="FAMILY_LJMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FAM_EMPNO" msprop:Generator_ColumnVarNameInTable="columnFAM_EMPNO" msprop:Generator_ColumnPropNameInRow="FAM_EMPNO" msprop:Generator_ColumnPropNameInTable="FAM_EMPNOColumn" msprop:Generator_UserColumnName="FAM_EMPNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAM_REL" msprop:Generator_ColumnVarNameInTable="columnFAM_REL" msprop:Generator_ColumnPropNameInRow="FAM_REL" msprop:Generator_ColumnPropNameInTable="FAM_RELColumn" msprop:Generator_UserColumnName="FAM_REL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAM_NAME" msprop:Generator_ColumnVarNameInTable="columnFAM_NAME" msprop:Generator_ColumnPropNameInRow="FAM_NAME" msprop:Generator_ColumnPropNameInTable="FAM_NAMEColumn" msprop:Generator_UserColumnName="FAM_NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAM_BTH" msprop:Generator_ColumnVarNameInTable="columnFAM_BTH" msprop:Generator_ColumnPropNameInRow="FAM_BTH" msprop:Generator_ColumnPropNameInTable="FAM_BTHColumn" msprop:Generator_UserColumnName="FAM_BTH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAM_LTG" msprop:Generator_ColumnVarNameInTable="columnFAM_LTG" msprop:Generator_ColumnPropNameInRow="FAM_LTG" msprop:Generator_ColumnPropNameInTable="FAM_LTGColumn" msprop:Generator_UserColumnName="FAM_LTG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATASYS1" msprop:Generator_ColumnVarNameInTable="columnDATASYS1" msprop:Generator_ColumnPropNameInRow="DATASYS1" msprop:Generator_ColumnPropNameInTable="DATASYS1Column" msprop:Generator_UserColumnName="DATASYS1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATASYS2" msprop:Generator_ColumnVarNameInTable="columnDATASYS2" msprop:Generator_ColumnPropNameInRow="DATASYS2" msprop:Generator_ColumnPropNameInTable="DATASYS2Column" msprop:Generator_UserColumnName="DATASYS2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATASYS3" msprop:Generator_ColumnVarNameInTable="columnDATASYS3" msprop:Generator_ColumnPropNameInRow="DATASYS3" msprop:Generator_ColumnPropNameInTable="DATASYS3Column" msprop:Generator_UserColumnName="DATASYS3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_CODE" msprop:Generator_ColumnVarNameInTable="columnCD_CODE" msprop:Generator_ColumnPropNameInRow="CD_CODE" msprop:Generator_ColumnPropNameInTable="CD_CODEColumn" msprop:Generator_UserColumnName="CD_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CD_CODNMS" msprop:Generator_ColumnVarNameInTable="columnCD_CODNMS" msprop:Generator_ColumnPropNameInRow="CD_CODNMS" msprop:Generator_ColumnPropNameInTable="CD_CODNMSColumn" msprop:Generator_UserColumnName="CD_CODNMS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,180 +1,141 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.ManagedDataAccess.Client;
-using System.Reflection;
-using System.Text.RegularExpressions;
-using System.Security.Cryptography.X509Certificates;
-using System.Data.SqlClient;
-using System.Data.SqlTypes;
-using System.Windows.Interop;
 
 namespace Project1
 {
     public partial class P_information : UserControl
     {
-        private static string orcl_str = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=222.237.134.74)(PORT=1522)))(CONNECT_DATA=(SID=ora7)));User ID=edu;Password=edu1234";
-        OracleConnection conn = new OracleConnection(orcl_str);
+        OracleDBManager dBManager = new OracleDBManager();
 
-        OracleCommand cmd;
         OracleDataReader reader;
         OracleDataAdapter adapter;
 
         DataSet ds = new DataSet();
-        
+
+       
 
         public P_information()
         {
-            
+
             InitializeComponent();
 
         }
 
 
-        
 
         private void P_information_Load(object sender, EventArgs e)
         {
-            var inf = new Information();
-            var fam = new Family();
-            var edu = new E_Background();
-            var awa = new Awards();
-            var car = new Career();
-            var lan = new Language();
-            var lic = new License();
-            panel1.Controls.Add(inf);
-            panel2.Controls.Add(fam);
-            panel3.Controls.Add(edu);
-            panel4.Controls.Add(awa);
-            panel5.Controls.Add(car);
-            panel6.Controls.Add(lan);
-            panel7.Controls.Add(lic);
 
-            string sql1 = "select CD_CODE || ':' || CD_CODNMS, cd_codnms, cd_grpcd from tieas_cd_ljm";
-            string sql2 = "select dept_code||':'||dept_name, dept_name from thrm_dept_ljm";
-
-            try
+            if (dBManager.GetConnection() == true)
             {
-                
-                conn.Open();
-                
-                cmd = new OracleCommand(sql1, conn);
-                reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                using (OracleCommand cmd = new OracleCommand())
                 {
-                    if (reader.GetString(2) == "POS")
+                    cmd.Connection = dBManager.Connection;
+                    cmd.CommandText = "select CD_CODE || ':' || CD_CODNMS, cd_codnms, cd_grpcd from tieas_cd_ljm";
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
                     {
-                        comboBox4.Items.Add(reader.GetString(0));
+                        if (reader.GetString(2) == "POS")
+                        {
+                            comboBox4.Items.Add(reader.GetString(0));
+                        }
+                        if (reader.GetString(2) == "DUT")
+                        {
+                            comboBox3.Items.Add(reader.GetString(0));
+                        }
                     }
-                    if (reader.GetString(2) == "DUT")
+                    cmd.CommandText = "select dept_code||':'||dept_name, dept_name from thrm_dept_ljm";
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
                     {
-                        comboBox3.Items.Add(reader.GetString(0));
+                        comboBox1.Items.Add(reader.GetString(0));
                     }
                 }
-                reader.Close();
-                cmd = new OracleCommand(sql2, conn);
-                reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    comboBox1.Items.Add(reader.GetString(0));
-                }
-                reader.Close();
-
-
+                    
+                button4.PerformClick();
+                //Load_Control(new Information());
+                //Load_Control(new Family());
+                //Load_Control(new E_Background());
+                //Load_Control(new Awards());
+                //Load_Control(new Career());
+                //Load_Control(new License());
+                //Load_Control(new Language());
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                if (conn != null && conn.State == System.Data.ConnectionState.Open)
-                {
-                    conn.Close();
-                }
-            }
-            button4.PerformClick();
-
-            
         }
 
 
-        public void emptyPerform()
-        {
-            foreach (Control c in this.Controls)
+            public void emptyPerform()
             {
-                if(c is TextBox)
+                foreach (Control c in this.Controls)
                 {
-                    c.Text = "";
-                }
-                if(c is ComboBox)
-                {
-                    c.Text = "선택";
-                }
-                if(c is DataGridView)
-                {
-                    dataGridView1.Refresh();
-                }
-                foreach (Control d in c.Controls)
-                {
-                    foreach (Control e in d.Controls)
+                    if (c is TextBox)
                     {
-                        if (e is GroupBox)
+                        c.Text = "";
+                    }
+                    if (c is ComboBox)
+                    {
+                        c.Text = "선택";
+                    }
+                    if (c is DataGridView)
+                    {
+                        dataGridView1.Refresh();
+                    }
+                    foreach (Control d in c.Controls)
+                    {
+                        foreach (Control e in d.Controls)
                         {
-                            foreach (Control f in e.Controls)
+                            if (e is GroupBox)
                             {
-                                if(f is TextBox)
+                                foreach (Control f in e.Controls)
                                 {
-                                    f.Text = "";
-                                }
-                                if(f is ComboBox)
-                                {
-                                    f.Text = "선택";
+                                    if (f is TextBox)
+                                    {
+                                        f.Text = "";
+                                    }
+                                    if (f is ComboBox)
+                                    {
+                                        f.Text = "선택";
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
-        }
 
-        public int StringCheck()
-        {
-            foreach(Control c in this.Controls)
+            public int StringCheck()
             {
-                foreach(Control d in c.Controls)
+                foreach (Control c in this.Controls)
                 {
-                    foreach(Control e in d.Controls)
+                    foreach (Control d in c.Controls)
                     {
-                        if(e is GroupBox)
+                        foreach (Control e in d.Controls)
                         {
-                            foreach(Control f in e.Controls)
+                            if (e is GroupBox)
                             {
-                                if (f is TextBox && f.Text == "" || f is ComboBox && f.Text == "선택")
+                                foreach (Control f in e.Controls)
                                 {
-                                    MessageBox.Show("빈 값을 확인해 주세요.");
-                                    f.Focus();
-                                    return 1;
+                                    if (f is TextBox && f.Text == "" || f is ComboBox && f.Text == "선택")
+                                    {
+                                        MessageBox.Show("빈 값을 확인해 주세요.");
+                                        f.Focus();
+                                        return 1;
+                                    }
                                 }
                             }
-                        }                        
+                        }
                     }
                 }
+                return 0;
             }
-            return 0;
-        }
 
-        private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = true;
-        }
+            private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
+            {
+                e.Handled = true;
+            }
 
         public string check;
 
@@ -195,11 +156,11 @@ namespace Project1
 
         public void submitPerform(object sender, EventArgs e)
         {
-            if(tabNum == 0)
+            if (tabNum == 0)
             {
-                if(check == "insert")
+                if (check == "insert")
                 {
-                    if(StringCheck() == 0)
+                    if (StringCheck() == 0)
                     {
                         MessageBox.Show("완료");
                     }
@@ -254,24 +215,24 @@ namespace Project1
             try
             {
                 String txt1 = comboBox1.SelectedItem as String;
-                if(comboBox1.Text == "선택" || comboBox1.Text == "전체")
+                if (comboBox1.Text == "선택" || comboBox1.Text == "전체")
                 {
                     c1_Text = "";
                 }
                 else
                 {
-                    c1_Text = txt1.Substring(0,1);
+                    c1_Text = txt1.Substring(0, 1);
                 }
                 String txt2 = comboBox2.SelectedItem as String;
-                if(comboBox2.Text == "선택")
+                if (comboBox2.Text == "선택")
                 {
                     c2_Text = "bas_empno";
                 }
-                if(comboBox2.Text == "사원번호")
+                if (comboBox2.Text == "사원번호")
                 {
                     c2_Text = "bas_empno";
                 }
-                if(comboBox2.Text == "성명")
+                if (comboBox2.Text == "성명")
                 {
                     c2_Text = "bas_name";
                 }
@@ -293,7 +254,7 @@ namespace Project1
                 {
                     c4_Text = txt4.Substring(0, 1);
                 }
-                conn.Open();
+                //conn.Open();
                 //string sql = "select * from INFORMATION_LJM where "+ c2_Text +" like '%"+textBox3.Text+ "%' and bas_dut like '%" + c3_Text + "%'" +
                 //" and dept_code like '%" + c1_Text + "%' and bas_pos like '%" + c4_Text + "%' order by bas_empno";
                 //OracleDataAdapter adapter = new OracleDataAdapter(sql, conn);
@@ -352,14 +313,12 @@ namespace Project1
             }
             finally
             {
-                if (conn != null && conn.State == System.Data.ConnectionState.Open)
-                {
-                    conn.Close();
-                }
+
             }
 
         }
-        
+
+
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -373,24 +332,21 @@ namespace Project1
 
             try
             {
-                
-                
+
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             finally
             {
-                if (conn != null && conn.State == System.Data.ConnectionState.Open)
-                {
-                    conn.Close();
-                }
+                
             }
         }
 
-        
 
-        
+
+
     }
 }

@@ -281,6 +281,7 @@
             this.Controls.Add(this.dataGridView3);
             this.Name = "E_Background";
             this.Size = new System.Drawing.Size(1086, 346);
+            this.Tag = "학력사항";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHRMEDULJMBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet2)).EndInit();

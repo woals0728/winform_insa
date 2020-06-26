@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.ManagedDataAccess.Client;
 
 namespace Project1
 {
-    public partial class Information : UserControl
+    public partial class Information : UserControl, I_control
     {
-        private static string orcl_str = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=222.237.134.74)(PORT=1522)))(CONNECT_DATA=(SID=ora7)));User ID=edu;Password=edu1234";
-        OracleConnection conn = new OracleConnection(orcl_str);
+        OracleDBManager dBManager = new OracleDBManager();
+        public MainWindow mainControl { get; set; }
 
         OracleCommand cmd;
         OracleDataReader reader;
@@ -27,70 +21,58 @@ namespace Project1
 
         private void Information_Load(object sender, EventArgs e)
         {
-            try
+            if (dBManager.GetConnection() == true)
             {
-                conn.Open();
-                string sql1 = "select CD_CODE || ':' || CD_CODNMS, cd_codnms, cd_grpcd from tieas_cd_ljm";
-                string sql2 = "select dept_code||':'||dept_name, dept_name from thrm_dept_ljm";
-                cmd = new OracleCommand(sql1, conn);
-                reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                using (OracleCommand cmd = new OracleCommand())
                 {
-                    if (reader.GetString(2) == "POS")
+                    cmd.Connection = dBManager.Connection;
+
+                    cmd.CommandText = "select CD_CODE || ':' || CD_CODNMS, cd_codnms, cd_grpcd from tieas_cd_ljm";
+                    reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
                     {
-                        bas_pos.Items.Add(reader.GetString(0));
+                        if (reader.GetString(2) == "POS")
+                        {
+                            bas_pos.Items.Add(reader.GetString(0));
+                        }
+                        if (reader.GetString(2) == "DUT")
+                        {
+                            bas_dut.Items.Add(reader.GetString(0));
+                        }
+                        if (reader.GetString(2) == "STS")
+                        {
+                            bas_sts.Items.Add(reader.GetString(0));
+                        }
+                        if (reader.GetString(2) == "MIL")
+                        {
+                            bas_mil_mil.Items.Add(reader.GetString(0));
+                        }
+                        if (reader.GetString(2) == "RNK")
+                        {
+                            bas_mil_rnk.Items.Add(reader.GetString(0));
+                        }
+                        if (reader.GetString(2) == "BNK")
+                        {
+                            bas_acc_bank1.Items.Add(reader.GetString(0));
+                            bas_acc_bank2.Items.Add(reader.GetString(0));
+                        }
                     }
-                    if (reader.GetString(2) == "DUT")
+                    cmd.CommandText = "select dept_code||':'||dept_name, dept_name from thrm_dept_ljm";
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
                     {
-                        bas_dut.Items.Add(reader.GetString(0));
-                    }
-                    if (reader.GetString(2) == "STS")
-                    {
-                        bas_sts.Items.Add(reader.GetString(0));
-                    }
-                    if (reader.GetString(2) == "MIL")
-                    {
-                        bas_mil_mil.Items.Add(reader.GetString(0));
-                    }
-                    if (reader.GetString(2) == "RNK")
-                    {
-                        bas_mil_rnk.Items.Add(reader.GetString(0));
-                    }
-                    if (reader.GetString(2) == "BNK")
-                    {
-                        bas_acc_bank1.Items.Add(reader.GetString(0));
-                        bas_acc_bank2.Items.Add(reader.GetString(0));
+                        bas_dept.Items.Add(reader.GetString(0));
                     }
                 }
-                reader.Close();
-                cmd = new OracleCommand(sql2, conn);
-                reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    bas_dept.Items.Add(reader.GetString(0));
-                }
-                reader.Close();
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                if (conn != null && conn.State == System.Data.ConnectionState.Open)
-                {
-                    conn.Close();
-                }
+                    
             }
         }
 
         private void bas_hdpno_KeyDown(object sender, KeyEventArgs e)
         {
             string val = bas_hdpno.Text;
-        
+
             if (!string.IsNullOrEmpty(val) && e.KeyCode != Keys.Back)
             {
                 if (val.Length == 3)
@@ -168,7 +150,22 @@ namespace Project1
 
         private void bas_emp_sdate_ValueChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        public void insert_button()
+        {
+            MessageBox.Show("버튼 클릭");
+        }
+
+        public void delete_button()
+        {
+
+        }
+
+        public void cancel_button()
+        {
+
         }
     }
 }

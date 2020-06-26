@@ -21,12 +21,12 @@ namespace Project1
         {
             BindingSource bs = (BindingSource)dataGridView2.DataSource;
             DataSet1 ds = bs.DataSource as DataSet1;
-            this.tHRM_FAM_LJMTableAdapter.Update(ds.THRM_FAM_LJM);
+            //this.fAMILY_LJMTableAdapter.Update(ds.THRM_FAM_LJM);
         }
 
         private void Family_Load(object sender, EventArgs e)
         {
-            this.tHRM_FAM_LJMTableAdapter.Fill(this.dataSet1.THRM_FAM_LJM);
+            this.fAMILY_LJMTableAdapter.Fill(this.dataSet9.FAMILY_LJM);
         }
 
         private void delete_button_Click(object sender, EventArgs e)
