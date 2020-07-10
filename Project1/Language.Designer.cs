@@ -28,30 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.fORLEMPNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fORLCODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fORLSCOREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fORLACQDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fORLORGANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tHRMFORLLJMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet6 = new Project1.DataSet6();
-            this.tHRM_FORL_LJMTableAdapter = new Project1.DataSet6TableAdapters.THRM_FORL_LJMTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
             this.add_button = new System.Windows.Forms.Button();
             this.fam_save_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHRMFORLLJMBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView7
@@ -62,7 +48,6 @@
             this.dataGridView7.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView7.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView7.AutoGenerateColumns = false;
             this.dataGridView7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView7.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView7.BackgroundColor = System.Drawing.Color.White;
@@ -80,16 +65,6 @@
             this.dataGridView7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView7.ColumnHeadersHeight = 24;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.fORLEMPNODataGridViewTextBoxColumn,
-            this.fORLCODEDataGridViewTextBoxColumn,
-            this.fORLSCOREDataGridViewTextBoxColumn,
-            this.fORLACQDATEDataGridViewTextBoxColumn,
-            this.fORLORGANDataGridViewTextBoxColumn,
-            this.dATASYS1DataGridViewTextBoxColumn,
-            this.dATASYS2DataGridViewTextBoxColumn,
-            this.dATASYS3DataGridViewTextBoxColumn});
-            this.dataGridView7.DataSource = this.tHRMFORLLJMBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -119,76 +94,10 @@
             this.dataGridView7.Size = new System.Drawing.Size(1074, 279);
             this.dataGridView7.TabIndex = 67;
             // 
-            // fORLEMPNODataGridViewTextBoxColumn
-            // 
-            this.fORLEMPNODataGridViewTextBoxColumn.DataPropertyName = "FORL_EMPNO";
-            this.fORLEMPNODataGridViewTextBoxColumn.HeaderText = "FORL_EMPNO";
-            this.fORLEMPNODataGridViewTextBoxColumn.Name = "fORLEMPNODataGridViewTextBoxColumn";
-            this.fORLEMPNODataGridViewTextBoxColumn.Visible = false;
-            // 
-            // fORLCODEDataGridViewTextBoxColumn
-            // 
-            this.fORLCODEDataGridViewTextBoxColumn.DataPropertyName = "FORL_CODE";
-            this.fORLCODEDataGridViewTextBoxColumn.HeaderText = "외국어코드";
-            this.fORLCODEDataGridViewTextBoxColumn.Name = "fORLCODEDataGridViewTextBoxColumn";
-            // 
-            // fORLSCOREDataGridViewTextBoxColumn
-            // 
-            this.fORLSCOREDataGridViewTextBoxColumn.DataPropertyName = "FORL_SCORE";
-            this.fORLSCOREDataGridViewTextBoxColumn.HeaderText = "점수";
-            this.fORLSCOREDataGridViewTextBoxColumn.Name = "fORLSCOREDataGridViewTextBoxColumn";
-            // 
-            // fORLACQDATEDataGridViewTextBoxColumn
-            // 
-            this.fORLACQDATEDataGridViewTextBoxColumn.DataPropertyName = "FORL_ACQDATE";
-            this.fORLACQDATEDataGridViewTextBoxColumn.HeaderText = "취득일";
-            this.fORLACQDATEDataGridViewTextBoxColumn.Name = "fORLACQDATEDataGridViewTextBoxColumn";
-            // 
-            // fORLORGANDataGridViewTextBoxColumn
-            // 
-            this.fORLORGANDataGridViewTextBoxColumn.DataPropertyName = "FORL_ORGAN";
-            this.fORLORGANDataGridViewTextBoxColumn.HeaderText = "발급기관";
-            this.fORLORGANDataGridViewTextBoxColumn.Name = "fORLORGANDataGridViewTextBoxColumn";
-            // 
-            // dATASYS1DataGridViewTextBoxColumn
-            // 
-            this.dATASYS1DataGridViewTextBoxColumn.DataPropertyName = "DATASYS1";
-            this.dATASYS1DataGridViewTextBoxColumn.HeaderText = "DATASYS1";
-            this.dATASYS1DataGridViewTextBoxColumn.Name = "dATASYS1DataGridViewTextBoxColumn";
-            this.dATASYS1DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dATASYS2DataGridViewTextBoxColumn
-            // 
-            this.dATASYS2DataGridViewTextBoxColumn.DataPropertyName = "DATASYS2";
-            this.dATASYS2DataGridViewTextBoxColumn.HeaderText = "DATASYS2";
-            this.dATASYS2DataGridViewTextBoxColumn.Name = "dATASYS2DataGridViewTextBoxColumn";
-            this.dATASYS2DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dATASYS3DataGridViewTextBoxColumn
-            // 
-            this.dATASYS3DataGridViewTextBoxColumn.DataPropertyName = "DATASYS3";
-            this.dATASYS3DataGridViewTextBoxColumn.HeaderText = "DATASYS3";
-            this.dATASYS3DataGridViewTextBoxColumn.Name = "dATASYS3DataGridViewTextBoxColumn";
-            this.dATASYS3DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // tHRMFORLLJMBindingSource
-            // 
-            this.tHRMFORLLJMBindingSource.DataMember = "THRM_FORL_LJM";
-            this.tHRMFORLLJMBindingSource.DataSource = this.dataSet6;
-            // 
-            // dataSet6
-            // 
-            this.dataSet6.DataSetName = "DataSet6";
-            this.dataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tHRM_FORL_LJMTableAdapter
-            // 
-            this.tHRM_FORL_LJMTableAdapter.ClearBeforeFill = true;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1031, 320);
             this.button1.Name = "button1";
@@ -220,7 +129,7 @@
             // fam_save_button
             // 
             this.fam_save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fam_save_button.ForeColor = System.Drawing.Color.White;
             this.fam_save_button.Location = new System.Drawing.Point(976, 320);
             this.fam_save_button.Name = "fam_save_button";
@@ -243,8 +152,6 @@
             this.Size = new System.Drawing.Size(1086, 346);
             this.Tag = "외국어";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHRMFORLLJMBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,17 +159,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.BindingSource tHRMFORLLJMBindingSource;
-        private DataSet6 dataSet6;
-        private DataSet6TableAdapters.THRM_FORL_LJMTableAdapter tHRM_FORL_LJMTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fORLEMPNODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fORLCODEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fORLSCOREDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fORLACQDATEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fORLORGANDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS3DataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button delete_button;
         private System.Windows.Forms.Button add_button;

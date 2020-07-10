@@ -28,30 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.lICEMPNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lICCODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lICGRADEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lICACQDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lICORGANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tHRMLICLJMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet5 = new Project1.DataSet5();
-            this.tHRM_LIC_LJMTableAdapter = new Project1.DataSet5TableAdapters.THRM_LIC_LJMTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
             this.add_button = new System.Windows.Forms.Button();
             this.fam_save_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHRMLICLJMBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView6
@@ -62,7 +48,6 @@
             this.dataGridView6.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView6.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView6.AutoGenerateColumns = false;
             this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView6.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView6.BackgroundColor = System.Drawing.Color.White;
@@ -80,16 +65,6 @@
             this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView6.ColumnHeadersHeight = 24;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lICEMPNODataGridViewTextBoxColumn,
-            this.lICCODEDataGridViewTextBoxColumn,
-            this.lICGRADEDataGridViewTextBoxColumn,
-            this.lICACQDATEDataGridViewTextBoxColumn,
-            this.lICORGANDataGridViewTextBoxColumn,
-            this.dATASYS1DataGridViewTextBoxColumn,
-            this.dATASYS2DataGridViewTextBoxColumn,
-            this.dATASYS3DataGridViewTextBoxColumn});
-            this.dataGridView6.DataSource = this.tHRMLICLJMBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -119,76 +94,10 @@
             this.dataGridView6.Size = new System.Drawing.Size(1074, 279);
             this.dataGridView6.TabIndex = 67;
             // 
-            // lICEMPNODataGridViewTextBoxColumn
-            // 
-            this.lICEMPNODataGridViewTextBoxColumn.DataPropertyName = "LIC_EMPNO";
-            this.lICEMPNODataGridViewTextBoxColumn.HeaderText = "LIC_EMPNO";
-            this.lICEMPNODataGridViewTextBoxColumn.Name = "lICEMPNODataGridViewTextBoxColumn";
-            this.lICEMPNODataGridViewTextBoxColumn.Visible = false;
-            // 
-            // lICCODEDataGridViewTextBoxColumn
-            // 
-            this.lICCODEDataGridViewTextBoxColumn.DataPropertyName = "LIC_CODE";
-            this.lICCODEDataGridViewTextBoxColumn.HeaderText = "자격면허코드";
-            this.lICCODEDataGridViewTextBoxColumn.Name = "lICCODEDataGridViewTextBoxColumn";
-            // 
-            // lICGRADEDataGridViewTextBoxColumn
-            // 
-            this.lICGRADEDataGridViewTextBoxColumn.DataPropertyName = "LIC_GRADE";
-            this.lICGRADEDataGridViewTextBoxColumn.HeaderText = "급수";
-            this.lICGRADEDataGridViewTextBoxColumn.Name = "lICGRADEDataGridViewTextBoxColumn";
-            // 
-            // lICACQDATEDataGridViewTextBoxColumn
-            // 
-            this.lICACQDATEDataGridViewTextBoxColumn.DataPropertyName = "LIC_ACQDATE";
-            this.lICACQDATEDataGridViewTextBoxColumn.HeaderText = "취득일";
-            this.lICACQDATEDataGridViewTextBoxColumn.Name = "lICACQDATEDataGridViewTextBoxColumn";
-            // 
-            // lICORGANDataGridViewTextBoxColumn
-            // 
-            this.lICORGANDataGridViewTextBoxColumn.DataPropertyName = "LIC_ORGAN";
-            this.lICORGANDataGridViewTextBoxColumn.HeaderText = "발급기관";
-            this.lICORGANDataGridViewTextBoxColumn.Name = "lICORGANDataGridViewTextBoxColumn";
-            // 
-            // dATASYS1DataGridViewTextBoxColumn
-            // 
-            this.dATASYS1DataGridViewTextBoxColumn.DataPropertyName = "DATASYS1";
-            this.dATASYS1DataGridViewTextBoxColumn.HeaderText = "DATASYS1";
-            this.dATASYS1DataGridViewTextBoxColumn.Name = "dATASYS1DataGridViewTextBoxColumn";
-            this.dATASYS1DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dATASYS2DataGridViewTextBoxColumn
-            // 
-            this.dATASYS2DataGridViewTextBoxColumn.DataPropertyName = "DATASYS2";
-            this.dATASYS2DataGridViewTextBoxColumn.HeaderText = "DATASYS2";
-            this.dATASYS2DataGridViewTextBoxColumn.Name = "dATASYS2DataGridViewTextBoxColumn";
-            this.dATASYS2DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dATASYS3DataGridViewTextBoxColumn
-            // 
-            this.dATASYS3DataGridViewTextBoxColumn.DataPropertyName = "DATASYS3";
-            this.dATASYS3DataGridViewTextBoxColumn.HeaderText = "DATASYS3";
-            this.dATASYS3DataGridViewTextBoxColumn.Name = "dATASYS3DataGridViewTextBoxColumn";
-            this.dATASYS3DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // tHRMLICLJMBindingSource
-            // 
-            this.tHRMLICLJMBindingSource.DataMember = "THRM_LIC_LJM";
-            this.tHRMLICLJMBindingSource.DataSource = this.dataSet5;
-            // 
-            // dataSet5
-            // 
-            this.dataSet5.DataSetName = "DataSet5";
-            this.dataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tHRM_LIC_LJMTableAdapter
-            // 
-            this.tHRM_LIC_LJMTableAdapter.ClearBeforeFill = true;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1031, 320);
             this.button1.Name = "button1";
@@ -220,7 +129,7 @@
             // fam_save_button
             // 
             this.fam_save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fam_save_button.ForeColor = System.Drawing.Color.White;
             this.fam_save_button.Location = new System.Drawing.Point(976, 320);
             this.fam_save_button.Name = "fam_save_button";
@@ -243,8 +152,6 @@
             this.Size = new System.Drawing.Size(1086, 346);
             this.Tag = "자격면허";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHRMLICLJMBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,17 +159,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.BindingSource tHRMLICLJMBindingSource;
-        private DataSet5 dataSet5;
-        private DataSet5TableAdapters.THRM_LIC_LJMTableAdapter tHRM_LIC_LJMTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lICEMPNODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lICCODEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lICGRADEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lICACQDATEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lICORGANDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS3DataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button delete_button;
         private System.Windows.Forms.Button add_button;

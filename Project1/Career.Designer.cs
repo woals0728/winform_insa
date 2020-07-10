@@ -28,34 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.cAREMPNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARCOMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARREGIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARYYYYMMFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARYYYYMMTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARPOSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARDEPTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARJOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cARREASONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tHRMCARLJMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet4 = new Project1.DataSet4();
-            this.tHRM_CAR_LJMTableAdapter = new Project1.DataSet4TableAdapters.THRM_CAR_LJMTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
             this.add_button = new System.Windows.Forms.Button();
             this.fam_save_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHRMCARLJMBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView5
@@ -66,7 +48,6 @@
             this.dataGridView5.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView5.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView5.AutoGenerateColumns = false;
             this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView5.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView5.BackgroundColor = System.Drawing.Color.White;
@@ -84,20 +65,6 @@
             this.dataGridView5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView5.ColumnHeadersHeight = 24;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cAREMPNODataGridViewTextBoxColumn,
-            this.cARCOMDataGridViewTextBoxColumn,
-            this.cARREGIONDataGridViewTextBoxColumn,
-            this.cARYYYYMMFDataGridViewTextBoxColumn,
-            this.cARYYYYMMTDataGridViewTextBoxColumn,
-            this.cARPOSDataGridViewTextBoxColumn,
-            this.cARDEPTDataGridViewTextBoxColumn,
-            this.cARJOBDataGridViewTextBoxColumn,
-            this.cARREASONDataGridViewTextBoxColumn,
-            this.dATASYS1DataGridViewTextBoxColumn,
-            this.dATASYS2DataGridViewTextBoxColumn,
-            this.dATASYS3DataGridViewTextBoxColumn});
-            this.dataGridView5.DataSource = this.tHRMCARLJMBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -127,100 +94,10 @@
             this.dataGridView5.Size = new System.Drawing.Size(1074, 279);
             this.dataGridView5.TabIndex = 67;
             // 
-            // cAREMPNODataGridViewTextBoxColumn
-            // 
-            this.cAREMPNODataGridViewTextBoxColumn.DataPropertyName = "CAR_EMPNO";
-            this.cAREMPNODataGridViewTextBoxColumn.HeaderText = "CAR_EMPNO";
-            this.cAREMPNODataGridViewTextBoxColumn.Name = "cAREMPNODataGridViewTextBoxColumn";
-            this.cAREMPNODataGridViewTextBoxColumn.Visible = false;
-            // 
-            // cARCOMDataGridViewTextBoxColumn
-            // 
-            this.cARCOMDataGridViewTextBoxColumn.DataPropertyName = "CAR_COM";
-            this.cARCOMDataGridViewTextBoxColumn.HeaderText = "근무처명";
-            this.cARCOMDataGridViewTextBoxColumn.Name = "cARCOMDataGridViewTextBoxColumn";
-            // 
-            // cARREGIONDataGridViewTextBoxColumn
-            // 
-            this.cARREGIONDataGridViewTextBoxColumn.DataPropertyName = "CAR_REGION";
-            this.cARREGIONDataGridViewTextBoxColumn.HeaderText = "소재지";
-            this.cARREGIONDataGridViewTextBoxColumn.Name = "cARREGIONDataGridViewTextBoxColumn";
-            // 
-            // cARYYYYMMFDataGridViewTextBoxColumn
-            // 
-            this.cARYYYYMMFDataGridViewTextBoxColumn.DataPropertyName = "CAR_YYYYMM_F";
-            this.cARYYYYMMFDataGridViewTextBoxColumn.HeaderText = "근무시작월";
-            this.cARYYYYMMFDataGridViewTextBoxColumn.Name = "cARYYYYMMFDataGridViewTextBoxColumn";
-            // 
-            // cARYYYYMMTDataGridViewTextBoxColumn
-            // 
-            this.cARYYYYMMTDataGridViewTextBoxColumn.DataPropertyName = "CAR_YYYYMM_T";
-            this.cARYYYYMMTDataGridViewTextBoxColumn.HeaderText = "근무종료월";
-            this.cARYYYYMMTDataGridViewTextBoxColumn.Name = "cARYYYYMMTDataGridViewTextBoxColumn";
-            // 
-            // cARPOSDataGridViewTextBoxColumn
-            // 
-            this.cARPOSDataGridViewTextBoxColumn.DataPropertyName = "CAR_POS";
-            this.cARPOSDataGridViewTextBoxColumn.HeaderText = "최종직급";
-            this.cARPOSDataGridViewTextBoxColumn.Name = "cARPOSDataGridViewTextBoxColumn";
-            // 
-            // cARDEPTDataGridViewTextBoxColumn
-            // 
-            this.cARDEPTDataGridViewTextBoxColumn.DataPropertyName = "CAR_DEPT";
-            this.cARDEPTDataGridViewTextBoxColumn.HeaderText = "담당부서";
-            this.cARDEPTDataGridViewTextBoxColumn.Name = "cARDEPTDataGridViewTextBoxColumn";
-            // 
-            // cARJOBDataGridViewTextBoxColumn
-            // 
-            this.cARJOBDataGridViewTextBoxColumn.DataPropertyName = "CAR_JOB";
-            this.cARJOBDataGridViewTextBoxColumn.HeaderText = "담당업무";
-            this.cARJOBDataGridViewTextBoxColumn.Name = "cARJOBDataGridViewTextBoxColumn";
-            // 
-            // cARREASONDataGridViewTextBoxColumn
-            // 
-            this.cARREASONDataGridViewTextBoxColumn.DataPropertyName = "CAR_REASON";
-            this.cARREASONDataGridViewTextBoxColumn.HeaderText = "퇴직/이직사유";
-            this.cARREASONDataGridViewTextBoxColumn.Name = "cARREASONDataGridViewTextBoxColumn";
-            // 
-            // dATASYS1DataGridViewTextBoxColumn
-            // 
-            this.dATASYS1DataGridViewTextBoxColumn.DataPropertyName = "DATASYS1";
-            this.dATASYS1DataGridViewTextBoxColumn.HeaderText = "DATASYS1";
-            this.dATASYS1DataGridViewTextBoxColumn.Name = "dATASYS1DataGridViewTextBoxColumn";
-            this.dATASYS1DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dATASYS2DataGridViewTextBoxColumn
-            // 
-            this.dATASYS2DataGridViewTextBoxColumn.DataPropertyName = "DATASYS2";
-            this.dATASYS2DataGridViewTextBoxColumn.HeaderText = "DATASYS2";
-            this.dATASYS2DataGridViewTextBoxColumn.Name = "dATASYS2DataGridViewTextBoxColumn";
-            this.dATASYS2DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dATASYS3DataGridViewTextBoxColumn
-            // 
-            this.dATASYS3DataGridViewTextBoxColumn.DataPropertyName = "DATASYS3";
-            this.dATASYS3DataGridViewTextBoxColumn.HeaderText = "DATASYS3";
-            this.dATASYS3DataGridViewTextBoxColumn.Name = "dATASYS3DataGridViewTextBoxColumn";
-            this.dATASYS3DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // tHRMCARLJMBindingSource
-            // 
-            this.tHRMCARLJMBindingSource.DataMember = "THRM_CAR_LJM";
-            this.tHRMCARLJMBindingSource.DataSource = this.dataSet4;
-            // 
-            // dataSet4
-            // 
-            this.dataSet4.DataSetName = "DataSet4";
-            this.dataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tHRM_CAR_LJMTableAdapter
-            // 
-            this.tHRM_CAR_LJMTableAdapter.ClearBeforeFill = true;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1031, 320);
             this.button1.Name = "button1";
@@ -252,7 +129,7 @@
             // fam_save_button
             // 
             this.fam_save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fam_save_button.ForeColor = System.Drawing.Color.White;
             this.fam_save_button.Location = new System.Drawing.Point(976, 320);
             this.fam_save_button.Name = "fam_save_button";
@@ -275,8 +152,6 @@
             this.Size = new System.Drawing.Size(1086, 346);
             this.Tag = "경력사항";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHRMCARLJMBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,21 +159,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.BindingSource tHRMCARLJMBindingSource;
-        private DataSet4 dataSet4;
-        private DataSet4TableAdapters.THRM_CAR_LJMTableAdapter tHRM_CAR_LJMTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cAREMPNODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARCOMDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARREGIONDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARYYYYMMFDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARYYYYMMTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARPOSDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARDEPTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARJOBDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cARREASONDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS3DataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button delete_button;
         private System.Windows.Forms.Button add_button;

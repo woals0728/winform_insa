@@ -70,7 +70,6 @@ namespace Project1
                         MessageBox.Show("아이디를 확인해주세요.");
                         return;
                     }
-
                 }
             }
         }

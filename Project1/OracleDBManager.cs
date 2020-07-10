@@ -68,8 +68,6 @@ namespace Project1
             this.Address = addr01;
             this.Port = port;
             this.ConnectionString = "User Id=" + user + ";Password=" + pwd + ";Data Source=" + dataSource;
-
-            //this.ConnectionString = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS = (PROTOCOL = TCP)(HOST = 222.237.134.74)(PORT = 1522)))(CONNECT_DATA = (SID = ora7))); User ID = edu; Password = edu1234";
         }
     }
 }

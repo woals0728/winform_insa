@@ -574,7 +574,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(32, 187);
+            this.label34.Location = new System.Drawing.Point(32, 182);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(53, 12);
             this.label34.TabIndex = 24;
@@ -766,6 +766,7 @@
             this.bas_empno.Name = "bas_empno";
             this.bas_empno.Size = new System.Drawing.Size(231, 21);
             this.bas_empno.TabIndex = 0;
+            this.bas_empno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bas_empno_KeyPress);
             // 
             // label8
             // 
@@ -783,6 +784,7 @@
             this.bas_resno1.Name = "bas_resno1";
             this.bas_resno1.Size = new System.Drawing.Size(109, 21);
             this.bas_resno1.TabIndex = 1;
+            this.bas_resno1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bas_empno_KeyPress);
             // 
             // bas_resno2
             // 
@@ -792,6 +794,7 @@
             this.bas_resno2.PasswordChar = '*';
             this.bas_resno2.Size = new System.Drawing.Size(109, 21);
             this.bas_resno2.TabIndex = 2;
+            this.bas_resno2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bas_empno_KeyPress);
             // 
             // label42
             // 

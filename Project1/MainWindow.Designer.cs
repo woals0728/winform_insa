@@ -203,14 +203,14 @@
             // 인사기본사항ToolStripMenuItem2
             // 
             this.인사기본사항ToolStripMenuItem2.Name = "인사기본사항ToolStripMenuItem2";
-            this.인사기본사항ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.인사기본사항ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.인사기본사항ToolStripMenuItem2.Text = "인사기록 등록";
             this.인사기본사항ToolStripMenuItem2.Click += new System.EventHandler(this.인사기본사항ToolStripMenuItem_Click);
             // 
             // 인사기록조회통합ToolStripMenuItem2
             // 
             this.인사기록조회통합ToolStripMenuItem2.Name = "인사기록조회통합ToolStripMenuItem2";
-            this.인사기록조회통합ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.인사기록조회통합ToolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.인사기록조회통합ToolStripMenuItem2.Text = "인사기록 조회";
             this.인사기록조회통합ToolStripMenuItem2.Click += new System.EventHandler(this.인사기록조회통합ToolStripMenuItem2_Click);
             // 
@@ -228,19 +228,19 @@
             // 인사발령대장관리ToolStripMenuItem2
             // 
             this.인사발령대장관리ToolStripMenuItem2.Name = "인사발령대장관리ToolStripMenuItem2";
-            this.인사발령대장관리ToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
+            this.인사발령대장관리ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사발령대장관리ToolStripMenuItem2.Text = "인사발령대장 관리";
             // 
             // 인사발령등록ToolStripMenuItem2
             // 
             this.인사발령등록ToolStripMenuItem2.Name = "인사발령등록ToolStripMenuItem2";
-            this.인사발령등록ToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
+            this.인사발령등록ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사발령등록ToolStripMenuItem2.Text = "인사발령 등록";
             // 
             // 인사발령조회ToolStripMenuItem2
             // 
             this.인사발령조회ToolStripMenuItem2.Name = "인사발령조회ToolStripMenuItem2";
-            this.인사발령조회ToolStripMenuItem2.Size = new System.Drawing.Size(174, 22);
+            this.인사발령조회ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.인사발령조회ToolStripMenuItem2.Text = "인사발령 조회";
             // 
             // 제증명서발ToolStripMenuItem
@@ -749,8 +749,9 @@
             this.submit_button.Name = "submit_button";
             this.submit_button.Size = new System.Drawing.Size(30, 30);
             this.submit_button.TabIndex = 20;
+            this.submit_button.Tag = "submit_button";
             this.submit_button.UseVisualStyleBackColor = false;
-            this.submit_button.Click += new System.EventHandler(this.submit_button_Click);
+            this.submit_button.Click += new System.EventHandler(this.button_Click);
             this.submit_button.MouseHover += new System.EventHandler(this.submit_button_MouseHover);
             // 
             // cancel_button
@@ -764,8 +765,9 @@
             this.cancel_button.Name = "cancel_button";
             this.cancel_button.Size = new System.Drawing.Size(30, 30);
             this.cancel_button.TabIndex = 20;
+            this.cancel_button.Tag = "cancel_button";
             this.cancel_button.UseVisualStyleBackColor = false;
-            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
+            this.cancel_button.Click += new System.EventHandler(this.button_Click);
             // 
             // update_button
             // 
@@ -778,8 +780,9 @@
             this.update_button.Name = "update_button";
             this.update_button.Size = new System.Drawing.Size(30, 30);
             this.update_button.TabIndex = 20;
+            this.update_button.Tag = "update_button";
             this.update_button.UseVisualStyleBackColor = false;
-            this.update_button.Click += new System.EventHandler(this.update_button_Click);
+            this.update_button.Click += new System.EventHandler(this.button_Click);
             this.update_button.MouseMove += new System.Windows.Forms.MouseEventHandler(this.update_button_MouseMove);
             // 
             // delete_button
@@ -793,8 +796,9 @@
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(34, 30);
             this.delete_button.TabIndex = 20;
+            this.delete_button.Tag = "delete_button";
             this.delete_button.UseVisualStyleBackColor = false;
-            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
+            this.delete_button.Click += new System.EventHandler(this.button_Click);
             this.delete_button.MouseHover += new System.EventHandler(this.delete_button_MouseHover);
             // 
             // insert_button

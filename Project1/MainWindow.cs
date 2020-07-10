@@ -28,7 +28,7 @@ namespace Project1
         public MainWindow()
         {
             InitializeComponent();
-            menuStrip1.Renderer = new ToolStripProfessionalRenderer(new MyColorTable());
+            menuStrip1.Renderer = new ToolStripProfessionalRenderer(new MyColorTable()); // 메뉴 색상 설정
             userList = new List<UserControl>();
         }
 
@@ -87,11 +87,6 @@ namespace Project1
             }
 
             this.inf = new P_information();
-            //this.InsertClick = new ButtonClick(inf.insertPerform);
-            //this.UpdateClick = new ButtonClick(inf.updatePerform);
-            //this.DeleteClick = new ButtonClick(inf.deletePerform);
-            //this.SubmitClick = new ButtonClick(inf.submitPerform);
-            //this.CancelClick = new ButtonClick(inf.cancelPerform);
             panel1.Controls.Add(inf);
 
             Load_Control(new Information());
@@ -118,16 +113,7 @@ namespace Project1
             this.refer = new Reference();
             panel1.Controls.Add(refer);
         }
-
-
-
-        public delegate void ButtonClick(object sender, EventArgs e);
-        public event ButtonClick InsertClick;
-        public event ButtonClick DeleteClick;
-        public event ButtonClick UpdateClick;
-        public event ButtonClick SubmitClick;
-        public event ButtonClick CancelClick;
-
+        
         #region 버튼상태제어
         public void setInsertButton(Boolean flag, Image img)
         {
@@ -181,19 +167,16 @@ namespace Project1
         private void insert_button_Click(object sender, EventArgs e)
         {
             setButton_1();
-            this.InsertClick?.Invoke(sender, e);
         }
 
         private void delete_button_Click(object sender, EventArgs e)
         {
             setButton_1();
-            this.DeleteClick?.Invoke(sender, e);
         }
 
         private void update_button_Click(object sender, EventArgs e)
         {
             setButton_1();
-            this.UpdateClick?.Invoke(sender, e);
         }
 
         private void submit_button_Click(object sender, EventArgs e)
@@ -201,7 +184,6 @@ namespace Project1
             try
             {
 
-                this.SubmitClick?.Invoke(sender, e);
             }
             catch(Exception ex)
             {
@@ -216,9 +198,6 @@ namespace Project1
         private void cancel_button_Click(object sender, EventArgs e)
         {
             setButton_2();
-            this.CancelClick?.Invoke(sender, e);
-            var inf = new P_information();
-            inf.cancelPerform(sender, e);
         }
 
         #region 버튼 툴팁
@@ -250,7 +229,7 @@ namespace Project1
         }
         #endregion
 
-        #region REFLECTION BUTTON
+        #region Button Reflection Control
         private void button_Click(object sender, EventArgs e)
         {
             Call_Method((string)(sender as Button).Tag);
@@ -261,14 +240,19 @@ namespace Project1
             UserControl control = (UserControl)inf.tabControl1.SelectedTab.Controls[0];
             Type type = control.GetType();
 
-            System.Reflection.PropertyInfo pi = type.GetProperty("mainControl");
-            if(pi != null)
-            {
-                pi.SetValue(control, this);
-            }
+            //System.Reflection.PropertyInfo pi = type.GetProperty("mainControl");
+            //if(pi != null)
+            //{
+            //    pi.SetValue(control, this);
+            //}
 
             System.Reflection.MethodInfo mtd = type.GetMethod(_mtd);
+            if(_mtd == null || mtd == null)
+            {
+                return;
+            }
             mtd.Invoke(control, null);
+
         }
         #endregion
     }

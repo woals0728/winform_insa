@@ -28,35 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.aWARDEMPNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aWARDDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aWARDTYPEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aWARDNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aWARDKINDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aWARDORGANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aWARDCONTENTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aWARDINOUTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aWARDPOSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aWARDDEPTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATASYS3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tHRMAWARDLJMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet3 = new Project1.DataSet3();
-            this.tHRM_AWARD_LJMTableAdapter = new Project1.DataSet3TableAdapters.THRM_AWARD_LJMTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
             this.add_button = new System.Windows.Forms.Button();
             this.fam_save_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHRMAWARDLJMBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -67,7 +48,6 @@
             this.dataGridView4.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView4.AutoGenerateColumns = false;
             this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView4.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
@@ -85,21 +65,6 @@
             this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView4.ColumnHeadersHeight = 24;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.aWARDEMPNODataGridViewTextBoxColumn,
-            this.aWARDDATEDataGridViewTextBoxColumn,
-            this.aWARDTYPEDataGridViewTextBoxColumn,
-            this.aWARDNODataGridViewTextBoxColumn,
-            this.aWARDKINDDataGridViewTextBoxColumn,
-            this.aWARDORGANDataGridViewTextBoxColumn,
-            this.aWARDCONTENTDataGridViewTextBoxColumn,
-            this.aWARDINOUTDataGridViewTextBoxColumn,
-            this.aWARDPOSDataGridViewTextBoxColumn,
-            this.aWARDDEPTDataGridViewTextBoxColumn,
-            this.dATASYS1DataGridViewTextBoxColumn,
-            this.dATASYS2DataGridViewTextBoxColumn,
-            this.dATASYS3DataGridViewTextBoxColumn});
-            this.dataGridView4.DataSource = this.tHRMAWARDLJMBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -129,106 +94,10 @@
             this.dataGridView4.Size = new System.Drawing.Size(1074, 279);
             this.dataGridView4.TabIndex = 67;
             // 
-            // aWARDEMPNODataGridViewTextBoxColumn
-            // 
-            this.aWARDEMPNODataGridViewTextBoxColumn.DataPropertyName = "AWARD_EMPNO";
-            this.aWARDEMPNODataGridViewTextBoxColumn.HeaderText = "AWARD_EMPNO";
-            this.aWARDEMPNODataGridViewTextBoxColumn.Name = "aWARDEMPNODataGridViewTextBoxColumn";
-            this.aWARDEMPNODataGridViewTextBoxColumn.Visible = false;
-            // 
-            // aWARDDATEDataGridViewTextBoxColumn
-            // 
-            this.aWARDDATEDataGridViewTextBoxColumn.DataPropertyName = "AWARD_DATE";
-            this.aWARDDATEDataGridViewTextBoxColumn.HeaderText = "상벌일자";
-            this.aWARDDATEDataGridViewTextBoxColumn.Name = "aWARDDATEDataGridViewTextBoxColumn";
-            // 
-            // aWARDTYPEDataGridViewTextBoxColumn
-            // 
-            this.aWARDTYPEDataGridViewTextBoxColumn.DataPropertyName = "AWARD_TYPE";
-            this.aWARDTYPEDataGridViewTextBoxColumn.HeaderText = "상벌구분";
-            this.aWARDTYPEDataGridViewTextBoxColumn.Name = "aWARDTYPEDataGridViewTextBoxColumn";
-            // 
-            // aWARDNODataGridViewTextBoxColumn
-            // 
-            this.aWARDNODataGridViewTextBoxColumn.DataPropertyName = "AWARD_NO";
-            this.aWARDNODataGridViewTextBoxColumn.HeaderText = "상벌번호";
-            this.aWARDNODataGridViewTextBoxColumn.Name = "aWARDNODataGridViewTextBoxColumn";
-            // 
-            // aWARDKINDDataGridViewTextBoxColumn
-            // 
-            this.aWARDKINDDataGridViewTextBoxColumn.DataPropertyName = "AWARD_KIND";
-            this.aWARDKINDDataGridViewTextBoxColumn.HeaderText = "상벌종별";
-            this.aWARDKINDDataGridViewTextBoxColumn.Name = "aWARDKINDDataGridViewTextBoxColumn";
-            // 
-            // aWARDORGANDataGridViewTextBoxColumn
-            // 
-            this.aWARDORGANDataGridViewTextBoxColumn.DataPropertyName = "AWARD_ORGAN";
-            this.aWARDORGANDataGridViewTextBoxColumn.HeaderText = "시행처";
-            this.aWARDORGANDataGridViewTextBoxColumn.Name = "aWARDORGANDataGridViewTextBoxColumn";
-            // 
-            // aWARDCONTENTDataGridViewTextBoxColumn
-            // 
-            this.aWARDCONTENTDataGridViewTextBoxColumn.DataPropertyName = "AWARD_CONTENT";
-            this.aWARDCONTENTDataGridViewTextBoxColumn.HeaderText = "상벌내용";
-            this.aWARDCONTENTDataGridViewTextBoxColumn.Name = "aWARDCONTENTDataGridViewTextBoxColumn";
-            // 
-            // aWARDINOUTDataGridViewTextBoxColumn
-            // 
-            this.aWARDINOUTDataGridViewTextBoxColumn.DataPropertyName = "AWARD_INOUT";
-            this.aWARDINOUTDataGridViewTextBoxColumn.HeaderText = "내외구분";
-            this.aWARDINOUTDataGridViewTextBoxColumn.Name = "aWARDINOUTDataGridViewTextBoxColumn";
-            // 
-            // aWARDPOSDataGridViewTextBoxColumn
-            // 
-            this.aWARDPOSDataGridViewTextBoxColumn.DataPropertyName = "AWARD_POS";
-            this.aWARDPOSDataGridViewTextBoxColumn.HeaderText = "직급";
-            this.aWARDPOSDataGridViewTextBoxColumn.Name = "aWARDPOSDataGridViewTextBoxColumn";
-            // 
-            // aWARDDEPTDataGridViewTextBoxColumn
-            // 
-            this.aWARDDEPTDataGridViewTextBoxColumn.DataPropertyName = "AWARD_DEPT";
-            this.aWARDDEPTDataGridViewTextBoxColumn.HeaderText = "소속";
-            this.aWARDDEPTDataGridViewTextBoxColumn.Name = "aWARDDEPTDataGridViewTextBoxColumn";
-            // 
-            // dATASYS1DataGridViewTextBoxColumn
-            // 
-            this.dATASYS1DataGridViewTextBoxColumn.DataPropertyName = "DATASYS1";
-            this.dATASYS1DataGridViewTextBoxColumn.HeaderText = "DATASYS1";
-            this.dATASYS1DataGridViewTextBoxColumn.Name = "dATASYS1DataGridViewTextBoxColumn";
-            this.dATASYS1DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dATASYS2DataGridViewTextBoxColumn
-            // 
-            this.dATASYS2DataGridViewTextBoxColumn.DataPropertyName = "DATASYS2";
-            this.dATASYS2DataGridViewTextBoxColumn.HeaderText = "DATASYS2";
-            this.dATASYS2DataGridViewTextBoxColumn.Name = "dATASYS2DataGridViewTextBoxColumn";
-            this.dATASYS2DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dATASYS3DataGridViewTextBoxColumn
-            // 
-            this.dATASYS3DataGridViewTextBoxColumn.DataPropertyName = "DATASYS3";
-            this.dATASYS3DataGridViewTextBoxColumn.HeaderText = "DATASYS3";
-            this.dATASYS3DataGridViewTextBoxColumn.Name = "dATASYS3DataGridViewTextBoxColumn";
-            this.dATASYS3DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // tHRMAWARDLJMBindingSource
-            // 
-            this.tHRMAWARDLJMBindingSource.DataMember = "THRM_AWARD_LJM";
-            this.tHRMAWARDLJMBindingSource.DataSource = this.dataSet3;
-            // 
-            // dataSet3
-            // 
-            this.dataSet3.DataSetName = "DataSet3";
-            this.dataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tHRM_AWARD_LJMTableAdapter
-            // 
-            this.tHRM_AWARD_LJMTableAdapter.ClearBeforeFill = true;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1031, 320);
             this.button1.Name = "button1";
@@ -260,7 +129,7 @@
             // fam_save_button
             // 
             this.fam_save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.fam_save_button.ForeColor = System.Drawing.Color.White;
             this.fam_save_button.Location = new System.Drawing.Point(976, 320);
             this.fam_save_button.Name = "fam_save_button";
@@ -283,8 +152,6 @@
             this.Size = new System.Drawing.Size(1086, 346);
             this.Tag = "상벌이력";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHRMAWARDLJMBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,22 +159,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.BindingSource tHRMAWARDLJMBindingSource;
-        private DataSet3 dataSet3;
-        private DataSet3TableAdapters.THRM_AWARD_LJMTableAdapter tHRM_AWARD_LJMTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDEMPNODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDDATEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDTYPEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDNODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDKINDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDORGANDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDCONTENTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDINOUTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDPOSDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aWARDDEPTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dATASYS3DataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button delete_button;
         private System.Windows.Forms.Button add_button;

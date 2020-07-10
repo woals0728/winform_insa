@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Project1
 {
-    public partial class Information : UserControl, I_control
+    public partial class Information : UserControl
     {
         OracleDBManager dBManager = new OracleDBManager();
         public MainWindow mainControl { get; set; }
@@ -130,7 +130,7 @@ namespace Project1
             }
         }
 
-        public static string bas_fix;
+        public string bas_fix;
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -155,7 +155,7 @@ namespace Project1
 
         public void insert_button()
         {
-            MessageBox.Show("버튼 클릭");
+            MessageBox.Show("인사기본사항");
         }
 
         public void delete_button()
@@ -167,5 +167,6 @@ namespace Project1
         {
 
         }
+
     }
 }
