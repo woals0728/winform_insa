@@ -17,6 +17,7 @@ namespace Project1
             InitializeComponent();
         }
 
+
         private void metroButton1_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(textBox1.Text))
@@ -46,16 +47,18 @@ namespace Project1
 
                         if (reader.Read())
                         {
+                            String admin_id = reader.GetString(0);
                             String admin_name = reader.GetString(2);
                             String admin_auth = reader.GetString(3);
                             string admin = admin_name + "(" + admin_auth + ")";
+                            string user = admin_id + ":" + admin_name;
                             Hide();
                             MessageBox.Show(admin_name + "님 로그인 되었습니다.", "");
                             MainWindow f2 = new MainWindow();
                             f2.ADMIN_NAME.Text = admin;
                             f2.LOGIN_TIME.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                            f2.USER.Text = user;
                             f2.ShowDialog();
-                            f2 = null;
                             Close();
                         }
                         else
@@ -90,8 +93,6 @@ namespace Project1
         {
             textBox1.Text = Settings.Default["login_id"].ToString();
             checkBox1.Checked = Settings.Default.ckd_id;
-
-
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <DATABASE>
+    <D_ADDR01>222.237.134.74</D_ADDR01>
+    <D_ADDR02>222.237.134.74</D_ADDR02>
+    <PORT>1522</PORT>
+    <USER>edu</USER>
+    <PWD>edu1234</PWD>
+    <SID>ora7</SID>
+  </DATABASE>
+</Configuration>

@@ -12,13 +12,18 @@ namespace Project1
         OracleDBManager dBManager = new OracleDBManager();
         OracleDataAdapter adapter = new OracleDataAdapter();
         DataSet ds = new DataSet();
+        OracleDataReader reader;
+
+        public P_information P_info { get; set; }
 
         public Family()
         {
             InitializeComponent();
         }
 
-        private void fam_save_button_Click(object sender, EventArgs e)
+        public string empno;
+
+        private void save_button_Click(object sender, EventArgs e)
         {
             if (dBManager.GetConnection() == true)
             {
@@ -27,20 +32,15 @@ namespace Project1
                     OracleTransaction tran = dBManager.Connection.BeginTransaction();
                     cmd.Transaction = tran;
                     cmd.Connection = dBManager.Connection;
-                    
 
-                    //cmd.CommandText = "update FAMILY_LJM set fam_empno = '10001'";
-                    //cmd.CommandText = "select * from FAMILY_LJM";
-                    //adapter.SelectCommand = cmd;
-                    //adapter.Fill(ds);
-                    //dataGridView2.DataSource = ds.Tables[0];
+                    empno = P_info.Empno;
+                    cmd.CommandText = "select * from thrm_fam_ljm where fam_empno = " + empno;
+                    adapter.SelectCommand = cmd;
                     try
                     {
-                        //adapter.UpdateCommand = cmd;
-                        adapter.UpdateCommand = new OracleCommand();
                         OracleCommandBuilder cb = new OracleCommandBuilder(adapter);
-                        adapter.Update(ds);
-                        dataGridView2.DataSource = ds.Tables[0];
+                        adapter.Update(ds, "Info");
+                        dataGridView2.DataSource = ds.Tables["Info"];
                         tran.Commit();
                     }
                     catch (Exception ex)
@@ -55,7 +55,7 @@ namespace Project1
 
         private void Family_Load(object sender, EventArgs e)
         {
-            DataLoad();
+
         }
 
         private void delete_button_Click(object sender, EventArgs e)
@@ -78,51 +78,98 @@ namespace Project1
         {
             try
             {
-                dataGridView2.DataSource = ds.Tables[0];
-                ds.Tables[0].Rows.Add("10001", "", "", "4", "5");
+                empno = P_info.Empno;
+                string user = P_info.User;
+                dataGridView2.DataSource = ds.Tables["Info"];
+                ds.Tables["Info"].Rows.Add(empno, "", "", "", "Y", DateTime.Now, "A", user);
+
             }
             catch
             {
-                MessageBox.Show("마지막 행을 작성후 추가해 주십시오.");
+
             }
         }
 
-        private void DataLoad()
+        public void DataLoad()
         {
-            if (dBManager.GetConnection() == true)
+            try
             {
-                using (OracleCommand cmd = new OracleCommand())
+                if (empno == P_info.Empno)
                 {
-                    cmd.Connection = dBManager.Connection;
-
-                    cmd.CommandText = "select * from FAMILY_LJM";
-                    adapter.SelectCommand = cmd;
-                    adapter.Fill(ds);
-                    dataGridView2.DataSource = ds.Tables[0];
+                    return;
+                }
+                if (dBManager.GetConnection() == true)
+                {
+                    using (OracleCommand cmd = new OracleCommand())
+                    {
+                        ds.Clear();
+                        cmd.Connection = dBManager.Connection;
+                        cmd.CommandText = "select cd_code, cd_codnms from tieas_cd_ljm where cd_grpcd='REL' and cd_use = 'Y'";
+                        adapter.SelectCommand = cmd;
+                        adapter.Fill(ds, "Code");
+                        empno = P_info.Empno;
+                        cmd.CommandText = "select * from thrm_fam_ljm where fam_empno = " + empno;
+                        adapter.SelectCommand = cmd;
+                        adapter.Fill(ds, "Info");
+                        dataGridView2.DataSource = ds.Tables["Info"];
+                        this.dataGridView2.Columns["FAM_EMPNO"].Visible = false;
+                        this.dataGridView2.Columns["FAM_NAME"].HeaderText = "성명";
+                        this.dataGridView2.Columns["FAM_BTH"].HeaderText = "생년월일";
+                        this.dataGridView2.Columns["DATASYS1"].Visible = false;
+                        this.dataGridView2.Columns["DATASYS2"].Visible = false;
+                        this.dataGridView2.Columns["DATASYS3"].Visible = false;
+                        dataGridView2.Columns.Remove("FAM_REL");
+                        dataGridView2.Columns.Remove("FAM_LTG");
+                        AddComboBoxColumns();
+                    }
                 }
             }
+            catch
+            {
+
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AddComboBoxColumns()
         {
-
+            DataGridViewComboBoxColumn col = new DataGridViewComboBoxColumn();
+            {
+                col.DataPropertyName = "FAM_REL";
+                col.FlatStyle = FlatStyle.Flat;
+            }
+            DataGridViewComboBoxColumn col2 = new DataGridViewComboBoxColumn();
+            {
+                col2.DataPropertyName = "FAM_LTG";
+                col2.FlatStyle = FlatStyle.Flat;
+            }
+            col.DataSource = ds.Tables["Code"];
+            col.DisplayMember = "CD_CODNMS";
+            col.ValueMember = "CD_CODE";
+            col.HeaderText = "관계";
+            col2.Items.Add("Y");
+            col2.Items.Add("N");
+            col2.HeaderText = "동거여부";
+            dataGridView2.Columns.Insert(1, col);
+            dataGridView2.Columns.Insert(4, col2);
         }
+
 
         public void insert_button()
         {
             MessageBox.Show("가족사항");
         }
 
-
-        public void cancel_button()
+        private void cancel_button_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
+            if (MessageBox.Show("작성중인 사항을 저장하지 않고 취소하시겠습니까?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                empno = "";
+                DataLoad();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

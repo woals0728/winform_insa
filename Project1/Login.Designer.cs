@@ -34,11 +34,12 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(104, 176);
+            this.metroButton1.Location = new System.Drawing.Point(104, 190);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(83, 69);
             this.metroButton1.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 57);
+            this.textBox1.Location = new System.Drawing.Point(45, 71);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(205, 21);
             this.textBox1.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(45, 111);
+            this.textBox2.Location = new System.Drawing.Point(45, 125);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(205, 21);
@@ -66,7 +67,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(162, 145);
+            this.checkBox1.Location = new System.Drawing.Point(162, 159);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(88, 16);
             this.checkBox1.TabIndex = 0;
@@ -78,7 +79,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel1.Location = new System.Drawing.Point(45, 35);
+            this.metroLabel1.Location = new System.Drawing.Point(45, 49);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(18, 15);
             this.metroLabel1.TabIndex = 3;
@@ -88,17 +89,27 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel2.Location = new System.Drawing.Point(45, 89);
+            this.metroLabel2.Location = new System.Drawing.Point(45, 103);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(68, 15);
             this.metroLabel2.TabIndex = 4;
             this.metroLabel2.Text = "PASSWORD";
             // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(3, 9);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(51, 19);
+            this.metroLabel3.TabIndex = 5;
+            this.metroLabel3.Text = "로그인";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(292, 268);
+            this.ClientSize = new System.Drawing.Size(292, 285);
+            this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.checkBox1);
@@ -126,6 +137,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
     }
 }
 

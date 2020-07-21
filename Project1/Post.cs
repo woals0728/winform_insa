@@ -1,13 +1,8 @@
 ﻿using MetroFramework.Forms;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using System.Windows.Forms;
 using System.Xml;
@@ -30,7 +25,7 @@ namespace Project1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtKeyword.Text == "")
+            if (txtKeyword.Text == "")
             {
                 MessageBox.Show("주소를 입력하세요.");
             }
@@ -45,17 +40,17 @@ namespace Project1
             Find(txtKeyword.Text, 1, 50, tm, out tma);
 
             int i = 0;
-            while(i * 3 < 50)
+            while (i * 3 < 50)
             {
                 i++;
                 try
                 {
                     table.Rows.Add(tm[i * 3 + 0], tm[i * 3 + 1], tm[i * 3 + 2]);
                 }
-                catch(Exception ex)
+                catch
                 {
-                    MessageBox.Show("주소를 입력하세요");
-                    MessageBox.Show($"DB connection fail.\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("주소를 입력하세요");
+                    //MessageBox.Show($"DB connection fail.\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 
@@ -191,10 +186,10 @@ namespace Project1
                     table.Rows.Add(tm[i * 3 + 0], tm[i * 3 + 1], tm[i * 3 + 2]);
                 }
 
-                catch (Exception ex)
+                catch
                 {
-                   MessageBox.Show("주소를 입력하세요");
-                   MessageBox.Show($"DB connection fail.\n {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("주소를 입력하세요");
+                    //MessageBox.Show($"DB connection fail.\n {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 

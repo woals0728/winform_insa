@@ -32,11 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cancel_button = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
             this.add_button = new System.Windows.Forms.Button();
-            this.fam_save_button = new System.Windows.Forms.Button();
+            this.save_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             this.dataGridView5.AllowUserToDeleteRows = false;
             this.dataGridView5.AllowUserToResizeColumns = false;
             this.dataGridView5.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataGridView5.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -65,7 +67,7 @@
             this.dataGridView5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView5.ColumnHeadersHeight = 24;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -80,7 +82,7 @@
             this.dataGridView5.MultiSelect = false;
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -90,21 +92,24 @@
             this.dataGridView5.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView5.RowHeadersVisible = false;
             this.dataGridView5.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView5.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView5.RowTemplate.Height = 23;
             this.dataGridView5.Size = new System.Drawing.Size(1074, 279);
             this.dataGridView5.TabIndex = 67;
             // 
-            // button1
+            // cancel_button
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1031, 320);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 23);
-            this.button1.TabIndex = 71;
-            this.button1.Text = "취소";
-            this.button1.UseVisualStyleBackColor = false;
+            this.cancel_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cancel_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cancel_button.ForeColor = System.Drawing.Color.White;
+            this.cancel_button.Location = new System.Drawing.Point(1031, 320);
+            this.cancel_button.Name = "cancel_button";
+            this.cancel_button.Size = new System.Drawing.Size(49, 23);
+            this.cancel_button.TabIndex = 71;
+            this.cancel_button.Text = "취소";
+            this.cancel_button.UseVisualStyleBackColor = false;
+            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
             // delete_button
             // 
@@ -115,6 +120,7 @@
             this.delete_button.TabIndex = 70;
             this.delete_button.Text = "행 삭제";
             this.delete_button.UseVisualStyleBackColor = true;
+            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
             // add_button
             // 
@@ -125,28 +131,30 @@
             this.add_button.TabIndex = 68;
             this.add_button.Text = "행 추가";
             this.add_button.UseVisualStyleBackColor = true;
+            this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
-            // fam_save_button
+            // save_button
             // 
-            this.fam_save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.fam_save_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.fam_save_button.ForeColor = System.Drawing.Color.White;
-            this.fam_save_button.Location = new System.Drawing.Point(976, 320);
-            this.fam_save_button.Name = "fam_save_button";
-            this.fam_save_button.Size = new System.Drawing.Size(49, 23);
-            this.fam_save_button.TabIndex = 69;
-            this.fam_save_button.Text = "저장";
-            this.fam_save_button.UseVisualStyleBackColor = false;
+            this.save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.save_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.save_button.ForeColor = System.Drawing.Color.White;
+            this.save_button.Location = new System.Drawing.Point(976, 320);
+            this.save_button.Name = "save_button";
+            this.save_button.Size = new System.Drawing.Size(49, 23);
+            this.save_button.TabIndex = 69;
+            this.save_button.Text = "저장";
+            this.save_button.UseVisualStyleBackColor = false;
+            this.save_button.Click += new System.EventHandler(this.save_button_Click);
             // 
             // Career
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cancel_button);
             this.Controls.Add(this.delete_button);
             this.Controls.Add(this.add_button);
-            this.Controls.Add(this.fam_save_button);
+            this.Controls.Add(this.save_button);
             this.Controls.Add(this.dataGridView5);
             this.Name = "Career";
             this.Size = new System.Drawing.Size(1086, 346);
@@ -159,9 +167,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cancel_button;
         private System.Windows.Forms.Button delete_button;
         private System.Windows.Forms.Button add_button;
-        private System.Windows.Forms.Button fam_save_button;
+        private System.Windows.Forms.Button save_button;
     }
 }

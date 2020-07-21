@@ -123,6 +123,16 @@ namespace Project1.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap submit {
             get {
                 object obj = ResourceManager.GetObject("submit", resourceCulture);
@@ -156,6 +166,36 @@ namespace Project1.Properties {
         internal static System.Drawing.Bitmap update_ {
             get {
                 object obj = ResourceManager.GetObject("update_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 경력증명서 {
+            get {
+                object obj = ResourceManager.GetObject("경력증명서", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 영문증명서2222 {
+            get {
+                object obj = ResourceManager.GetObject("영문증명서2222", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 재직증명서 {
+            get {
+                object obj = ResourceManager.GetObject("재직증명서", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -85,6 +85,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bas_telno = new System.Windows.Forms.TextBox();
             this.bas_hdpno = new System.Windows.Forms.TextBox();
+            this.ck_button = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.bas_empno = new System.Windows.Forms.TextBox();
@@ -177,7 +178,7 @@
             // 
             // bas_emp_edate
             // 
-            this.bas_emp_edate.CustomFormat = "yyyy/MM/dd";
+            this.bas_emp_edate.CustomFormat = "yy/MM/dd";
             this.bas_emp_edate.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bas_emp_edate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bas_emp_edate.Location = new System.Drawing.Point(286, 72);
@@ -188,7 +189,7 @@
             // 
             // bas_emp_sdate
             // 
-            this.bas_emp_sdate.CustomFormat = "yyyy/MM/dd";
+            this.bas_emp_sdate.CustomFormat = "yy/MM/dd";
             this.bas_emp_sdate.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bas_emp_sdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bas_emp_sdate.Location = new System.Drawing.Point(109, 72);
@@ -368,7 +369,7 @@
             // 
             // bas_dept_dt
             // 
-            this.bas_dept_dt.CustomFormat = "yyyy/MM/dd";
+            this.bas_dept_dt.CustomFormat = "yy/MM/dd";
             this.bas_dept_dt.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bas_dept_dt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bas_dept_dt.Location = new System.Drawing.Point(244, 153);
@@ -378,7 +379,7 @@
             // 
             // bas_dut_dt
             // 
-            this.bas_dut_dt.CustomFormat = "yyyy/MM/dd";
+            this.bas_dut_dt.CustomFormat = "yy/MM/dd";
             this.bas_dut_dt.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bas_dut_dt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bas_dut_dt.Location = new System.Drawing.Point(244, 126);
@@ -388,7 +389,7 @@
             // 
             // bas_pos_dt
             // 
-            this.bas_pos_dt.CustomFormat = "yyyy/MM/dd";
+            this.bas_pos_dt.CustomFormat = "yy/MM/dd";
             this.bas_pos_dt.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bas_pos_dt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bas_pos_dt.Location = new System.Drawing.Point(244, 101);
@@ -452,7 +453,7 @@
             // 
             // bas_reidate
             // 
-            this.bas_reidate.CustomFormat = "yyyy/MM/dd";
+            this.bas_reidate.CustomFormat = "yy/MM/dd";
             this.bas_reidate.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bas_reidate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bas_reidate.Location = new System.Drawing.Point(244, 48);
@@ -462,7 +463,7 @@
             // 
             // bas_resdate
             // 
-            this.bas_resdate.CustomFormat = "yyyy/MM/dd";
+            this.bas_resdate.CustomFormat = "yy/MM/dd";
             this.bas_resdate.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bas_resdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bas_resdate.Location = new System.Drawing.Point(244, 21);
@@ -472,7 +473,7 @@
             // 
             // bas_levdate
             // 
-            this.bas_levdate.CustomFormat = "yyyy/MM/dd";
+            this.bas_levdate.CustomFormat = "yy/MM/dd";
             this.bas_levdate.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bas_levdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bas_levdate.Location = new System.Drawing.Point(91, 48);
@@ -482,7 +483,7 @@
             // 
             // bas_entdate
             // 
-            this.bas_entdate.CustomFormat = "yyyy/MM/dd";
+            this.bas_entdate.CustomFormat = "yy/MM/dd";
             this.bas_entdate.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.bas_entdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.bas_entdate.Location = new System.Drawing.Point(91, 21);
@@ -614,6 +615,7 @@
             this.bas_rmk.Name = "bas_rmk";
             this.bas_rmk.Size = new System.Drawing.Size(231, 139);
             this.bas_rmk.TabIndex = 42;
+            this.bas_rmk.Tag = "NO";
             this.bas_rmk.Text = "없음";
             // 
             // groupBox6
@@ -634,11 +636,15 @@
             // bas_acc_bank2
             // 
             this.bas_acc_bank2.FormattingEnabled = true;
+            this.bas_acc_bank2.Items.AddRange(new object[] {
+            "해당없음"});
             this.bas_acc_bank2.Location = new System.Drawing.Point(109, 18);
             this.bas_acc_bank2.Name = "bas_acc_bank2";
             this.bas_acc_bank2.Size = new System.Drawing.Size(89, 20);
             this.bas_acc_bank2.TabIndex = 18;
+            this.bas_acc_bank2.Tag = "NO";
             this.bas_acc_bank2.Text = "선택";
+            this.bas_acc_bank2.SelectedIndexChanged += new System.EventHandler(this.bas_acc_bank2_SelectedIndexChanged);
             this.bas_acc_bank2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
             // 
             // label16
@@ -674,6 +680,7 @@
             this.bas_acc_name2.Name = "bas_acc_name2";
             this.bas_acc_name2.Size = new System.Drawing.Size(78, 21);
             this.bas_acc_name2.TabIndex = 19;
+            this.bas_acc_name2.Tag = "NO";
             // 
             // bas_acc_no2
             // 
@@ -681,11 +688,13 @@
             this.bas_acc_no2.Name = "bas_acc_no2";
             this.bas_acc_no2.Size = new System.Drawing.Size(254, 21);
             this.bas_acc_no2.TabIndex = 20;
+            this.bas_acc_no2.Tag = "NO";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.bas_telno);
             this.groupBox1.Controls.Add(this.bas_hdpno);
+            this.groupBox1.Controls.Add(this.ck_button);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.bas_empno);
@@ -728,6 +737,7 @@
             this.bas_telno.Name = "bas_telno";
             this.bas_telno.Size = new System.Drawing.Size(231, 21);
             this.bas_telno.TabIndex = 10;
+            this.bas_telno.Tag = "NO";
             this.bas_telno.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bas_telno_KeyDown);
             // 
             // bas_hdpno
@@ -738,6 +748,17 @@
             this.bas_hdpno.Size = new System.Drawing.Size(231, 21);
             this.bas_hdpno.TabIndex = 9;
             this.bas_hdpno.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bas_hdpno_KeyDown);
+            // 
+            // ck_button
+            // 
+            this.ck_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ck_button.Location = new System.Drawing.Point(273, 20);
+            this.ck_button.Name = "ck_button";
+            this.ck_button.Size = new System.Drawing.Size(67, 23);
+            this.ck_button.TabIndex = 39;
+            this.ck_button.Text = "중복확인";
+            this.ck_button.UseVisualStyleBackColor = true;
+            this.ck_button.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -764,7 +785,7 @@
             this.bas_empno.Location = new System.Drawing.Point(109, 21);
             this.bas_empno.MaxLength = 5;
             this.bas_empno.Name = "bas_empno";
-            this.bas_empno.Size = new System.Drawing.Size(231, 21);
+            this.bas_empno.Size = new System.Drawing.Size(158, 21);
             this.bas_empno.TabIndex = 0;
             this.bas_empno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bas_empno_KeyPress);
             // 
@@ -863,6 +884,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "여";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // label6
             // 
@@ -883,6 +905,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "남";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // bas_ename
             // 
@@ -1021,6 +1044,7 @@
             this.bas_mil_rnk.Name = "bas_mil_rnk";
             this.bas_mil_rnk.Size = new System.Drawing.Size(78, 20);
             this.bas_mil_rnk.TabIndex = 23;
+            this.bas_mil_rnk.Tag = "";
             this.bas_mil_rnk.Text = "선택";
             this.bas_mil_rnk.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
             // 
@@ -1031,6 +1055,7 @@
             this.bas_mil_mil.Name = "bas_mil_mil";
             this.bas_mil_mil.Size = new System.Drawing.Size(78, 20);
             this.bas_mil_mil.TabIndex = 22;
+            this.bas_mil_mil.Tag = "";
             this.bas_mil_mil.Text = "선택";
             this.bas_mil_mil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
             // 
@@ -1073,6 +1098,7 @@
             this.bas_mil_sta.Size = new System.Drawing.Size(78, 20);
             this.bas_mil_sta.TabIndex = 21;
             this.bas_mil_sta.Text = "선택";
+            this.bas_mil_sta.SelectedIndexChanged += new System.EventHandler(this.bas_mil_sta_SelectedIndexChanged);
             this.bas_mil_sta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
             // 
             // Information
@@ -1109,38 +1135,17 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox bas_intern;
-        private System.Windows.Forms.ComboBox bas_cont;
-        private System.Windows.Forms.DateTimePicker bas_emp_edate;
-        private System.Windows.Forms.DateTimePicker bas_emp_sdate;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox bas_intern_no;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox bas_intern_dt;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox bas_acc_bank1;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox bas_acc_name1;
-        private System.Windows.Forms.TextBox bas_acc_no1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DateTimePicker bas_dept_dt;
-        private System.Windows.Forms.DateTimePicker bas_dut_dt;
-        private System.Windows.Forms.DateTimePicker bas_pos_dt;
-        private System.Windows.Forms.ComboBox bas_sts;
-        private System.Windows.Forms.ComboBox bas_dept;
-        private System.Windows.Forms.ComboBox bas_dut;
-        private System.Windows.Forms.ComboBox bas_pos;
-        private System.Windows.Forms.ComboBox bas_wsta;
-        private System.Windows.Forms.DateTimePicker bas_reidate;
-        private System.Windows.Forms.DateTimePicker bas_resdate;
-        private System.Windows.Forms.DateTimePicker bas_levdate;
-        private System.Windows.Forms.DateTimePicker bas_entdate;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
@@ -1154,33 +1159,18 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox bas_rmk;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ComboBox bas_acc_bank2;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox bas_acc_name2;
-        private System.Windows.Forms.TextBox bas_acc_no2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox bas_telno;
-        private System.Windows.Forms.TextBox bas_hdpno;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox bas_empno;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox bas_resno1;
-        private System.Windows.Forms.TextBox bas_resno2;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox bas_mar;
-        private System.Windows.Forms.TextBox bas_name;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox bas_cname;
-        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox bas_ename;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         public System.Windows.Forms.TextBox bas_zip;
@@ -1188,17 +1178,54 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         public System.Windows.Forms.TextBox bas_residence;
-        private System.Windows.Forms.TextBox bas_email;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.TextBox bas_addr;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox bas_mil_rnk;
-        private System.Windows.Forms.ComboBox bas_mil_mil;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox bas_mil_sta;
+        public System.Windows.Forms.ComboBox bas_intern;
+        public System.Windows.Forms.ComboBox bas_cont;
+        public System.Windows.Forms.DateTimePicker bas_emp_edate;
+        public System.Windows.Forms.DateTimePicker bas_emp_sdate;
+        public System.Windows.Forms.TextBox bas_intern_no;
+        public System.Windows.Forms.TextBox bas_intern_dt;
+        public System.Windows.Forms.ComboBox bas_acc_bank1;
+        public System.Windows.Forms.TextBox bas_acc_name1;
+        public System.Windows.Forms.TextBox bas_acc_no1;
+        public System.Windows.Forms.DateTimePicker bas_dept_dt;
+        public System.Windows.Forms.DateTimePicker bas_dut_dt;
+        public System.Windows.Forms.DateTimePicker bas_pos_dt;
+        public System.Windows.Forms.ComboBox bas_sts;
+        public System.Windows.Forms.ComboBox bas_dept;
+        public System.Windows.Forms.ComboBox bas_dut;
+        public System.Windows.Forms.ComboBox bas_pos;
+        public System.Windows.Forms.ComboBox bas_wsta;
+        public System.Windows.Forms.DateTimePicker bas_reidate;
+        public System.Windows.Forms.DateTimePicker bas_resdate;
+        public System.Windows.Forms.DateTimePicker bas_levdate;
+        public System.Windows.Forms.DateTimePicker bas_entdate;
+        public System.Windows.Forms.TextBox bas_rmk;
+        public System.Windows.Forms.ComboBox bas_acc_bank2;
+        public System.Windows.Forms.TextBox bas_acc_name2;
+        public System.Windows.Forms.TextBox bas_acc_no2;
+        public System.Windows.Forms.TextBox bas_telno;
+        public System.Windows.Forms.TextBox bas_hdpno;
+        public System.Windows.Forms.TextBox bas_empno;
+        public System.Windows.Forms.TextBox bas_resno1;
+        public System.Windows.Forms.TextBox bas_resno2;
+        public System.Windows.Forms.ComboBox bas_mar;
+        public System.Windows.Forms.TextBox bas_name;
+        public System.Windows.Forms.TextBox bas_cname;
+        public System.Windows.Forms.RadioButton radioButton2;
+        public System.Windows.Forms.RadioButton radioButton1;
+        public System.Windows.Forms.TextBox bas_ename;
+        public System.Windows.Forms.TextBox bas_email;
+        public System.Windows.Forms.ComboBox bas_mil_rnk;
+        public System.Windows.Forms.ComboBox bas_mil_mil;
+        public System.Windows.Forms.ComboBox bas_mil_sta;
+        private System.Windows.Forms.Button ck_button;
     }
 }
